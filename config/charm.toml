@@ -404,7 +404,7 @@
 	#This does not apply if Grave mode is true.
 	"Chests contain totems" = ["chests/pillager_outpost", "chests/woodland_mansion"]
 	#If true, the totem will preserve the player's experience and restore when broken.
-	"Preserve XP" = false
+	"Preserve XP" = true
 	#If true, the coordinates where you died will be added to the player's chat screen.
 	"Show death position" = false
 

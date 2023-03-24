@@ -1,8 +1,8 @@
-[03:06:23] [main/INFO]: Loading Minecraft 1.19.2 with Fabric Loader 0.14.18
-[03:06:23] [ForkJoinPool-1-worker-3/WARN]: Mod create uses the version 0.5.0.i-961+1.19.2 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'i'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[03:06:23] [ForkJoinPool-1-worker-2/WARN]: Mod io_netty_netty-codec-http uses the version 4.1.77.Final which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'Final'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[03:06:23] [ForkJoinPool-1-worker-3/WARN]: Mod flywheel uses the version 0.6.8.a-4 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'a'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[03:06:23] [main/INFO]: Loading 112 mods:
+[16:52:51] [main/INFO]: Loading Minecraft 1.19.2 with Fabric Loader 0.14.18
+[16:52:51] [ForkJoinPool-1-worker-7/WARN]: Mod io_netty_netty-codec-http uses the version 4.1.77.Final which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'Final'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[16:52:51] [ForkJoinPool-1-worker-5/WARN]: Mod create uses the version 0.5.0.i-961+1.19.2 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'i'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[16:52:51] [ForkJoinPool-1-worker-3/WARN]: Mod flywheel uses the version 0.6.8.a-4 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'a'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[16:52:51] [main/INFO]: Loading 112 mods:
 	- architectury 6.5.69
 	- betterdeserttemples 1.19.2-Fabric-2.2.2
 	   \-- org_reflections_reflections 0.10.2
@@ -135,714 +135,331 @@
 	   \-- org_javassist_javassist 3.28.0-GA
 	- yungsbridges 1.19.2-Fabric-3.1.0
 	- yungsextras 1.19.2-Fabric-3.1.0
-[03:06:24] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/data/data/com.termux/files/home/FhrazeSMP/libraries/net/fabricmc/sponge-mixin/0.12.4+mixin.0.8.5/sponge-mixin-0.12.4+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
-[03:06:24] [main/INFO]: Compatibility level set to JAVA_16
-[03:06:24] [main/INFO]: Compatibility level set to JAVA_17
-[03:06:24] [main/INFO]: Loaded configuration file for Lithium: 108 options available, 0 override(s) found
-[03:06:24] [main/WARN]: Reference map 'yungsextras.refmap.json' for yungsextras.mixins.json could not be read. If this is a development environment you can ignore this message
-[03:06:24] [main/WARN]: Reference map 'yungsextras.refmap.json' for yungsextras_fabric.mixins.json could not be read. If this is a development environment you can ignore this message
-[03:06:25] [main/WARN]: Error loading class: net/minecraft/class_5616 (java.lang.ClassNotFoundException: net/minecraft/class_5616)
-[03:06:25] [main/WARN]: @Mixin target net.minecraft.class_5616 was not found registrate-fabric.mixins.json:accessor.BlockEntityRenderersAccessor from mod registrate-fabric
-[03:06:25] [main/WARN]: Error loading class: net/minecraft/class_4224 (java.lang.ClassNotFoundException: net/minecraft/class_4224)
-[03:06:25] [main/WARN]: @Mixin target net.minecraft.class_4224 was not found sound_physics_remastered.mixins.json:ChannelAccessor from mod sound_physics_remastered
-[03:06:31] [main/INFO]: Building unoptimized datafixer
-[03:06:32] [main/WARN]: @Inject(@At("INVOKE_ASSIGN")) Shift.BY=2 on gud_recipe_confidence.mixins.json:IngredientMixin from mod gud_recipe_confidence::handler$bed000$gud_recipe_confidence$init exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
-[03:06:33] [main/INFO]: Reflections took 62 ms to scan 1 urls, producing 1 keys and 2 values
-[03:06:33] [main/INFO]: Reflections took 4 ms to scan 1 urls, producing 1 keys and 2 values
-[03:06:33] [main/INFO]: Creating directory for additional Better Desert Temples configuration at /data/data/com.termux/files/home/FhrazeSMP/config/betterdeserttemples/fabric-1_19
-[03:06:33] [main/INFO]: Reflections took 3 ms to scan 1 urls, producing 1 keys and 3 values
-[03:06:33] [main/INFO]: Reflections took 3 ms to scan 1 urls, producing 1 keys and 3 values
-[03:06:33] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values
-[03:06:33] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values
-[03:06:33] [main/INFO]: Creating directory for additional Better Nether Fortresses configuration at /data/data/com.termux/files/home/FhrazeSMP/config/betterfortresses/fabric-1_19
-[03:06:33] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[03:06:33] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[03:06:33] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
-[03:06:33] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
-[03:06:33] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[03:06:33] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[03:06:33] [main/INFO]: Creating directory for additional Better Strongholds configuration at /data/data/com.termux/files/home/FhrazeSMP/config/betterstrongholds/fabric-1_19
-[03:06:33] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
-[03:06:33] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values
-[03:06:33] [main/INFO]: [ModuleLoader] Enabled AerialAffinityEnchantment
-[03:06:33] [main/INFO]: [ModuleLoader] Enabled AllowTooExpensive
-[03:06:33] [main/INFO]: [ModuleLoader] Enabled AmethystNoteBlock
-[03:06:33] [main/INFO]: [ModuleLoader] Enabled Atlases
-[03:06:33] [main/INFO]: [ModuleLoader] Enabled AutoRestock
-[03:06:33] [main/INFO]: [ModuleLoader] Enabled AzaleaWood
-[03:06:33] [main/INFO]: [ModuleLoader] Enabled BatBuckets
-[03:06:33] [main/INFO]: [ModuleLoader] Enabled BeaconsHealMobs
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled Beekeepers
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled BlockOfEnderPearls
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled BlockOfGunpowder
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled BlockOfSugar
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled Bookcases
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled CaveSpidersDropCobwebs
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled Chairs
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ChickensDropFeathers
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ClearItemFrames
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled CollectionEnchantment
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ColoredBundles
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ColoredNetherPortals
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled CompassOverlay
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled CoralSeaLanterns
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled CoralSquids
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled Core
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled DiscsStopBackgroundMusic
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled EbonyWood
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled EditableSigns
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled EndermitePowder
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ExtraBoats
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ExtraRecipes
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ExtraTrades
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ExtraWanderingTrades
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ExtractEnchantments
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled GentlePotionParticles
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled GoatsDropMutton
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled GrindableArmor
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled HoverSorting
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled HusksDropSand
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled HusksSpawnUnderground
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ImprovedFortressLoot
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ImprovedMansionLoot
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ImprovedMineshafts
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled InventoryTidying
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled Kilns
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled LavaBucketDestroysItems
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled LowerNoteblockPitch
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled Lumberjacks
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled MapTooltip
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled Mooblooms
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled MorePortalFrames
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled NoCropTrampling
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled NoPetDamage
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled NoPotionGlint
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled NoSpyglassScope
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled OpenBothDoors
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ParrotsStayOnShoulder
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled PathToDirt
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled PlayerPressurePlates
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled PortableCrafting
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled QuickReplant
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled RaidHorns
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled RedstoneLanterns
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled RedstoneSand
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled RepairElytraFromLeather
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled RepairNetheriteFromScrap
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled RepairTridentsFromShards
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ShowRepairCost
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ShulkerBoxDragDrop
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled ShulkerBoxTooltip
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled SmoothGlowstone
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled SnowAccumulation
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled StackableEnchantedBooks
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled StackablePotions
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled StackableStews
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled StraysDropBlueIce
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled StraysSpawnUnderground
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled StrongerAnvils
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled TotemOfPreserving
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled TotemWorksFromInventory
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled VariantBarrels
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled VariantBars
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled VariantBookshelves
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled VariantChains
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled VariantChests
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled VariantLadders
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled VariantLanterns
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled VariantMobTextures
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled VillagersFollowEmeraldBlocks
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled WeatheringIron
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled WitchesDropLuck
-[03:06:34] [main/INFO]: [ModuleLoader] Enabled Woodcutters
-[03:06:34] [main/INFO]: [ModuleLoader] Running AerialAffinityEnchantment
-[03:06:34] [main/INFO]: [ModuleLoader] Running AllowTooExpensive
-[03:06:34] [main/INFO]: [ModuleLoader] Running AmethystNoteBlock
-[03:06:34] [main/INFO]: [ModuleLoader] Running Atlases
-[03:06:34] [main/INFO]: [ModuleLoader] Running AutoRestock
-[03:06:34] [main/INFO]: [ModuleLoader] Running AzaleaWood
-[03:06:34] [main/INFO]: [ModuleLoader] Running BatBuckets
-[03:06:34] [main/INFO]: [ModuleLoader] Running BeaconsHealMobs
-[03:06:34] [main/INFO]: [ModuleLoader] Running Beekeepers
-[03:06:34] [main/INFO]: [ModuleLoader] Running BlockOfEnderPearls
-[03:06:34] [main/INFO]: [ModuleLoader] Running BlockOfGunpowder
-[03:06:34] [main/INFO]: [ModuleLoader] Running BlockOfSugar
-[03:06:34] [main/INFO]: [ModuleLoader] Running Bookcases
-[03:06:34] [main/INFO]: [ModuleLoader] Running CaveSpidersDropCobwebs
-[03:06:34] [main/INFO]: [ModuleLoader] Running Chairs
-[03:06:34] [main/INFO]: [ModuleLoader] Running ChickensDropFeathers
-[03:06:34] [main/INFO]: [ModuleLoader] Running ClearItemFrames
-[03:06:34] [main/INFO]: [ModuleLoader] Running CollectionEnchantment
-[03:06:34] [main/INFO]: [ModuleLoader] Running ColoredBundles
-[03:06:34] [main/INFO]: [ModuleLoader] Running ColoredNetherPortals
-[03:06:34] [main/INFO]: [ModuleLoader] Running CompassOverlay
-[03:06:34] [main/INFO]: [ModuleLoader] Running CoralSeaLanterns
-[03:06:34] [main/INFO]: [ModuleLoader] Running CoralSquids
-[03:06:34] [main/INFO]: [ModuleLoader] Running Core
-[03:06:34] [main/INFO]: [ModuleLoader] Running DiscsStopBackgroundMusic
-[03:06:34] [main/INFO]: [ModuleLoader] Running EbonyWood
-[03:06:34] [main/INFO]: [ModuleLoader] Running EditableSigns
-[03:06:34] [main/INFO]: [ModuleLoader] Running EndermitePowder
-[03:06:34] [main/INFO]: [ModuleLoader] Running ExtraBoats
-[03:06:34] [main/INFO]: [ModuleLoader] Running ExtraRecipes
-[03:06:34] [main/INFO]: [ModuleLoader] Running ExtraTrades
-[03:06:34] [main/INFO]: [ModuleLoader] Running ExtraWanderingTrades
-[03:06:34] [main/INFO]: [ModuleLoader] Running ExtractEnchantments
-[03:06:34] [main/INFO]: [ModuleLoader] Running GentlePotionParticles
-[03:06:34] [main/INFO]: [ModuleLoader] Running GoatsDropMutton
-[03:06:34] [main/INFO]: [ModuleLoader] Running GrindableArmor
-[03:06:34] [main/INFO]: [ModuleLoader] Running HoverSorting
-[03:06:34] [main/INFO]: [ModuleLoader] Running HusksDropSand
-[03:06:34] [main/INFO]: [ModuleLoader] Running HusksSpawnUnderground
-[03:06:34] [main/INFO]: [ModuleLoader] Running ImprovedFortressLoot
-[03:06:34] [main/INFO]: [ModuleLoader] Running ImprovedMansionLoot
-[03:06:34] [main/INFO]: [ModuleLoader] Running ImprovedMineshafts
-[03:06:34] [main/INFO]: [ModuleLoader] Running InventoryTidying
-[03:06:34] [main/INFO]: [ModuleLoader] Running Kilns
-[03:06:34] [main/INFO]: [ModuleLoader] Running LavaBucketDestroysItems
-[03:06:34] [main/INFO]: [ModuleLoader] Running LowerNoteblockPitch
-[03:06:34] [main/INFO]: [ModuleLoader] Running Lumberjacks
-[03:06:34] [main/INFO]: [ModuleLoader] Running MapTooltip
-[03:06:34] [main/INFO]: [ModuleLoader] Running Mooblooms
-[03:06:34] [main/INFO]: [ModuleLoader] Running MorePortalFrames
-[03:06:34] [main/INFO]: [ModuleLoader] Running NoCropTrampling
-[03:06:34] [main/INFO]: [ModuleLoader] Running NoPetDamage
-[03:06:34] [main/INFO]: [ModuleLoader] Running NoPotionGlint
-[03:06:34] [main/INFO]: [ModuleLoader] Running NoSpyglassScope
-[03:06:34] [main/INFO]: [ModuleLoader] Running OpenBothDoors
-[03:06:34] [main/INFO]: [ModuleLoader] Running ParrotsStayOnShoulder
-[03:06:34] [main/INFO]: [ModuleLoader] Running PathToDirt
-[03:06:34] [main/INFO]: [ModuleLoader] Running PlayerPressurePlates
-[03:06:34] [main/INFO]: [ModuleLoader] Running PortableCrafting
-[03:06:34] [main/INFO]: [ModuleLoader] Running QuickReplant
-[03:06:34] [main/INFO]: [ModuleLoader] Running RaidHorns
-[03:06:34] [main/INFO]: [ModuleLoader] Running RedstoneLanterns
-[03:06:34] [main/INFO]: [ModuleLoader] Running RedstoneSand
-[03:06:34] [main/INFO]: [ModuleLoader] Running RepairElytraFromLeather
-[03:06:34] [main/INFO]: [ModuleLoader] Running RepairNetheriteFromScrap
-[03:06:34] [main/INFO]: [ModuleLoader] Running RepairTridentsFromShards
-[03:06:34] [main/INFO]: [ModuleLoader] Running ShowRepairCost
-[03:06:34] [main/INFO]: [ModuleLoader] Running ShulkerBoxDragDrop
-[03:06:34] [main/INFO]: [ModuleLoader] Running ShulkerBoxTooltip
-[03:06:34] [main/INFO]: [ModuleLoader] Running SmoothGlowstone
-[03:06:34] [main/INFO]: [ModuleLoader] Running SnowAccumulation
-[03:06:34] [main/INFO]: [ModuleLoader] Running StackableEnchantedBooks
-[03:06:34] [main/INFO]: [ModuleLoader] Running StackablePotions
-[03:06:34] [main/INFO]: [ModuleLoader] Running StackableStews
-[03:06:34] [main/INFO]: [ModuleLoader] Running StraysDropBlueIce
-[03:06:34] [main/INFO]: [ModuleLoader] Running StraysSpawnUnderground
-[03:06:34] [main/INFO]: [ModuleLoader] Running StrongerAnvils
-[03:06:34] [main/INFO]: [ModuleLoader] Running TotemOfPreserving
-[03:06:34] [main/INFO]: [ModuleLoader] Running TotemWorksFromInventory
-[03:06:34] [main/INFO]: [ModuleLoader] Running VariantBarrels
-[03:06:34] [main/INFO]: [ModuleLoader] Running VariantBars
-[03:06:34] [main/INFO]: [ModuleLoader] Running VariantBookshelves
-[03:06:34] [main/INFO]: [ModuleLoader] Running VariantChains
-[03:06:34] [main/INFO]: [ModuleLoader] Running VariantChests
-[03:06:34] [main/INFO]: [ModuleLoader] Running VariantLadders
-[03:06:34] [main/INFO]: [ModuleLoader] Running VariantLanterns
-[03:06:34] [main/INFO]: [ModuleLoader] Running VariantMobTextures
-[03:06:34] [main/INFO]: [ModuleLoader] Running VillagersFollowEmeraldBlocks
-[03:06:34] [main/INFO]: [ModuleLoader] Running WeatheringIron
-[03:06:34] [main/INFO]: [ModuleLoader] Running WitchesDropLuck
-[03:06:34] [main/INFO]: [ModuleLoader] Running Woodcutters
-[03:06:37] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:glass_bottle
-[03:06:37] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
-[03:06:37] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
-[03:06:37] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:glass_bottle
-[03:06:37] [main/WARN]: Configuration file ./config/create-common.toml is not correct. Correcting
-[03:06:37] [main/WARN]: Incorrect key worldgen was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2 was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.disableWorldGen was corrected from null to its default, false. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.striated_ores_nether was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.striated_ores_nether.clusterSize was corrected from null to its default, 32. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.striated_ores_nether.frequency was corrected from null to its default, 0.0833333358168602. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.striated_ores_nether.minHeight was corrected from null to its default, 40. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.striated_ores_nether.maxHeight was corrected from null to its default, 90. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.striated_ores_overworld was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.striated_ores_overworld.clusterSize was corrected from null to its default, 32. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.striated_ores_overworld.frequency was corrected from null to its default, 0.0833333358168602. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.striated_ores_overworld.minHeight was corrected from null to its default, -30. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.striated_ores_overworld.maxHeight was corrected from null to its default, 70. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.zinc_ore was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.zinc_ore.clusterSize was corrected from null to its default, 12. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.zinc_ore.frequency was corrected from null to its default, 8.0. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.zinc_ore.minHeight was corrected from null to its default, -63. 
-[03:06:37] [main/WARN]: Incorrect key worldgen.v2.zinc_ore.maxHeight was corrected from null to its default, 70. 
-[03:06:37] [main/WARN]: Configuration file ./config/create-client.toml is not correct. Correcting
-[03:06:37] [main/WARN]: Incorrect key client was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key client.enableTooltips was corrected from null to its default, true. 
-[03:06:37] [main/WARN]: Incorrect key client.enableOverstressedTooltip was corrected from null to its default, true. 
-[03:06:37] [main/WARN]: Incorrect key client.explainRenderErrors was corrected from null to its default, false. 
-[03:06:37] [main/WARN]: Incorrect key client.fanParticleDensity was corrected from null to its default, 0.5. 
-[03:06:37] [main/WARN]: Incorrect key client.filterItemRenderDistance was corrected from null to its default, 10.0. 
-[03:06:37] [main/WARN]: Incorrect key client.enableRainbowDebug was corrected from null to its default, false. 
-[03:06:37] [main/WARN]: Incorrect key client.maximumContraptionLightVolume was corrected from null to its default, 16384. 
-[03:06:37] [main/WARN]: Incorrect key client.mainMenuConfigButtonRow was corrected from null to its default, 2. 
-[03:06:37] [main/WARN]: Incorrect key client.mainMenuConfigButtonOffsetX was corrected from null to its default, -4. 
-[03:06:37] [main/WARN]: Incorrect key client.ingameMenuConfigButtonRow was corrected from null to its default, 3. 
-[03:06:37] [main/WARN]: Incorrect key client.ingameMenuConfigButtonOffsetX was corrected from null to its default, -4. 
-[03:06:37] [main/WARN]: Incorrect key client.ignoreFabulousWarning was corrected from null to its default, false. 
-[03:06:37] [main/WARN]: Incorrect key client.fluidUnitType was corrected from null to its default, MILIBUCKETS. 
-[03:06:37] [main/WARN]: Incorrect key client.simplifyFluidUnit was corrected from null to its default, true. 
-[03:06:37] [main/WARN]: Incorrect key client.toolboxHotbarOverlayOffset was corrected from null to its default, 0. 
-[03:06:37] [main/WARN]: Incorrect key client.goggleOverlay was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key client.goggleOverlay.overlayOffsetX was corrected from null to its default, 20. 
-[03:06:37] [main/WARN]: Incorrect key client.goggleOverlay.overlayOffsetY was corrected from null to its default, 0. 
-[03:06:37] [main/WARN]: Incorrect key client.goggleOverlay.customColorsOverlay was corrected from null to its default, false. 
-[03:06:37] [main/WARN]: Incorrect key client.goggleOverlay.customBackgroundOverlay was corrected from null to its default, -267386864. 
-[03:06:37] [main/WARN]: Incorrect key client.goggleOverlay.customBorderTopOverlay was corrected from null to its default, 1347420415. 
-[03:06:37] [main/WARN]: Incorrect key client.goggleOverlay.customBorderBotOverlay was corrected from null to its default, 1344798847. 
-[03:06:37] [main/WARN]: Incorrect key client.placementAssist was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key client.placementAssist.indicatorType was corrected from null to its default, TEXTURE. 
-[03:06:37] [main/WARN]: Incorrect key client.placementAssist.indicatorScale was corrected from null to its default, 1.0. 
-[03:06:37] [main/WARN]: Incorrect key client.ponder was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key client.ponder.comfyReading was corrected from null to its default, false. 
-[03:06:37] [main/WARN]: Incorrect key client.ponder.editingMode was corrected from null to its default, false. 
-[03:06:37] [main/WARN]: Incorrect key client.sound was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key client.sound.enableAmbientSounds was corrected from null to its default, true. 
-[03:06:37] [main/WARN]: Incorrect key client.sound.ambientVolumeCap was corrected from null to its default, 0.10000000149011612. 
-[03:06:37] [main/WARN]: Incorrect key client.trains was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:37] [main/WARN]: Incorrect key client.trains.mountedZoomMultiplier was corrected from null to its default, 3.0. 
-[03:06:37] [main/WARN]: Incorrect key client.trains.showTrackGraphOnF3 was corrected from null to its default, false. 
-[03:06:37] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
-[03:06:37] [main/INFO]: Definitely not up to no good
-[03:06:37] [main/INFO]: [REI] Registered plugin provider CharmReiServerPlugin [charm] for REIPlugin
-[03:06:37] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:request_tags_c2s
-[03:06:37] [main/INFO]: [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIPlugin
-[03:06:37] [main/INFO]: [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIPlugin
-[03:06:37] [main/INFO]: [REI] Registered plugin provider ReiCompat [travelersbackpack] for REIPlugin
-[03:06:37] [main/INFO]: [REI] Registered plugin provider CharmReiServerPlugin [charm] for REIServerPlugin
-[03:06:37] [main/INFO]: [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIServerPlugin
-[03:06:37] [main/INFO]: [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIServerPlugin
-[03:06:37] [main/INFO]: [REI] Registered plugin provider ReiCompat [travelersbackpack] for REIServerPlugin
-[03:06:37] [main/INFO]: [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIServerPlugin
-[03:06:37] [main/INFO]: [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIPlugin
-[03:06:37] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:delete_item
-[03:06:37] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item
-[03:06:37] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item_grab
-[03:06:37] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item_hotbar
-[03:06:37] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:move_items
-[03:06:37] [main/INFO]: Reloading config
-[03:06:37] [main/INFO]: Reloading reverb parameters
-[03:06:38] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.WaterEffect as a FluidEffect for minecraft:water 81000 with the ID 0
-[03:06:38] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.LavaEffect as a FluidEffect for minecraft:lava 81000 with the ID 1
-[03:06:38] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.PotionEffect as a FluidEffect for travelersbackpack:potion_still 27000 with the ID 2
-[03:06:38] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.MilkEffect as a FluidEffect for travelersbackpack:milk_still 81000 with the ID 3
-[03:06:38] [main/INFO]: Compatibility version 15
-[03:06:38] [main/INFO]: Loading plugins
-[03:06:38] [main/INFO]: Loaded 2 plugin(s)
-[03:06:38] [main/INFO]: Initializing plugins
-[03:06:38] [main/INFO]: Initializing Simple Voice Chat integration
-[03:06:38] [main/INFO]: Initialized 2 plugin(s)
-[03:06:38] [main/INFO]: Registering events for sound_physics_remastered
-[03:06:38] [main/INFO]: Registering events for vcinteraction
-[03:06:38] [main/INFO]: Reflections took 7 ms to scan 1 urls, producing 1 keys and 4 values
-[03:06:38] [main/INFO]: Reflections took 7 ms to scan 1 urls, producing 1 keys and 4 values
-[03:06:38] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[03:06:38] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
-[03:06:38] [main/INFO]: Reflections took 3 ms to scan 1 urls, producing 1 keys and 2 values
-[03:06:38] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
-[03:06:38] [main/INFO]: Creating directory for additional YUNG's Extras configuration at /data/data/com.termux/files/home/FhrazeSMP/config/YungsExtras/fabric-1_19
-[03:06:38] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[03:06:40] [main/INFO]: [fabric-registry-sync] Loaded registry data [file 1/4]
-[03:06:41] [main/INFO]: Loaded 24 recipes
-[03:06:42] [main/INFO]: Loaded 2502 advancements
-[03:06:42] [main/INFO]: [REI] Reloading Plugin Manager [REIPlugin] stage [START], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[03:06:42] [main/INFO]: [REI] Reloading Plugin Manager [REIServerPlugin] stage [START], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[03:06:42] [main/INFO]: [REI] Reloaded Plugin Manager [REIPlugin] with 5 plugins in 54.28 ms.
-[03:06:42] [main/INFO]: [REI] Reloaded Plugin Manager [REIServerPlugin] with 5 plugins in 5.192 ms.
-[03:06:42] [main/INFO]: [REI] Reloading Plugin Manager [REIPlugin] stage [END], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[03:06:42] [main/INFO]: [REI] Reloading Plugin Manager [REIServerPlugin] stage [END], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[03:06:42] [main/INFO]: [REI] Reloaded Plugin Manager [REIPlugin] with 5 plugins in 36.14 ms.
-[03:06:42] [main/INFO]: [REI] Reloaded Plugin Manager [REIServerPlugin] with 5 plugins in 14.16 ms.
-[03:06:43] [main/INFO]: Applied 326 biome modifications to 57 of 72 new biomes in 21.05 ms
-[03:06:43] [Server thread/WARN]: Config key computer_space_limit missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key floppy_space_limit missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key maximum_open_files missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key disable_lua51_features missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key default_computer_settings missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key log_computer_errors missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key command_require_creative missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key execution missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key execution.computer_threads missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key execution.max_main_global_time missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key execution.max_main_computer_time missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key http missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key http.enabled missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key http.websocket_enabled missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key http.rules missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key http.max_requests missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key http.max_websockets missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key peripheral missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key peripheral.command_block_enabled missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key peripheral.modem_range missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key peripheral.modem_high_altitude_range missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key peripheral.modem_range_during_storm missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key peripheral.modem_high_altitude_range_during_storm missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key peripheral.max_notes_per_tick missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key peripheral.monitor_bandwidth missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key turtle missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key turtle.need_fuel missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key turtle.normal_fuel_limit missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key turtle.advanced_fuel_limit missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key turtle.obey_block_protection missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key turtle.can_push missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key term_sizes missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key term_sizes.computer missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key term_sizes.computer.width missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key term_sizes.computer.height missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key term_sizes.pocket_computer missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key term_sizes.pocket_computer.width missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key term_sizes.pocket_computer.height missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key term_sizes.monitor missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key term_sizes.monitor.width missing -> added default value.
-[03:06:43] [Server thread/WARN]: Config key term_sizes.monitor.height missing -> added default value.
-[03:06:43] [Server thread/WARN]: Configuration file ./world/serverconfig/create-server.toml is not correct. Correcting
-[03:06:43] [Server thread/WARN]: Incorrect key limitAdventureMode was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key infrastructure was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key infrastructure.tickrateSyncTimer was corrected from null to its default, 20. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.bulkPressing was corrected from null to its default, false. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.bulkCutting was corrected from null to its default, false. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.allowBrewingInMixer was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.allowShapelessInMixer was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.allowShapedSquareInPress was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.allowRegularCraftingInCrafter was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.maxFireworkIngredientsInCrafter was corrected from null to its default, 9. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.allowStonecuttingOnSaw was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.allowWoodcuttingOnSaw was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.allowCastingBySpout was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.allowFillingBySpout was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.displayLogStrippingRecipes was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.lightSourceCountForRefinedRadiance was corrected from null to its default, 10. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.enableRefinedRadianceRecipe was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key recipes.enableShadowSteelRecipe was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.disableStress was corrected from null to its default, false. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.maxBeltLength was corrected from null to its default, 20. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.crushingDamage was corrected from null to its default, 4. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.maxMotorSpeed was corrected from null to its default, 256. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.waterWheelBaseSpeed was corrected from null to its default, 4. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.waterWheelFlowSpeed was corrected from null to its default, 4. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.maxRotationSpeed was corrected from null to its default, 256. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.ignoreDeployerAttacks was corrected from null to its default, CREEPERS. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.kineticValidationFrequency was corrected from null to its default, 60. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.crankHungerMultiplier was corrected from null to its default, 0.009999999776482582. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.minimumWindmillSails was corrected from null to its default, 8. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.windmillSailsPerRPM was corrected from null to its default, 8. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.maxEjectorDistance was corrected from null to its default, 32. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.ejectorScanInterval was corrected from null to its default, 120. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.encasedFan was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.encasedFan.fanPushDistance was corrected from null to its default, 20. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.encasedFan.fanPullDistance was corrected from null to its default, 20. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.encasedFan.fanBlockCheckRate was corrected from null to its default, 30. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.encasedFan.fanRotationArgmax was corrected from null to its default, 256. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.encasedFan.inWorldProcessingTime was corrected from null to its default, 150. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.maxBlocksMoved was corrected from null to its default, 2048. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.maxDataSize was corrected from null to its default, 2000000. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.maxChassisRange was corrected from null to its default, 16. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.maxPistonPoles was corrected from null to its default, 64. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.maxRopeLength was corrected from null to its default, 256. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.maxCartCouplingLength was corrected from null to its default, 32. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.survivalContraptionPickup was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.movableSpawners was corrected from null to its default, NO_PICKUP. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.amethystMovement was corrected from null to its default, NO_PICKUP. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.movableObsidian was corrected from null to its default, UNMOVABLE. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.movableReinforcedDeepslate was corrected from null to its default, UNMOVABLE. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.moveItemsToStorage was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.harvestPartiallyGrown was corrected from null to its default, false. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.contraptions.harvesterReplants was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2 was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.display_board was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.deployer was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.mechanical_piston was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.millstone was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.mechanical_bearing was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.clockwork_bearing was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.cuckoo_clock was corrected from null to its default, 1.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.speedometer was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.copper_backtank was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.mechanical_saw was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.flywheel was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.encased_chain_drive was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.clutch was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.encased_fan was corrected from null to its default, 2.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.adjustable_chain_gearshift was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.mechanical_pump was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.crushing_wheel was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.mechanical_mixer was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.gantry_shaft was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.rope_pulley was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.rotation_speed_controller was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.mechanical_arm was corrected from null to its default, 2.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.andesite_encased_shaft was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.mechanical_press was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.large_cogwheel was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.mechanical_drill was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.andesite_encased_large_cogwheel was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.brass_encased_large_cogwheel was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.mysterious_cuckoo_clock was corrected from null to its default, 1.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.stressometer was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.shaft was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.brass_encased_shaft was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.gearshift was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.turntable was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.sticky_mechanical_piston was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.sequenced_gearshift was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.weighted_ejector was corrected from null to its default, 2.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.cogwheel was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.andesite_encased_cogwheel was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.belt was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.brass_encased_cogwheel was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.gearbox was corrected from null to its default, 0.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.hose_pulley was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.impact.mechanical_crafter was corrected from null to its default, 2.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.blue_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.copper_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.pink_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.hand_crank was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.black_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.magenta_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.white_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.yellow_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.brown_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.cyan_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.windmill_bearing was corrected from null to its default, 512.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.light_blue_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.lime_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.purple_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.red_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.steam_engine was corrected from null to its default, 1024.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.creative_motor was corrected from null to its default, 16384.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.gray_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.water_wheel was corrected from null to its default, 16.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.orange_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.light_gray_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.v2.capacity.green_valve_handle was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.stats was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.stats.mediumSpeed was corrected from null to its default, 30.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.stats.fastSpeed was corrected from null to its default, 100.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.stats.mediumStressImpact was corrected from null to its default, 4.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.stats.highStressImpact was corrected from null to its default, 8.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.stats.mediumCapacity was corrected from null to its default, 128.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key kinetics.stressValues.stats.highCapacity was corrected from null to its default, 1024.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key fluids was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key fluids.fluidTankCapacity was corrected from null to its default, 8. 
-[03:06:43] [Server thread/WARN]: Incorrect key fluids.fluidTankMaxHeight was corrected from null to its default, 32. 
-[03:06:43] [Server thread/WARN]: Incorrect key fluids.mechanicalPumpRange was corrected from null to its default, 16. 
-[03:06:43] [Server thread/WARN]: Incorrect key fluids.hosePulleyRange was corrected from null to its default, 128. 
-[03:06:43] [Server thread/WARN]: Incorrect key fluids.hosePulleyBlockThreshold was corrected from null to its default, 10000. 
-[03:06:43] [Server thread/WARN]: Incorrect key fluids.fillInfinite was corrected from null to its default, false. 
-[03:06:43] [Server thread/WARN]: Incorrect key fluids.bottomlessFluidMode was corrected from null to its default, ALLOW_BY_TAG. 
-[03:06:43] [Server thread/WARN]: Incorrect key fluids.placeFluidSourceBlocks was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key logistics was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key logistics.defaultExtractionLimit was corrected from null to its default, 64. 
-[03:06:43] [Server thread/WARN]: Incorrect key logistics.defaultExtractionTimer was corrected from null to its default, 8. 
-[03:06:43] [Server thread/WARN]: Incorrect key logistics.psiTimeout was corrected from null to its default, 20. 
-[03:06:43] [Server thread/WARN]: Incorrect key logistics.mechanicalArmRange was corrected from null to its default, 5. 
-[03:06:43] [Server thread/WARN]: Incorrect key logistics.linkRange was corrected from null to its default, 256. 
-[03:06:43] [Server thread/WARN]: Incorrect key logistics.displayLinkRange was corrected from null to its default, 64. 
-[03:06:43] [Server thread/WARN]: Incorrect key logistics.vaultCapacity was corrected from null to its default, 20. 
-[03:06:43] [Server thread/WARN]: Incorrect key schematics was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key schematics.creativePrintIncludesAir was corrected from null to its default, false. 
-[03:06:43] [Server thread/WARN]: Incorrect key schematics.maxSchematics was corrected from null to its default, 256. 
-[03:06:43] [Server thread/WARN]: Incorrect key schematics.maxSchematicPacketSize was corrected from null to its default, 1024. 
-[03:06:43] [Server thread/WARN]: Incorrect key schematics.schematicIdleTimeout was corrected from null to its default, 600. 
-[03:06:43] [Server thread/WARN]: Incorrect key schematics.schematicannon was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key schematics.schematicannon.schematicannonDelay was corrected from null to its default, 10. 
-[03:06:43] [Server thread/WARN]: Incorrect key schematics.schematicannon.schematicannonGunpowderWorth was corrected from null to its default, 20.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key schematics.schematicannon.schematicannonFuelUsage was corrected from null to its default, 0.05000000074505806. 
-[03:06:43] [Server thread/WARN]: Incorrect key curiosities was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key curiosities.maxSymmetryWandRange was corrected from null to its default, 50. 
-[03:06:43] [Server thread/WARN]: Incorrect key curiosities.placementAssistRange was corrected from null to its default, 12. 
-[03:06:43] [Server thread/WARN]: Incorrect key curiosities.toolboxRange was corrected from null to its default, 10. 
-[03:06:43] [Server thread/WARN]: Incorrect key curiosities.airInBacktank was corrected from null to its default, 900. 
-[03:06:43] [Server thread/WARN]: Incorrect key curiosities.enchantedBacktankCapacity was corrected from null to its default, 300. 
-[03:06:43] [Server thread/WARN]: Incorrect key curiosities.maxExtendoGripActions was corrected from null to its default, 1000. 
-[03:06:43] [Server thread/WARN]: Incorrect key curiosities.maxPotatoCannonShots was corrected from null to its default, 200. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.trainsCauseDamage was corrected from null to its default, true. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.maxTrackPlacementLength was corrected from null to its default, 32. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.maxAssemblyLength was corrected from null to its default, 128. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.maxBogeyCount was corrected from null to its default, 20. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.manualTrainSpeedModifier was corrected from null to its default, 0.75. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.trainStats was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.trainStats.trainTopSpeed was corrected from null to its default, 28.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.trainStats.trainTurningTopSpeed was corrected from null to its default, 14.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.trainStats.trainAcceleration was corrected from null to its default, 3.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.poweredTrainStats was corrected from null to its default, SimpleCommentedConfig:{}. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.poweredTrainStats.poweredTrainTopSpeed was corrected from null to its default, 40.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.poweredTrainStats.poweredTrainTurningTopSpeed was corrected from null to its default, 20.0. 
-[03:06:43] [Server thread/WARN]: Incorrect key trains.poweredTrainStats.poweredTrainAcceleration was corrected from null to its default, 3.0. 
-[03:06:43] [Server thread/INFO]: Starting minecraft server version 1.19.2
-[03:06:43] [Server thread/INFO]: Loading properties
-[03:06:43] [Server thread/INFO]: Default game type: SURVIVAL
-[03:06:43] [Server thread/INFO]: Generating keypair
-[03:06:43] [Server thread/INFO]: Starting Minecraft server on 172.22.20.14:25565
-[03:06:43] [Server thread/INFO]: Using default channel type
-[03:06:43] [Server thread/WARN]: Failed to find a usable hardware address from the network interfaces; using random bytes: 89:ec:4e:fd:d4:e4:8c:a8
-[03:06:44] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[03:06:44] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[03:06:44] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[03:06:44] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[03:06:44] [Server thread/INFO]: Preparing level "world"
-[03:07:06] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[03:07:06] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[03:07:07] [Worker-Main-7/INFO]: Preparing spawn area: 0%
-[03:07:07] [Worker-Main-6/INFO]: Preparing spawn area: 0%
-[03:07:07] [Worker-Main-6/INFO]: Preparing spawn area: 0%
-[03:07:08] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[03:07:08] [Worker-Main-4/INFO]: Preparing spawn area: 0%
-[03:07:09] [Worker-Main-6/INFO]: Preparing spawn area: 1%
-[03:07:09] [Worker-Main-4/INFO]: Preparing spawn area: 1%
-[03:07:10] [Worker-Main-1/INFO]: Preparing spawn area: 2%
-[03:07:10] [Worker-Main-3/INFO]: Preparing spawn area: 3%
-[03:07:11] [Worker-Main-2/INFO]: Preparing spawn area: 4%
-[03:07:11] [Worker-Main-4/INFO]: Preparing spawn area: 5%
-[03:07:12] [Worker-Main-3/INFO]: Preparing spawn area: 6%
-[03:07:12] [Worker-Main-6/INFO]: Preparing spawn area: 9%
-[03:07:13] [Worker-Main-2/INFO]: Preparing spawn area: 10%
-[03:07:13] [Worker-Main-4/INFO]: Preparing spawn area: 10%
-[03:07:14] [Worker-Main-6/INFO]: Preparing spawn area: 12%
-[03:07:14] [Worker-Main-5/INFO]: Preparing spawn area: 13%
-[03:07:15] [Worker-Main-4/INFO]: Preparing spawn area: 16%
-[03:07:15] [Worker-Main-5/INFO]: Preparing spawn area: 17%
-[03:07:16] [Worker-Main-2/INFO]: Preparing spawn area: 19%
-[03:07:16] [Worker-Main-7/INFO]: Preparing spawn area: 22%
-[03:07:17] [Worker-Main-7/INFO]: Preparing spawn area: 23%
-[03:07:17] [Worker-Main-4/INFO]: Preparing spawn area: 24%
-[03:07:18] [Worker-Main-2/INFO]: Preparing spawn area: 26%
-[03:07:18] [Worker-Main-4/INFO]: Preparing spawn area: 28%
-[03:07:19] [Worker-Main-3/INFO]: Preparing spawn area: 30%
-[03:07:19] [Worker-Main-6/INFO]: Preparing spawn area: 32%
-[03:07:20] [Worker-Main-6/INFO]: Preparing spawn area: 34%
-[03:07:20] [Worker-Main-4/INFO]: Preparing spawn area: 37%
-[03:07:21] [Worker-Main-5/INFO]: Preparing spawn area: 38%
-[03:07:21] [Worker-Main-2/INFO]: Preparing spawn area: 41%
-[03:07:22] [Worker-Main-6/INFO]: Preparing spawn area: 42%
-[03:07:22] [Worker-Main-1/INFO]: Preparing spawn area: 43%
-[03:07:23] [Worker-Main-4/INFO]: Preparing spawn area: 45%
-[03:07:29] [Worker-Main-1/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-2/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-2/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-7/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-6/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-3/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-6/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-4/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-1/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-1/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-7/INFO]: Preparing spawn area: 47%
-[03:07:29] [Worker-Main-5/INFO]: Preparing spawn area: 49%
-[03:07:29] [Worker-Main-1/INFO]: Preparing spawn area: 50%
-[03:07:30] [Worker-Main-3/INFO]: Preparing spawn area: 52%
-[03:07:30] [Worker-Main-2/INFO]: Preparing spawn area: 54%
-[03:07:31] [Worker-Main-5/INFO]: Preparing spawn area: 56%
-[03:07:31] [Worker-Main-2/INFO]: Preparing spawn area: 58%
-[03:07:32] [Worker-Main-1/INFO]: Preparing spawn area: 61%
-[03:07:32] [Worker-Main-5/INFO]: Preparing spawn area: 65%
-[03:07:33] [Worker-Main-1/INFO]: Preparing spawn area: 68%
-[03:07:33] [Worker-Main-2/INFO]: Preparing spawn area: 69%
-[03:07:34] [Worker-Main-7/INFO]: Preparing spawn area: 70%
-[03:07:36] [Worker-Main-7/INFO]: Preparing spawn area: 74%
-[03:07:36] [Worker-Main-2/INFO]: Preparing spawn area: 74%
-[03:07:36] [Worker-Main-2/INFO]: Preparing spawn area: 74%
-[03:07:36] [Worker-Main-6/INFO]: Preparing spawn area: 74%
-[03:07:36] [Worker-Main-5/INFO]: Preparing spawn area: 76%
-[03:07:37] [Worker-Main-2/INFO]: Preparing spawn area: 79%
-[03:07:37] [Worker-Main-2/INFO]: Preparing spawn area: 81%
-[03:07:38] [Worker-Main-3/INFO]: Preparing spawn area: 83%
-[03:07:38] [Worker-Main-1/INFO]: Preparing spawn area: 84%
-[03:07:39] [Worker-Main-2/INFO]: Preparing spawn area: 86%
-[03:07:39] [Worker-Main-7/INFO]: Preparing spawn area: 89%
-[03:07:40] [Worker-Main-1/INFO]: Preparing spawn area: 91%
-[03:07:40] [Worker-Main-5/INFO]: Preparing spawn area: 93%
-[03:07:41] [Worker-Main-3/INFO]: Preparing spawn area: 96%
-[03:07:41] [Server thread/INFO]: Time elapsed: 35402 ms
-[03:07:41] [Server thread/INFO]: Done (57.678s)! For help, type "help"
-[03:07:41] [Server thread/INFO]: Created README.txt in config folder.
-[03:07:41] [Server thread/WARN]: No config 'tool_leveling_table.json' was found, created a new one.
-[03:07:41] [Server thread/WARN]: No config 'item_values.json' was found, created a new one.
-[03:07:41] [Server thread/WARN]: No config 'command_config.json' was found, created a new one.
-[03:07:41] [Server thread/WARN]: Running in offline mode - Voice chat encryption is not secure!
-[03:07:41] [VoiceChatServerThread/INFO]: Server started at port 24454
-[03:07:49] [Server thread/INFO]: Fhraze[/172.22.20.12:59146] logged in with entity id 222 at (-7.5, 74.0, -40.5)
-[03:07:49] [Server thread/INFO]: Fhraze joined the game
-[03:07:49] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
-[03:07:49] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
-[03:07:49] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
-[03:07:49] [Server thread/INFO]: Received secret request of Fhraze (15)
-[03:07:49] [Server thread/INFO]: Sent secret to Fhraze
-[03:07:51] [Server thread/WARN]: @Final field field_25883:Lnet/minecraft/class_4970$class_4973; in charm.mixins.json:more_portal_frames.AddValidPortalFrameBlocksMixin from mod charm should be final
-[03:07:52] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player 1e130ad2-a122-3396-aaf7-ce85cb193571
-[03:07:52] [VoiceChatPacketProcessingThread/WARN]: Failed to load native Opus codec: /data/data/com.termux/files/home/.cache/JNA/temp/jna13560174287869755456.tmp: dlopen failed: library "libc.so.6" not found: needed by /data/data/com.termux/files/home/.cache/JNA/temp/jna13560174287869755456.tmp in namespace (default)
-[03:07:52] [VoiceChatPacketProcessingThread/WARN]: Failed to load native Opus codec - Falling back to Java Opus implementation
-[03:07:52] [VoiceChatPacketProcessingThread/INFO]: Initializing Opus decoder with sample rate 48000 Hz, frame size 960 bytes and max payload size 1024 bytes
-[03:19:21] [Server thread/INFO]: Fhraze lost connection: Disconnected
-[03:19:21] [Server thread/INFO]: Fhraze left the game
-[03:19:21] [Server thread/INFO]: Disconnecting client Fhraze
-[03:37:36] [Server thread/INFO]: Fhraze[/172.22.20.12:43524] logged in with entity id 3024 at (-142.69999998807907, 73.0, 165.30000001192093)
-[03:37:36] [Server thread/INFO]: Fhraze joined the game
-[03:37:36] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
-[03:37:36] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
-[03:37:36] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
-[03:37:37] [Server thread/INFO]: Received secret request of Fhraze (15)
-[03:37:37] [Server thread/INFO]: Sent secret to Fhraze
-[03:37:38] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player 1e130ad2-a122-3396-aaf7-ce85cb193571
-[03:39:57] [Server thread/INFO]: Melansla[/172.22.124.157:60424] logged in with entity id 3513 at (-22.5, 69.0, -50.5)
-[03:39:57] [Server thread/INFO]: Melansla joined the game
-[03:39:57] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
-[03:39:57] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
-[03:39:57] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
-[03:39:58] [Server thread/INFO]: Received secret request of Melansla (15)
-[03:39:58] [Server thread/INFO]: Sent secret to Melansla
-[03:40:02] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player dc65c1c5-dcd8-3d3d-a95c-6fbc3b39affb
-[03:42:22] [Server thread/INFO]: Fhraze has made the advancement [Cobweb Entanglement]
-[03:43:47] [Server thread/INFO]: [Not Secure] <Melansla> como ativa
-[03:44:01] [Server thread/INFO]: [Not Secure] <Melansla> ingles
-[03:46:13] [Server thread/INFO]: [Not Secure] <Melansla> porco laranja
-[03:46:35] [Server thread/INFO]: Fhraze lost connection: Disconnected
-[03:46:35] [Server thread/INFO]: Fhraze left the game
-[03:46:35] [Server thread/INFO]: Disconnecting client Fhraze
-[03:47:16] [Server thread/INFO]: Fhraze[/172.22.20.12:39462] logged in with entity id 6701 at (-33.4264506054907, 72.0, 188.144652488586)
-[03:47:16] [Server thread/INFO]: Fhraze joined the game
-[03:47:16] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
-[03:47:16] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
-[03:47:16] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
-[03:47:16] [Server thread/INFO]: Received secret request of Fhraze (15)
-[03:47:16] [Server thread/INFO]: Sent secret to Fhraze
-[03:47:17] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player 1e130ad2-a122-3396-aaf7-ce85cb193571
-[03:51:39] [Server thread/INFO]: Fhraze has made the advancement [Stone Age]
-[03:52:41] [Server thread/INFO]: Fhraze has made the advancement [Monster Hunter]
-[03:52:56] [Server thread/INFO]: Fhraze has made the advancement [Getting an Upgrade]
-[03:53:18] [Server thread/INFO]: Melansla has made the advancement [Monster Hunter]
-[03:53:29] [Server thread/INFO]: Melansla was blown up by Creeper
-[03:53:29] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=144, y=83, z=340}
-[03:55:55] [Server thread/INFO]: Melansla has made the advancement [Stone Age]
-[03:57:00] [Server thread/INFO]: Melansla has made the advancement [Getting an Upgrade]
-[03:57:08] [Server thread/INFO]: Fhraze was slain by Enderman
-[03:57:08] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=81, y=97, z=339}
-[03:57:57] [Server thread/INFO]: [Not Secure] <Melansla> 130 64 320
-[04:01:35] [Server thread/INFO]: Fhraze lost connection: Disconnected
-[04:01:35] [Server thread/INFO]: Fhraze left the game
-[04:01:35] [Server thread/INFO]: Disconnecting client Fhraze
-[04:02:14] [Server thread/INFO]: Stopping the server
-[04:02:14] [Server thread/INFO]: Stopping server
-[04:02:14] [Server thread/INFO]: Saving players
-[04:02:14] [Server thread/INFO]: Melansla lost connection: Disconnected
-[04:02:14] [Server thread/INFO]: Melansla left the game
-[04:02:14] [Server thread/INFO]: Saving worlds
-[04:02:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[04:02:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[04:02:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[04:02:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/paradise_lost:paradise_lost
-[04:02:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[04:02:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[04:02:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[04:02:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (paradise_lost): All chunks are saved
-[04:02:17] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16:52:51] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/data/data/com.termux/files/home/FhrazeSMP/libraries/net/fabricmc/sponge-mixin/0.12.4+mixin.0.8.5/sponge-mixin-0.12.4+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
+[16:52:51] [main/INFO]: Compatibility level set to JAVA_16
+[16:52:51] [main/INFO]: Compatibility level set to JAVA_17
+[16:52:52] [main/INFO]: [MixinConfig] Not adding no_cured_villager_discount.BypassReputationGossipMixin
+[16:52:52] [main/INFO]: [MixinConfig] Not adding respawn_anchor_in_the_end.CheckIfCanSetSpawnMixin
+[16:52:52] [main/INFO]: [MixinConfig] Not adding no_chat_verified_nag.DisableToastMixin
+[16:52:52] [main/INFO]: [MixinConfig] Not adding no_treasure_enchantment_trading.CheckIfTradeableMixin
+[16:52:52] [main/INFO]: Loaded configuration file for Lithium: 108 options available, 0 override(s) found
+[16:52:52] [main/WARN]: Reference map 'yungsextras.refmap.json' for yungsextras.mixins.json could not be read. If this is a development environment you can ignore this message
+[16:52:52] [main/WARN]: Reference map 'yungsextras.refmap.json' for yungsextras_fabric.mixins.json could not be read. If this is a development environment you can ignore this message
+[16:52:53] [main/WARN]: Error loading class: net/minecraft/class_5616 (java.lang.ClassNotFoundException: net/minecraft/class_5616)
+[16:52:53] [main/WARN]: @Mixin target net.minecraft.class_5616 was not found registrate-fabric.mixins.json:accessor.BlockEntityRenderersAccessor from mod registrate-fabric
+[16:52:53] [main/WARN]: Error loading class: net/minecraft/class_4224 (java.lang.ClassNotFoundException: net/minecraft/class_4224)
+[16:52:53] [main/WARN]: @Mixin target net.minecraft.class_4224 was not found sound_physics_remastered.mixins.json:ChannelAccessor from mod sound_physics_remastered
+[16:52:58] [main/INFO]: Building unoptimized datafixer
+[16:53:00] [main/WARN]: @Inject(@At("INVOKE_ASSIGN")) Shift.BY=2 on gud_recipe_confidence.mixins.json:IngredientMixin from mod gud_recipe_confidence::handler$bea000$gud_recipe_confidence$init exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[16:53:00] [main/INFO]: Reflections took 57 ms to scan 1 urls, producing 1 keys and 2 values
+[16:53:00] [main/INFO]: Reflections took 6 ms to scan 1 urls, producing 1 keys and 2 values
+[16:53:00] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 3 values
+[16:53:00] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 3 values
+[16:53:01] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
+[16:53:01] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
+[16:53:01] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[16:53:01] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
+[16:53:01] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
+[16:53:01] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
+[16:53:01] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
+[16:53:01] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[16:53:01] [main/WARN]: WARNING: block Block{minecraft:coal_ore} added to BlockSelector exceeds max probabiltiy of 1!
+[16:53:01] [main/INFO]: Reflections took 0 ms to scan 1 urls, producing 1 keys and 1 values
+[16:53:01] [main/INFO]: Reflections took 0 ms to scan 1 urls, producing 1 keys and 1 values
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled AerialAffinityEnchantment
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled AllowTooExpensive
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled AmethystNoteBlock
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled Atlases
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled AutoRestock
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled AzaleaWood
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled BatBuckets
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled BeaconsHealMobs
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled Beekeepers
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled BlockOfEnderPearls
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled BlockOfGunpowder
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled BlockOfSugar
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled Bookcases
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled CaveSpidersDropCobwebs
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled Chairs
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ChickensDropFeathers
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ClearItemFrames
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled CollectionEnchantment
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ColoredBundles
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ColoredNetherPortals
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled CompassOverlay
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled CoralSeaLanterns
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled CoralSquids
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled Core
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled DiscsStopBackgroundMusic
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled EbonyWood
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled EditableSigns
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled EndermitePowder
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ExtraBoats
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ExtraRecipes
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ExtraTrades
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ExtraWanderingTrades
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ExtractEnchantments
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled GentlePotionParticles
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled GoatsDropMutton
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled GrindableArmor
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled HoverSorting
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled HusksDropSand
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled HusksSpawnUnderground
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ImprovedFortressLoot
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ImprovedMansionLoot
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ImprovedMineshafts
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled InventoryTidying
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled Kilns
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled LavaBucketDestroysItems
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled LowerNoteblockPitch
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled Lumberjacks
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled MapTooltip
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled Mooblooms
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled MorePortalFrames
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled NoCropTrampling
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled NoPetDamage
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled NoPotionGlint
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled NoSpyglassScope
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled OpenBothDoors
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ParrotsStayOnShoulder
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled PathToDirt
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled PlayerPressurePlates
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled PortableCrafting
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled QuickReplant
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled RaidHorns
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled RedstoneLanterns
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled RedstoneSand
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled RepairElytraFromLeather
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled RepairNetheriteFromScrap
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled RepairTridentsFromShards
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ShowRepairCost
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ShulkerBoxDragDrop
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled ShulkerBoxTooltip
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled SmoothGlowstone
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled SnowAccumulation
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled StackableEnchantedBooks
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled StackablePotions
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled StackableStews
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled StraysDropBlueIce
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled StraysSpawnUnderground
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled StrongerAnvils
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled TotemOfPreserving
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled TotemWorksFromInventory
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled VariantBarrels
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled VariantBars
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled VariantBookshelves
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled VariantChains
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled VariantChests
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled VariantLadders
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled VariantLanterns
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled VariantMobTextures
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled VillagersFollowEmeraldBlocks
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled WeatheringIron
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled WitchesDropLuck
+[16:53:01] [main/INFO]: [ModuleLoader] Enabled Woodcutters
+[16:53:01] [main/INFO]: [ModuleLoader] Running AerialAffinityEnchantment
+[16:53:01] [main/INFO]: [ModuleLoader] Running AllowTooExpensive
+[16:53:01] [main/INFO]: [ModuleLoader] Running AmethystNoteBlock
+[16:53:01] [main/INFO]: [ModuleLoader] Running Atlases
+[16:53:01] [main/INFO]: [ModuleLoader] Running AutoRestock
+[16:53:01] [main/INFO]: [ModuleLoader] Running AzaleaWood
+[16:53:01] [main/INFO]: [ModuleLoader] Running BatBuckets
+[16:53:01] [main/INFO]: [ModuleLoader] Running BeaconsHealMobs
+[16:53:01] [main/INFO]: [ModuleLoader] Running Beekeepers
+[16:53:01] [main/INFO]: [ModuleLoader] Running BlockOfEnderPearls
+[16:53:01] [main/INFO]: [ModuleLoader] Running BlockOfGunpowder
+[16:53:01] [main/INFO]: [ModuleLoader] Running BlockOfSugar
+[16:53:01] [main/INFO]: [ModuleLoader] Running Bookcases
+[16:53:01] [main/INFO]: [ModuleLoader] Running CaveSpidersDropCobwebs
+[16:53:01] [main/INFO]: [ModuleLoader] Running Chairs
+[16:53:01] [main/INFO]: [ModuleLoader] Running ChickensDropFeathers
+[16:53:01] [main/INFO]: [ModuleLoader] Running ClearItemFrames
+[16:53:01] [main/INFO]: [ModuleLoader] Running CollectionEnchantment
+[16:53:01] [main/INFO]: [ModuleLoader] Running ColoredBundles
+[16:53:01] [main/INFO]: [ModuleLoader] Running ColoredNetherPortals
+[16:53:01] [main/INFO]: [ModuleLoader] Running CompassOverlay
+[16:53:01] [main/INFO]: [ModuleLoader] Running CoralSeaLanterns
+[16:53:01] [main/INFO]: [ModuleLoader] Running CoralSquids
+[16:53:01] [main/INFO]: [ModuleLoader] Running Core
+[16:53:01] [main/INFO]: [ModuleLoader] Running DiscsStopBackgroundMusic
+[16:53:01] [main/INFO]: [ModuleLoader] Running EbonyWood
+[16:53:01] [main/INFO]: [ModuleLoader] Running EditableSigns
+[16:53:01] [main/INFO]: [ModuleLoader] Running EndermitePowder
+[16:53:01] [main/INFO]: [ModuleLoader] Running ExtraBoats
+[16:53:01] [main/INFO]: [ModuleLoader] Running ExtraRecipes
+[16:53:01] [main/INFO]: [ModuleLoader] Running ExtraTrades
+[16:53:01] [main/INFO]: [ModuleLoader] Running ExtraWanderingTrades
+[16:53:01] [main/INFO]: [ModuleLoader] Running ExtractEnchantments
+[16:53:01] [main/INFO]: [ModuleLoader] Running GentlePotionParticles
+[16:53:01] [main/INFO]: [ModuleLoader] Running GoatsDropMutton
+[16:53:01] [main/INFO]: [ModuleLoader] Running GrindableArmor
+[16:53:01] [main/INFO]: [ModuleLoader] Running HoverSorting
+[16:53:01] [main/INFO]: [ModuleLoader] Running HusksDropSand
+[16:53:01] [main/INFO]: [ModuleLoader] Running HusksSpawnUnderground
+[16:53:01] [main/INFO]: [ModuleLoader] Running ImprovedFortressLoot
+[16:53:01] [main/INFO]: [ModuleLoader] Running ImprovedMansionLoot
+[16:53:01] [main/INFO]: [ModuleLoader] Running ImprovedMineshafts
+[16:53:01] [main/INFO]: [ModuleLoader] Running InventoryTidying
+[16:53:01] [main/INFO]: [ModuleLoader] Running Kilns
+[16:53:01] [main/INFO]: [ModuleLoader] Running LavaBucketDestroysItems
+[16:53:01] [main/INFO]: [ModuleLoader] Running LowerNoteblockPitch
+[16:53:01] [main/INFO]: [ModuleLoader] Running Lumberjacks
+[16:53:01] [main/INFO]: [ModuleLoader] Running MapTooltip
+[16:53:01] [main/INFO]: [ModuleLoader] Running Mooblooms
+[16:53:01] [main/INFO]: [ModuleLoader] Running MorePortalFrames
+[16:53:01] [main/INFO]: [ModuleLoader] Running NoCropTrampling
+[16:53:01] [main/INFO]: [ModuleLoader] Running NoPetDamage
+[16:53:01] [main/INFO]: [ModuleLoader] Running NoPotionGlint
+[16:53:01] [main/INFO]: [ModuleLoader] Running NoSpyglassScope
+[16:53:01] [main/INFO]: [ModuleLoader] Running OpenBothDoors
+[16:53:01] [main/INFO]: [ModuleLoader] Running ParrotsStayOnShoulder
+[16:53:01] [main/INFO]: [ModuleLoader] Running PathToDirt
+[16:53:01] [main/INFO]: [ModuleLoader] Running PlayerPressurePlates
+[16:53:01] [main/INFO]: [ModuleLoader] Running PortableCrafting
+[16:53:01] [main/INFO]: [ModuleLoader] Running QuickReplant
+[16:53:01] [main/INFO]: [ModuleLoader] Running RaidHorns
+[16:53:01] [main/INFO]: [ModuleLoader] Running RedstoneLanterns
+[16:53:01] [main/INFO]: [ModuleLoader] Running RedstoneSand
+[16:53:01] [main/INFO]: [ModuleLoader] Running RepairElytraFromLeather
+[16:53:01] [main/INFO]: [ModuleLoader] Running RepairNetheriteFromScrap
+[16:53:01] [main/INFO]: [ModuleLoader] Running RepairTridentsFromShards
+[16:53:01] [main/INFO]: [ModuleLoader] Running ShowRepairCost
+[16:53:01] [main/INFO]: [ModuleLoader] Running ShulkerBoxDragDrop
+[16:53:01] [main/INFO]: [ModuleLoader] Running ShulkerBoxTooltip
+[16:53:01] [main/INFO]: [ModuleLoader] Running SmoothGlowstone
+[16:53:01] [main/INFO]: [ModuleLoader] Running SnowAccumulation
+[16:53:01] [main/INFO]: [ModuleLoader] Running StackableEnchantedBooks
+[16:53:01] [main/INFO]: [ModuleLoader] Running StackablePotions
+[16:53:01] [main/INFO]: [ModuleLoader] Running StackableStews
+[16:53:01] [main/INFO]: [ModuleLoader] Running StraysDropBlueIce
+[16:53:01] [main/INFO]: [ModuleLoader] Running StraysSpawnUnderground
+[16:53:01] [main/INFO]: [ModuleLoader] Running StrongerAnvils
+[16:53:01] [main/INFO]: [ModuleLoader] Running TotemOfPreserving
+[16:53:01] [main/INFO]: [ModuleLoader] Running TotemWorksFromInventory
+[16:53:01] [main/INFO]: [ModuleLoader] Running VariantBarrels
+[16:53:01] [main/INFO]: [ModuleLoader] Running VariantBars
+[16:53:01] [main/INFO]: [ModuleLoader] Running VariantBookshelves
+[16:53:01] [main/INFO]: [ModuleLoader] Running VariantChains
+[16:53:01] [main/INFO]: [ModuleLoader] Running VariantChests
+[16:53:01] [main/INFO]: [ModuleLoader] Running VariantLadders
+[16:53:01] [main/INFO]: [ModuleLoader] Running VariantLanterns
+[16:53:01] [main/INFO]: [ModuleLoader] Running VariantMobTextures
+[16:53:01] [main/INFO]: [ModuleLoader] Running VillagersFollowEmeraldBlocks
+[16:53:01] [main/INFO]: [ModuleLoader] Running WeatheringIron
+[16:53:01] [main/INFO]: [ModuleLoader] Running WitchesDropLuck
+[16:53:01] [main/INFO]: [ModuleLoader] Running Woodcutters
+[16:53:04] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:glass_bottle
+[16:53:04] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
+[16:53:04] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
+[16:53:04] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:glass_bottle
+[16:53:04] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
+[16:53:04] [main/INFO]: Definitely not up to no good
+[16:53:04] [main/INFO]: [REI] Registered plugin provider CharmReiServerPlugin [charm] for REIPlugin
+[16:53:04] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:request_tags_c2s
+[16:53:04] [main/INFO]: [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIPlugin
+[16:53:04] [main/INFO]: [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIPlugin
+[16:53:04] [main/INFO]: [REI] Registered plugin provider ReiCompat [travelersbackpack] for REIPlugin
+[16:53:04] [main/INFO]: [REI] Registered plugin provider CharmReiServerPlugin [charm] for REIServerPlugin
+[16:53:04] [main/INFO]: [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIServerPlugin
+[16:53:04] [main/INFO]: [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIServerPlugin
+[16:53:04] [main/INFO]: [REI] Registered plugin provider ReiCompat [travelersbackpack] for REIServerPlugin
+[16:53:04] [main/INFO]: [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIServerPlugin
+[16:53:04] [main/INFO]: [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIPlugin
+[16:53:04] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:delete_item
+[16:53:04] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item
+[16:53:04] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item_grab
+[16:53:04] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item_hotbar
+[16:53:04] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:move_items
+[16:53:04] [main/INFO]: Reloading config
+[16:53:04] [main/INFO]: Reloading reverb parameters
+[16:53:04] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.WaterEffect as a FluidEffect for minecraft:water 81000 with the ID 0
+[16:53:04] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.LavaEffect as a FluidEffect for minecraft:lava 81000 with the ID 1
+[16:53:04] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.PotionEffect as a FluidEffect for travelersbackpack:potion_still 27000 with the ID 2
+[16:53:04] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.MilkEffect as a FluidEffect for travelersbackpack:milk_still 81000 with the ID 3
+[16:53:04] [main/INFO]: Compatibility version 15
+[16:53:05] [main/INFO]: Loading plugins
+[16:53:05] [main/INFO]: Loaded 2 plugin(s)
+[16:53:05] [main/INFO]: Initializing plugins
+[16:53:05] [main/INFO]: Initializing Simple Voice Chat integration
+[16:53:05] [main/INFO]: Initialized 2 plugin(s)
+[16:53:05] [main/INFO]: Registering events for sound_physics_remastered
+[16:53:05] [main/INFO]: Registering events for vcinteraction
+[16:53:05] [main/INFO]: Reflections took 3 ms to scan 1 urls, producing 1 keys and 4 values
+[16:53:05] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 4 values
+[16:53:05] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[16:53:05] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
+[16:53:05] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[16:53:05] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[16:53:05] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16:53:06] [main/INFO]: [fabric-registry-sync] Loaded registry data [file 1/4]
+[16:53:08] [main/INFO]: Loaded 24 recipes
+[16:53:08] [main/INFO]: Loaded 2502 advancements
+[16:53:08] [main/INFO]: [REI] Reloading Plugin Manager [REIPlugin] stage [START], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[16:53:08] [main/INFO]: [REI] Reloading Plugin Manager [REIServerPlugin] stage [START], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[16:53:08] [main/INFO]: [REI] Reloaded Plugin Manager [REIPlugin] with 5 plugins in 36.25 ms.
+[16:53:08] [main/INFO]: [REI] Reloaded Plugin Manager [REIServerPlugin] with 5 plugins in 3.063 ms.
+[16:53:08] [main/INFO]: [REI] Reloading Plugin Manager [REIPlugin] stage [END], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[16:53:08] [main/INFO]: [REI] Reloading Plugin Manager [REIServerPlugin] stage [END], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[16:53:08] [main/INFO]: [REI] Reloaded Plugin Manager [REIPlugin] with 5 plugins in 27.02 ms.
+[16:53:08] [main/INFO]: [REI] Reloaded Plugin Manager [REIServerPlugin] with 5 plugins in 9.293 ms.
+[16:53:10] [main/INFO]: Applied 326 biome modifications to 57 of 72 new biomes in 23.86 ms
+[16:53:10] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[16:53:10] [Server thread/INFO]: Loading properties
+[16:53:10] [Server thread/INFO]: Default game type: SURVIVAL
+[16:53:10] [Server thread/INFO]: Generating keypair
+[16:53:10] [Server thread/INFO]: Starting Minecraft server on 172.22.20.14:25565
+[16:53:10] [Server thread/INFO]: Using default channel type
+[16:53:10] [Server thread/WARN]: Failed to find a usable hardware address from the network interfaces; using random bytes: 9a:ad:96:d5:6c:04:1a:b9
+[16:53:10] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:53:10] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:53:10] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:53:10] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:53:10] [Server thread/INFO]: Preparing level "world"
+[16:53:10] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:53:17] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[16:53:17] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[16:53:19] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[16:53:19] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[16:53:19] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[16:53:19] [Worker-Main-5/INFO]: Preparing spawn area: 2%
+[16:53:20] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[16:53:20] [Worker-Main-4/INFO]: Preparing spawn area: 46%
+[16:53:21] [Worker-Main-3/INFO]: Preparing spawn area: 74%
+[16:53:21] [Server thread/INFO]: Time elapsed: 10967 ms
+[16:53:21] [Server thread/INFO]: Done (11.348s)! For help, type "help"
+[16:53:21] [Server thread/INFO]: Created README.txt in config folder.
+[16:53:21] [Server thread/INFO]: Config 'tool_leveling_table.json' was successfully loaded.
+[16:53:21] [Server thread/INFO]: Saved the checked/corrected config: tool_leveling_table.json
+[16:53:21] [Server thread/INFO]: Config 'item_values.json' was successfully loaded.
+[16:53:21] [Server thread/INFO]: Saved the checked/corrected config: item_values.json
+[16:53:21] [Server thread/INFO]: Config 'command_config.json' was successfully loaded.
+[16:53:21] [Server thread/INFO]: Saved the checked/corrected config: command_config.json
+[16:53:21] [Server thread/WARN]: Running in offline mode - Voice chat encryption is not secure!
+[16:53:21] [VoiceChatServerThread/INFO]: Server started at port 24454
+[16:54:37] [Server thread/INFO]: Gamerule playersSleepingPercentage is now set to: 20
+[16:56:07] [Server thread/INFO]: Stopping the server
+[16:56:07] [Server thread/INFO]: Stopping server
+[16:56:07] [Server thread/INFO]: Saving players
+[16:56:07] [Server thread/INFO]: Saving worlds
+[16:56:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:56:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[16:56:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/paradise_lost:paradise_lost
+[16:56:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[16:56:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:56:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:56:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (paradise_lost): All chunks are saved
+[16:56:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:56:08] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
