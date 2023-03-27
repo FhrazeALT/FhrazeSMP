@@ -1,0 +1,3 @@
+ls rom/programs
+ls rom/apis
+help <programa ou api>

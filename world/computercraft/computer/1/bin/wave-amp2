@@ -747,7 +747,7 @@ wave.instance = { }
 
 function wave.createContext(clock, volume)
 	clock = clock or os.clock()
-	volume = volume or 1.0
+	volume = volume or 10000 --1.0
 
 	local context = setmetatable({ }, {__index = wave.context})
 	context.outputs = { }
