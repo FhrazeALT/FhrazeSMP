@@ -65,8 +65,8 @@
     "_comment_allowedHealthTags_1": "// Allows health tags for certain entities.",
     "_comment_allowedHealthTags_2": "// This maps entity ID to percentage as decimal.",
     "allowedHealthTags": {
-      "minecraft:wolf": 0.0,
       "minecraft:iron_golem": 0.25,
+      "minecraft:wolf": 0.0,
       "minecraft:wither": 0.5
     },
     "removeEquipmentTags": true,
