@@ -1,5 +1,7 @@
 {
-  "computer": 9,
-  "peripheral.computer": 0,
-  "peripheral.drive": 0
+  "computer": 10,
+  "peripheral.computer": 2,
+  "peripheral.drive": 0,
+  "peripheral.modem": 0,
+  "peripheral.speaker": 0
 }

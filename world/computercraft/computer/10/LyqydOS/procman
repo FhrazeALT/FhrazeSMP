@@ -1,0 +1,217 @@
+if process and process.active ~= nil then return end
+
+local unpack = unpack or table.unpack
+
+local path
+
+do
+	--current path discovery, set up shell paths.
+	local procPath = shell.getRunningProgram()
+	path = fs.getDir and fs.getDir(procPath) or string.match(procPath, "^(.*)/"..fs.getName(procPath).."$")
+	shell.setPath(shell.path()..":".."/"..path)
+	if fs.exists("/usr/apis") and fs.isDir("/usr/apis") then shell.setPath(shell.path()..":/usr/apis") end
+	if fs.exists("/usr/bin") and fs.isDir("/usr/bin") then shell.setPath(shell.path()..":/usr/bin") end
+end
+
+local function load(api)
+	if shell.resolveProgram(api) and fs.exists(shell.resolveProgram(api)) then
+		if not os.loadAPI(shell.resolveProgram(api)) then
+			print("Could not load "..api.." API!")
+			return false
+		else
+			return true
+		end
+	else
+		print("Could not find "..api.." API!")
+		return false
+	end
+end
+
+if not theme and not load("theme") then return end
+if not framebuffer and not load("framebuffer") then return end
+if not compositor and not load("compositor") then return end
+if not menu and not load("menu") then return end
+if not process and not load("process") then return end
+if window and window.create then os.unloadAPI("window") end --kill 1.6 window API.
+if not window and not load("window") then return end
+if not metadata and not load("metadata") then return end
+if not configuration and not load("configuration") then return end
+
+--establish this before loading the environment
+_G.LyqydOS = {
+	window = {
+		theme = term.isColor() and "pretty" or "standard",
+	},
+	desktop = {
+		background = colors.lightBlue,
+		backgroundImage = "",
+		theme = term.isColor() and "pretty" or "standard",
+	},
+	shell = {
+		shell = shell,
+		multishell = multishell or {},
+	},
+	folderPath = path,
+}
+
+--set up environment.
+dofile(shell.resolveProgram("env"))
+--[[if fs.exists(fs.combine(path, "metafs")) then
+	dofile(fs.combine(path, "metafs"))
+end]]
+
+if fs.exists(fs.combine(path, "themes/window")) and fs.isDir(fs.combine(path, "themes/window")) then
+	for _, name in pairs(fs.list(fs.combine(path, "themes/window"))) do
+		local themeData, err = configuration.load(fs.combine(fs.combine(path, "themes/window"), name))
+		if themeData then
+			theme.add("window", name, themeData)
+		else
+			print("Could not load window theme "..name.."\n"..err)
+			sleep(1)
+		end
+	end
+end
+
+if fs.exists(fs.combine(path, ".config")) then
+	dofile(fs.combine(path, ".config"))
+end
+
+process.focus = nil
+process.compositor = compositor.new(term.current and term.current() or term.native)
+process.compositor.deferDraw = true
+
+do
+	local x, y = term.getSize()
+	process.nullRedirect = framebuffer.new(x, y, term.isColor())
+end
+
+do
+	local initPath = ""
+	if fs.exists(fs.combine(path, ".init")) then
+		initPath = fs.combine(path, ".init")
+	else
+		initPath = shell.resolveProgram(".init")
+	end
+	if #initPath > 0 then
+		local handle = io.open(initPath, "r")
+		if handle then
+			for line in handle:lines() do
+				process.new(function() return shell.run(line) end, shell.resolveProgram(string.match(line, "^(%S*)")))
+			end
+			handle:close()
+		end
+	end
+
+	if #process.compositor.bufferStack == 0 then
+		--no desktop of any sort, so start a shell instance
+		local pid = #process.list + 1
+		local redirect = process.compositor:newBuffer(pid)
+		process.new(function() return os.run({shell = LyqydOS.shell.shell, multishell = LyqydOS.shell.multishell}, shell.resolveProgram("lsh")) end, shell.resolveProgram("lsh"), redirect)
+		process.focus = pid
+	end
+end
+
+local function findHook(event)
+	local ref = process.eventHooks
+	local _results = {}
+	for i = 1, #event do
+		if ref[event[i]] then
+			if type(ref[event[i]]) == "table" then
+				for k, v in pairs(ref[event[i]].__hooks) do
+					_results[v] = true
+				end
+				ref = ref[event[i]]
+			end
+		end
+	end
+	local results = {}
+	for k, v in pairs(_results) do
+		table.insert(results, k)
+	end
+	return unpack(results)
+end
+
+--table of player input generated events.
+local input_events = {
+	key = true,
+	key_up = true,
+	char = true,
+	mouse_click = true,
+	mouse_drag = true,
+	mouse_scroll = true,
+	mouse_up = true,
+	terminate = true,
+}
+
+local function distributeEvent(event)
+	if process.list[process.focus] then
+		process.list[process.focus]:resume(event)
+	elseif event[1] == "key" or event[1] == "char" then
+		if process.eventHooks.redraw then
+			--events should fall through to desktop if there is no focus window.
+			local procs = {findHook({"redraw"})}
+			for _, pID in ipairs(procs) do
+				if pID and process.list[pID] then
+					process.list[pID]:resume(event)
+				end
+			end
+		end
+	end
+	--handle background processes.
+	if not input_events[event[1]] then
+		for pID, proc in ipairs(process.list) do
+			if pID ~= process.focus and proc then
+				proc:resume(event)
+			end
+		end
+	end
+end
+
+--causes initial desktop and title bar to draw, if present.
+process.compositor:draw()
+
+while true do
+	--check all processes to clean up ephemeral windows and such.
+	for pID, proc in ipairs(process.list) do
+		if proc then proc:check() end
+	end
+
+	--process directed events, queued for specific processes
+	while process.directedEventsWaiting() do
+		local pid, event = process.getNextDirectedEvent()
+		if pid and process.list[pid] then
+			local proc = process.list[pid]
+			if proc:check() then proc:resume(event) end
+		end
+	end
+
+	--build title bar items if a desktop is present.
+	if process.eventHooks.redraw then
+		local procs = {findHook({"redraw"})}
+		for _, pID in ipairs(procs) do
+			if pID and process.list[pID] then
+				process.list[pID]:resume({"redraw"})
+			end
+		end
+	end
+
+	process.compositor:draw()
+
+	local event = {coroutine.yield()}
+
+	--process event hooks, like lws and desktop use for hotkeys, otherwise distribute it.
+	if process.eventHooks[event[1]] then
+		local procs = {findHook(event)}
+		if #procs >= 1 then
+			for _, pID in ipairs(procs) do
+				if pID and process.list[pID] then
+					process.list[pID]:resume(event)
+				end
+			end
+		else
+			distributeEvent(event)
+		end
+	else
+		distributeEvent(event)
+	end
+end

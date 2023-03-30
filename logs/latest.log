@@ -1,8 +1,8 @@
-[21:16:36] [main/INFO]: Loading Minecraft 1.19.2 with Fabric Loader 0.14.18
-[21:16:37] [ForkJoinPool-1-worker-1/WARN]: Mod io_netty_netty-codec-http uses the version 4.1.77.Final which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'Final'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[21:16:38] [ForkJoinPool-1-worker-6/WARN]: Mod create uses the version 0.5.0.i-961+1.19.2 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'i'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[21:16:38] [ForkJoinPool-1-worker-1/WARN]: Mod flywheel uses the version 0.6.8.a-4 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'a'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[21:16:38] [main/INFO]: Loading 113 mods:
+[00:10:42] [main/INFO]: Loading Minecraft 1.19.2 with Fabric Loader 0.14.18
+[00:10:42] [ForkJoinPool-1-worker-2/WARN]: Mod create uses the version 0.5.0.i-961+1.19.2 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'i'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[00:10:42] [ForkJoinPool-1-worker-6/WARN]: Mod io_netty_netty-codec-http uses the version 4.1.77.Final which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'Final'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[00:10:42] [ForkJoinPool-1-worker-7/WARN]: Mod flywheel uses the version 0.6.8.a-4 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'a'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[00:10:42] [main/INFO]: Loading 113 mods:
 	- architectury 6.5.69
 	- betterdeserttemples 1.19.2-Fabric-2.2.2
 	   \-- org_reflections_reflections 0.10.2
@@ -136,344 +136,559 @@
 	   \-- org_javassist_javassist 3.28.0-GA
 	- yungsbridges 1.19.2-Fabric-3.1.0
 	- yungsextras 1.19.2-Fabric-3.1.0
-[21:16:39] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/home/fhraze/Documents/MC_Fhraze_SV/FhrazeSMP/libraries/net/fabricmc/sponge-mixin/0.12.4+mixin.0.8.5/sponge-mixin-0.12.4+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
-[21:16:39] [main/INFO]: Compatibility level set to JAVA_16
-[21:16:39] [main/INFO]: Compatibility level set to JAVA_17
-[21:16:40] [main/INFO]: [MixinConfig] Not adding no_cured_villager_discount.BypassReputationGossipMixin
-[21:16:40] [main/INFO]: [MixinConfig] Not adding respawn_anchor_in_the_end.CheckIfCanSetSpawnMixin
-[21:16:40] [main/INFO]: [MixinConfig] Not adding no_chat_verified_nag.DisableToastMixin
-[21:16:40] [main/INFO]: [MixinConfig] Not adding no_treasure_enchantment_trading.CheckIfTradeableMixin
-[21:16:40] [main/INFO]: Loaded configuration file for Lithium: 108 options available, 0 override(s) found
-[21:16:40] [main/WARN]: Reference map 'yungsextras.refmap.json' for yungsextras.mixins.json could not be read. If this is a development environment you can ignore this message
-[21:16:40] [main/WARN]: Reference map 'yungsextras.refmap.json' for yungsextras_fabric.mixins.json could not be read. If this is a development environment you can ignore this message
-[21:16:42] [main/WARN]: Error loading class: net/minecraft/class_5616 (java.lang.ClassNotFoundException: net/minecraft/class_5616)
-[21:16:42] [main/WARN]: @Mixin target net.minecraft.class_5616 was not found registrate-fabric.mixins.json:accessor.BlockEntityRenderersAccessor from mod registrate-fabric
-[21:16:42] [main/WARN]: Error loading class: net/minecraft/class_4224 (java.lang.ClassNotFoundException: net/minecraft/class_4224)
-[21:16:42] [main/WARN]: @Mixin target net.minecraft.class_4224 was not found sound_physics_remastered.mixins.json:ChannelAccessor from mod sound_physics_remastered
-[21:16:47] [main/INFO]: Building unoptimized datafixer
-[21:16:48] [main/WARN]: @Inject(@At("INVOKE_ASSIGN")) Shift.BY=2 on gud_recipe_confidence.mixins.json:IngredientMixin from mod gud_recipe_confidence::handler$bfa000$gud_recipe_confidence$init exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
-[21:16:49] [main/INFO]: Reflections took 48 ms to scan 1 urls, producing 1 keys and 2 values
-[21:16:49] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
-[21:16:49] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 3 values
-[21:16:49] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 3 values
-[21:16:49] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
-[21:16:49] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
-[21:16:49] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[21:16:49] [main/INFO]: Reflections took 0 ms to scan 1 urls, producing 1 keys and 2 values
-[21:16:49] [main/INFO]: Reflections took 0 ms to scan 1 urls, producing 1 keys and 1 values
-[21:16:49] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
-[21:16:49] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[21:16:49] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[21:16:49] [main/WARN]: WARNING: block Block{minecraft:coal_ore} added to BlockSelector exceeds max probabiltiy of 1!
-[21:16:49] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
-[21:16:49] [main/INFO]: Reflections took 0 ms to scan 1 urls, producing 1 keys and 1 values
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled AerialAffinityEnchantment
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled AllowTooExpensive
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled AmethystNoteBlock
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled Atlases
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled AutoRestock
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled AzaleaWood
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled BatBuckets
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled BeaconsHealMobs
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled Beekeepers
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled BlockOfEnderPearls
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled BlockOfGunpowder
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled BlockOfSugar
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled Bookcases
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled CaveSpidersDropCobwebs
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled Chairs
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ChickensDropFeathers
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ClearItemFrames
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled CollectionEnchantment
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ColoredBundles
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ColoredNetherPortals
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled CompassOverlay
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled CoralSeaLanterns
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled CoralSquids
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled Core
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled DiscsStopBackgroundMusic
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled EbonyWood
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled EditableSigns
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled EndermitePowder
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ExtraBoats
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ExtraRecipes
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ExtraTrades
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ExtraWanderingTrades
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ExtractEnchantments
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled GentlePotionParticles
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled GoatsDropMutton
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled GrindableArmor
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled HoverSorting
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled HusksDropSand
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled HusksSpawnUnderground
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ImprovedFortressLoot
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ImprovedMansionLoot
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ImprovedMineshafts
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled InventoryTidying
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled Kilns
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled LavaBucketDestroysItems
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled LowerNoteblockPitch
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled Lumberjacks
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled MapTooltip
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled Mooblooms
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled MorePortalFrames
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled NoCropTrampling
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled NoPetDamage
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled NoPotionGlint
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled NoSpyglassScope
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled OpenBothDoors
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ParrotsStayOnShoulder
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled PathToDirt
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled PlayerPressurePlates
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled PortableCrafting
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled QuickReplant
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled RaidHorns
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled RedstoneLanterns
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled RedstoneSand
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled RepairElytraFromLeather
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled RepairNetheriteFromScrap
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled RepairTridentsFromShards
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ShowRepairCost
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ShulkerBoxDragDrop
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled ShulkerBoxTooltip
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled SmoothGlowstone
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled SnowAccumulation
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled StackableEnchantedBooks
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled StackablePotions
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled StackableStews
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled StraysDropBlueIce
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled StraysSpawnUnderground
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled StrongerAnvils
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled TotemOfPreserving
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled TotemWorksFromInventory
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled VariantBarrels
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled VariantBars
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled VariantBookshelves
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled VariantChains
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled VariantChests
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled VariantLadders
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled VariantLanterns
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled VariantMobTextures
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled VillagersFollowEmeraldBlocks
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled WeatheringIron
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled WitchesDropLuck
-[21:16:49] [main/INFO]: [ModuleLoader] Enabled Woodcutters
-[21:16:49] [main/INFO]: [ModuleLoader] Running AerialAffinityEnchantment
-[21:16:49] [main/INFO]: [ModuleLoader] Running AllowTooExpensive
-[21:16:49] [main/INFO]: [ModuleLoader] Running AmethystNoteBlock
-[21:16:49] [main/INFO]: [ModuleLoader] Running Atlases
-[21:16:49] [main/INFO]: [ModuleLoader] Running AutoRestock
-[21:16:49] [main/INFO]: [ModuleLoader] Running AzaleaWood
-[21:16:49] [main/INFO]: [ModuleLoader] Running BatBuckets
-[21:16:49] [main/INFO]: [ModuleLoader] Running BeaconsHealMobs
-[21:16:49] [main/INFO]: [ModuleLoader] Running Beekeepers
-[21:16:50] [main/INFO]: [ModuleLoader] Running BlockOfEnderPearls
-[21:16:50] [main/INFO]: [ModuleLoader] Running BlockOfGunpowder
-[21:16:50] [main/INFO]: [ModuleLoader] Running BlockOfSugar
-[21:16:50] [main/INFO]: [ModuleLoader] Running Bookcases
-[21:16:50] [main/INFO]: [ModuleLoader] Running CaveSpidersDropCobwebs
-[21:16:50] [main/INFO]: [ModuleLoader] Running Chairs
-[21:16:50] [main/INFO]: [ModuleLoader] Running ChickensDropFeathers
-[21:16:50] [main/INFO]: [ModuleLoader] Running ClearItemFrames
-[21:16:50] [main/INFO]: [ModuleLoader] Running CollectionEnchantment
-[21:16:50] [main/INFO]: [ModuleLoader] Running ColoredBundles
-[21:16:50] [main/INFO]: [ModuleLoader] Running ColoredNetherPortals
-[21:16:50] [main/INFO]: [ModuleLoader] Running CompassOverlay
-[21:16:50] [main/INFO]: [ModuleLoader] Running CoralSeaLanterns
-[21:16:50] [main/INFO]: [ModuleLoader] Running CoralSquids
-[21:16:50] [main/INFO]: [ModuleLoader] Running Core
-[21:16:50] [main/INFO]: [ModuleLoader] Running DiscsStopBackgroundMusic
-[21:16:50] [main/INFO]: [ModuleLoader] Running EbonyWood
-[21:16:50] [main/INFO]: [ModuleLoader] Running EditableSigns
-[21:16:50] [main/INFO]: [ModuleLoader] Running EndermitePowder
-[21:16:50] [main/INFO]: [ModuleLoader] Running ExtraBoats
-[21:16:50] [main/INFO]: [ModuleLoader] Running ExtraRecipes
-[21:16:50] [main/INFO]: [ModuleLoader] Running ExtraTrades
-[21:16:50] [main/INFO]: [ModuleLoader] Running ExtraWanderingTrades
-[21:16:50] [main/INFO]: [ModuleLoader] Running ExtractEnchantments
-[21:16:50] [main/INFO]: [ModuleLoader] Running GentlePotionParticles
-[21:16:50] [main/INFO]: [ModuleLoader] Running GoatsDropMutton
-[21:16:50] [main/INFO]: [ModuleLoader] Running GrindableArmor
-[21:16:50] [main/INFO]: [ModuleLoader] Running HoverSorting
-[21:16:50] [main/INFO]: [ModuleLoader] Running HusksDropSand
-[21:16:50] [main/INFO]: [ModuleLoader] Running HusksSpawnUnderground
-[21:16:50] [main/INFO]: [ModuleLoader] Running ImprovedFortressLoot
-[21:16:50] [main/INFO]: [ModuleLoader] Running ImprovedMansionLoot
-[21:16:50] [main/INFO]: [ModuleLoader] Running ImprovedMineshafts
-[21:16:50] [main/INFO]: [ModuleLoader] Running InventoryTidying
-[21:16:50] [main/INFO]: [ModuleLoader] Running Kilns
-[21:16:50] [main/INFO]: [ModuleLoader] Running LavaBucketDestroysItems
-[21:16:50] [main/INFO]: [ModuleLoader] Running LowerNoteblockPitch
-[21:16:50] [main/INFO]: [ModuleLoader] Running Lumberjacks
-[21:16:50] [main/INFO]: [ModuleLoader] Running MapTooltip
-[21:16:50] [main/INFO]: [ModuleLoader] Running Mooblooms
-[21:16:50] [main/INFO]: [ModuleLoader] Running MorePortalFrames
-[21:16:50] [main/INFO]: [ModuleLoader] Running NoCropTrampling
-[21:16:50] [main/INFO]: [ModuleLoader] Running NoPetDamage
-[21:16:50] [main/INFO]: [ModuleLoader] Running NoPotionGlint
-[21:16:50] [main/INFO]: [ModuleLoader] Running NoSpyglassScope
-[21:16:50] [main/INFO]: [ModuleLoader] Running OpenBothDoors
-[21:16:50] [main/INFO]: [ModuleLoader] Running ParrotsStayOnShoulder
-[21:16:50] [main/INFO]: [ModuleLoader] Running PathToDirt
-[21:16:50] [main/INFO]: [ModuleLoader] Running PlayerPressurePlates
-[21:16:50] [main/INFO]: [ModuleLoader] Running PortableCrafting
-[21:16:50] [main/INFO]: [ModuleLoader] Running QuickReplant
-[21:16:50] [main/INFO]: [ModuleLoader] Running RaidHorns
-[21:16:50] [main/INFO]: [ModuleLoader] Running RedstoneLanterns
-[21:16:50] [main/INFO]: [ModuleLoader] Running RedstoneSand
-[21:16:50] [main/INFO]: [ModuleLoader] Running RepairElytraFromLeather
-[21:16:50] [main/INFO]: [ModuleLoader] Running RepairNetheriteFromScrap
-[21:16:50] [main/INFO]: [ModuleLoader] Running RepairTridentsFromShards
-[21:16:50] [main/INFO]: [ModuleLoader] Running ShowRepairCost
-[21:16:50] [main/INFO]: [ModuleLoader] Running ShulkerBoxDragDrop
-[21:16:50] [main/INFO]: [ModuleLoader] Running ShulkerBoxTooltip
-[21:16:50] [main/INFO]: [ModuleLoader] Running SmoothGlowstone
-[21:16:50] [main/INFO]: [ModuleLoader] Running SnowAccumulation
-[21:16:50] [main/INFO]: [ModuleLoader] Running StackableEnchantedBooks
-[21:16:50] [main/INFO]: [ModuleLoader] Running StackablePotions
-[21:16:50] [main/INFO]: [ModuleLoader] Running StackableStews
-[21:16:50] [main/INFO]: [ModuleLoader] Running StraysDropBlueIce
-[21:16:50] [main/INFO]: [ModuleLoader] Running StraysSpawnUnderground
-[21:16:50] [main/INFO]: [ModuleLoader] Running StrongerAnvils
-[21:16:50] [main/INFO]: [ModuleLoader] Running TotemOfPreserving
-[21:16:50] [main/INFO]: [ModuleLoader] Running TotemWorksFromInventory
-[21:16:50] [main/INFO]: [ModuleLoader] Running VariantBarrels
-[21:16:50] [main/INFO]: [ModuleLoader] Running VariantBars
-[21:16:50] [main/INFO]: [ModuleLoader] Running VariantBookshelves
-[21:16:50] [main/INFO]: [ModuleLoader] Running VariantChains
-[21:16:50] [main/INFO]: [ModuleLoader] Running VariantChests
-[21:16:50] [main/INFO]: [ModuleLoader] Running VariantLadders
-[21:16:50] [main/INFO]: [ModuleLoader] Running VariantLanterns
-[21:16:50] [main/INFO]: [ModuleLoader] Running VariantMobTextures
-[21:16:50] [main/INFO]: [ModuleLoader] Running VillagersFollowEmeraldBlocks
-[21:16:50] [main/INFO]: [ModuleLoader] Running WeatheringIron
-[21:16:50] [main/INFO]: [ModuleLoader] Running WitchesDropLuck
-[21:16:50] [main/INFO]: [ModuleLoader] Running Woodcutters
-[21:16:52] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:glass_bottle
-[21:16:52] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:glass_bottle
-[21:16:52] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
-[21:16:52] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
-[21:16:52] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
-[21:16:52] [main/INFO]: Definitely not up to no good
-[21:16:53] [main/INFO]: [REI] Registered plugin provider CharmReiServerPlugin [charm] for REIPlugin
-[21:16:53] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:request_tags_c2s
-[21:16:53] [main/INFO]: [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIPlugin
-[21:16:53] [main/INFO]: [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIPlugin
-[21:16:53] [main/INFO]: [REI] Registered plugin provider ReiCompat [travelersbackpack] for REIPlugin
-[21:16:53] [main/INFO]: [REI] Registered plugin provider CharmReiServerPlugin [charm] for REIServerPlugin
-[21:16:53] [main/INFO]: [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIServerPlugin
-[21:16:53] [main/INFO]: [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIServerPlugin
-[21:16:53] [main/INFO]: [REI] Registered plugin provider ReiCompat [travelersbackpack] for REIServerPlugin
-[21:16:53] [main/INFO]: [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIServerPlugin
-[21:16:53] [main/INFO]: [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIPlugin
-[21:16:53] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:delete_item
-[21:16:53] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item
-[21:16:53] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item_grab
-[21:16:53] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item_hotbar
-[21:16:53] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:move_items
-[21:16:53] [main/INFO]: Reloading config
-[21:16:53] [main/INFO]: Reloading reverb parameters
-[21:16:53] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.WaterEffect as a FluidEffect for minecraft:water 81000 with the ID 0
-[21:16:53] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.LavaEffect as a FluidEffect for minecraft:lava 81000 with the ID 1
-[21:16:53] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.PotionEffect as a FluidEffect for travelersbackpack:potion_still 27000 with the ID 2
-[21:16:53] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.MilkEffect as a FluidEffect for travelersbackpack:milk_still 81000 with the ID 3
-[21:16:53] [main/INFO]: Compatibility version 15
-[21:16:53] [main/INFO]: Loading plugins
-[21:16:53] [main/INFO]: Loaded 2 plugin(s)
-[21:16:53] [main/INFO]: Initializing plugins
-[21:16:53] [main/INFO]: Initializing Simple Voice Chat integration
-[21:16:53] [main/INFO]: Initialized 2 plugin(s)
-[21:16:53] [main/INFO]: Registering events for sound_physics_remastered
-[21:16:53] [main/INFO]: Registering events for vcinteraction
-[21:16:53] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 4 values
-[21:16:53] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 4 values
-[21:16:53] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[21:16:53] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[21:16:53] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[21:16:53] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
-[21:16:54] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[21:16:55] [main/INFO]: [fabric-registry-sync] Loaded registry data [file 1/4]
-[21:16:56] [main/INFO]: Loaded 24 recipes
-[21:16:56] [main/INFO]: Loaded 2502 advancements
-[21:16:56] [main/INFO]: [REI] Reloading Plugin Manager [REIPlugin] stage [START], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[21:16:56] [main/INFO]: [REI] Reloading Plugin Manager [REIServerPlugin] stage [START], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[21:16:56] [main/INFO]: [REI] Reloaded Plugin Manager [REIPlugin] with 5 plugins in 51.57 ms.
-[21:16:56] [main/INFO]: [REI] Reloaded Plugin Manager [REIServerPlugin] with 5 plugins in 2.833 ms.
-[21:16:56] [main/INFO]: [REI] Reloading Plugin Manager [REIPlugin] stage [END], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[21:16:56] [main/INFO]: [REI] Reloading Plugin Manager [REIServerPlugin] stage [END], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
-[21:16:56] [main/INFO]: [REI] Reloaded Plugin Manager [REIPlugin] with 5 plugins in 20.64 ms.
-[21:16:56] [main/INFO]: [REI] Reloaded Plugin Manager [REIServerPlugin] with 5 plugins in 10.42 ms.
-[21:16:57] [main/INFO]: Applied 326 biome modifications to 57 of 72 new biomes in 16.73 ms
-[21:16:58] [Server thread/INFO]: Starting minecraft server version 1.19.2
-[21:16:58] [Server thread/INFO]: Loading properties
-[21:16:58] [Server thread/INFO]: Default game type: SURVIVAL
-[21:16:58] [Server thread/INFO]: Generating keypair
-[21:16:58] [Server thread/INFO]: Starting Minecraft server on 172.22.20.12:25565
-[21:16:58] [Server thread/INFO]: Using epoll channel type
-[21:16:58] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[21:16:58] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[21:16:58] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[21:16:58] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[21:16:58] [Server thread/INFO]: Preparing level "world"
-[21:16:58] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[21:17:02] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:17:02] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[21:17:02] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:17:02] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:17:02] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[21:17:02] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[21:17:02] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[21:17:02] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[21:17:03] [Worker-Main-5/INFO]: Preparing spawn area: 0%
-[21:17:03] [Worker-Main-3/INFO]: Preparing spawn area: 0%
-[21:17:03] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[21:17:04] [Worker-Main-5/INFO]: Preparing spawn area: 6%
-[21:17:04] [Worker-Main-3/INFO]: Preparing spawn area: 88%
-[21:17:04] [Server thread/INFO]: Time elapsed: 6234 ms
-[21:17:04] [Server thread/INFO]: Done (6.582s)! For help, type "help"
-[21:17:05] [Server thread/INFO]: Created README.txt in config folder.
-[21:17:05] [Server thread/INFO]: Config 'tool_leveling_table.json' was successfully loaded.
-[21:17:05] [Server thread/INFO]: Saved the checked/corrected config: tool_leveling_table.json
-[21:17:05] [Server thread/INFO]: Config 'item_values.json' was successfully loaded.
-[21:17:05] [Server thread/INFO]: Saved the checked/corrected config: item_values.json
-[21:17:05] [Server thread/INFO]: Config 'command_config.json' was successfully loaded.
-[21:17:05] [Server thread/INFO]: Saved the checked/corrected config: command_config.json
-[21:17:05] [Server thread/WARN]: Running in offline mode - Voice chat encryption is not secure!
-[21:17:05] [VoiceChatServerThread/INFO]: Server started at port 24454
-[21:17:07] [Server thread/INFO]: Girelli[/172.22.9.183:61344] logged in with entity id 285 at (-1930.0811863904664, 63.0, -313.54150814110056)
-[21:17:07] [Server thread/INFO]: Girelli joined the game
-[21:17:07] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
-[21:17:07] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
-[21:17:07] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
-[21:17:07] [Server thread/INFO]: Received secret request of Girelli (15)
-[21:17:07] [Server thread/INFO]: Sent secret to Girelli
-[21:17:10] [Server thread/INFO]: Fhraze[/172.22.20.12:57450] logged in with entity id 320 at (-1918.9191428281795, 12.0, -243.69955096245172)
-[21:17:10] [Server thread/INFO]: Fhraze joined the game
-[21:17:10] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
-[21:17:10] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
-[21:17:10] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
-[21:17:11] [Server thread/INFO]: Received secret request of Fhraze (15)
-[21:17:11] [Server thread/INFO]: Sent secret to Fhraze
-[21:17:12] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player 0acaec34-b7c6-39de-9d96-3a435fe35dca
-[21:17:12] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player 1e130ad2-a122-3396-aaf7-ce85cb193571
-[21:17:27] [Server thread/INFO]: Fhraze lost connection: Disconnected
-[21:17:27] [Server thread/INFO]: Fhraze left the game
-[21:17:27] [Server thread/INFO]: Disconnecting client Fhraze
-[21:17:31] [Server thread/INFO]: Girelli lost connection: Disconnected
-[21:17:31] [Server thread/INFO]: Girelli left the game
-[21:17:31] [Server thread/INFO]: Disconnecting client Girelli
-[21:17:34] [Server thread/INFO]: Unknown or incomplete command, see below for error
-[21:17:34] [Server thread/INFO]: stopstop<--[HERE]
-[21:17:36] [Server thread/INFO]: Stopping the server
-[21:17:36] [Server thread/INFO]: Stopping server
-[21:17:36] [Server thread/INFO]: Saving players
-[21:17:36] [Server thread/INFO]: Saving worlds
-[21:17:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[21:17:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[21:17:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[21:17:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/paradise_lost:paradise_lost
-[21:17:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[21:17:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[21:17:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[21:17:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (paradise_lost): All chunks are saved
-[21:17:39] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[00:10:42] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/data/data/com.termux/files/home/FhrazeSMP/libraries/net/fabricmc/sponge-mixin/0.12.4+mixin.0.8.5/sponge-mixin-0.12.4+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
+[00:10:42] [main/INFO]: Compatibility level set to JAVA_16
+[00:10:42] [main/INFO]: Compatibility level set to JAVA_17
+[00:10:43] [main/INFO]: [MixinConfig] Not adding no_cured_villager_discount.BypassReputationGossipMixin
+[00:10:43] [main/INFO]: [MixinConfig] Not adding respawn_anchor_in_the_end.CheckIfCanSetSpawnMixin
+[00:10:43] [main/INFO]: [MixinConfig] Not adding no_chat_verified_nag.DisableToastMixin
+[00:10:43] [main/INFO]: [MixinConfig] Not adding no_treasure_enchantment_trading.CheckIfTradeableMixin
+[00:10:43] [main/INFO]: Loaded configuration file for Lithium: 108 options available, 0 override(s) found
+[00:10:43] [main/WARN]: Reference map 'yungsextras.refmap.json' for yungsextras.mixins.json could not be read. If this is a development environment you can ignore this message
+[00:10:43] [main/WARN]: Reference map 'yungsextras.refmap.json' for yungsextras_fabric.mixins.json could not be read. If this is a development environment you can ignore this message
+[00:10:44] [main/WARN]: Error loading class: net/minecraft/class_5616 (java.lang.ClassNotFoundException: net/minecraft/class_5616)
+[00:10:44] [main/WARN]: @Mixin target net.minecraft.class_5616 was not found registrate-fabric.mixins.json:accessor.BlockEntityRenderersAccessor from mod registrate-fabric
+[00:10:44] [main/WARN]: Error loading class: net/minecraft/class_4224 (java.lang.ClassNotFoundException: net/minecraft/class_4224)
+[00:10:44] [main/WARN]: @Mixin target net.minecraft.class_4224 was not found sound_physics_remastered.mixins.json:ChannelAccessor from mod sound_physics_remastered
+[00:10:49] [main/INFO]: Building unoptimized datafixer
+[00:10:51] [main/WARN]: @Inject(@At("INVOKE_ASSIGN")) Shift.BY=2 on gud_recipe_confidence.mixins.json:IngredientMixin from mod gud_recipe_confidence::handler$bfa000$gud_recipe_confidence$init exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[00:10:51] [main/INFO]: Reflections took 45 ms to scan 1 urls, producing 1 keys and 2 values
+[00:10:51] [main/INFO]: Reflections took 3 ms to scan 1 urls, producing 1 keys and 2 values
+[00:10:51] [main/INFO]: Reflections took 3 ms to scan 1 urls, producing 1 keys and 3 values
+[00:10:51] [main/INFO]: Reflections took 4 ms to scan 1 urls, producing 1 keys and 3 values
+[00:10:51] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values
+[00:10:51] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values
+[00:10:51] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[00:10:51] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[00:10:51] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values
+[00:10:51] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values
+[00:10:51] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[00:10:51] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[00:10:51] [main/WARN]: WARNING: block Block{minecraft:coal_ore} added to BlockSelector exceeds max probabiltiy of 1!
+[00:10:51] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
+[00:10:51] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 1 values
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled AerialAffinityEnchantment
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled AllowTooExpensive
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled AmethystNoteBlock
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled Atlases
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled AutoRestock
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled AzaleaWood
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled BatBuckets
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled BeaconsHealMobs
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled Beekeepers
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled BlockOfEnderPearls
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled BlockOfGunpowder
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled BlockOfSugar
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled Bookcases
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled CaveSpidersDropCobwebs
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled Chairs
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ChickensDropFeathers
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ClearItemFrames
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled CollectionEnchantment
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ColoredBundles
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ColoredNetherPortals
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled CompassOverlay
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled CoralSeaLanterns
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled CoralSquids
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled Core
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled DiscsStopBackgroundMusic
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled EbonyWood
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled EditableSigns
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled EndermitePowder
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ExtraBoats
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ExtraRecipes
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ExtraTrades
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ExtraWanderingTrades
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ExtractEnchantments
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled GentlePotionParticles
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled GoatsDropMutton
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled GrindableArmor
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled HoverSorting
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled HusksDropSand
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled HusksSpawnUnderground
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ImprovedFortressLoot
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ImprovedMansionLoot
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ImprovedMineshafts
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled InventoryTidying
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled Kilns
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled LavaBucketDestroysItems
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled LowerNoteblockPitch
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled Lumberjacks
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled MapTooltip
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled Mooblooms
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled MorePortalFrames
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled NoCropTrampling
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled NoPetDamage
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled NoPotionGlint
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled NoSpyglassScope
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled OpenBothDoors
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ParrotsStayOnShoulder
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled PathToDirt
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled PlayerPressurePlates
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled PortableCrafting
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled QuickReplant
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled RaidHorns
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled RedstoneLanterns
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled RedstoneSand
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled RepairElytraFromLeather
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled RepairNetheriteFromScrap
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled RepairTridentsFromShards
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ShowRepairCost
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ShulkerBoxDragDrop
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled ShulkerBoxTooltip
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled SmoothGlowstone
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled SnowAccumulation
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled StackableEnchantedBooks
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled StackablePotions
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled StackableStews
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled StraysDropBlueIce
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled StraysSpawnUnderground
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled StrongerAnvils
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled TotemOfPreserving
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled TotemWorksFromInventory
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled VariantBarrels
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled VariantBars
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled VariantBookshelves
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled VariantChains
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled VariantChests
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled VariantLadders
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled VariantLanterns
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled VariantMobTextures
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled VillagersFollowEmeraldBlocks
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled WeatheringIron
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled WitchesDropLuck
+[00:10:52] [main/INFO]: [ModuleLoader] Enabled Woodcutters
+[00:10:52] [main/INFO]: [ModuleLoader] Running AerialAffinityEnchantment
+[00:10:52] [main/INFO]: [ModuleLoader] Running AllowTooExpensive
+[00:10:52] [main/INFO]: [ModuleLoader] Running AmethystNoteBlock
+[00:10:52] [main/INFO]: [ModuleLoader] Running Atlases
+[00:10:52] [main/INFO]: [ModuleLoader] Running AutoRestock
+[00:10:52] [main/INFO]: [ModuleLoader] Running AzaleaWood
+[00:10:52] [main/INFO]: [ModuleLoader] Running BatBuckets
+[00:10:52] [main/INFO]: [ModuleLoader] Running BeaconsHealMobs
+[00:10:52] [main/INFO]: [ModuleLoader] Running Beekeepers
+[00:10:52] [main/INFO]: [ModuleLoader] Running BlockOfEnderPearls
+[00:10:52] [main/INFO]: [ModuleLoader] Running BlockOfGunpowder
+[00:10:52] [main/INFO]: [ModuleLoader] Running BlockOfSugar
+[00:10:52] [main/INFO]: [ModuleLoader] Running Bookcases
+[00:10:52] [main/INFO]: [ModuleLoader] Running CaveSpidersDropCobwebs
+[00:10:52] [main/INFO]: [ModuleLoader] Running Chairs
+[00:10:52] [main/INFO]: [ModuleLoader] Running ChickensDropFeathers
+[00:10:52] [main/INFO]: [ModuleLoader] Running ClearItemFrames
+[00:10:52] [main/INFO]: [ModuleLoader] Running CollectionEnchantment
+[00:10:52] [main/INFO]: [ModuleLoader] Running ColoredBundles
+[00:10:52] [main/INFO]: [ModuleLoader] Running ColoredNetherPortals
+[00:10:52] [main/INFO]: [ModuleLoader] Running CompassOverlay
+[00:10:52] [main/INFO]: [ModuleLoader] Running CoralSeaLanterns
+[00:10:52] [main/INFO]: [ModuleLoader] Running CoralSquids
+[00:10:52] [main/INFO]: [ModuleLoader] Running Core
+[00:10:52] [main/INFO]: [ModuleLoader] Running DiscsStopBackgroundMusic
+[00:10:52] [main/INFO]: [ModuleLoader] Running EbonyWood
+[00:10:52] [main/INFO]: [ModuleLoader] Running EditableSigns
+[00:10:52] [main/INFO]: [ModuleLoader] Running EndermitePowder
+[00:10:52] [main/INFO]: [ModuleLoader] Running ExtraBoats
+[00:10:52] [main/INFO]: [ModuleLoader] Running ExtraRecipes
+[00:10:52] [main/INFO]: [ModuleLoader] Running ExtraTrades
+[00:10:52] [main/INFO]: [ModuleLoader] Running ExtraWanderingTrades
+[00:10:52] [main/INFO]: [ModuleLoader] Running ExtractEnchantments
+[00:10:52] [main/INFO]: [ModuleLoader] Running GentlePotionParticles
+[00:10:52] [main/INFO]: [ModuleLoader] Running GoatsDropMutton
+[00:10:52] [main/INFO]: [ModuleLoader] Running GrindableArmor
+[00:10:52] [main/INFO]: [ModuleLoader] Running HoverSorting
+[00:10:52] [main/INFO]: [ModuleLoader] Running HusksDropSand
+[00:10:52] [main/INFO]: [ModuleLoader] Running HusksSpawnUnderground
+[00:10:52] [main/INFO]: [ModuleLoader] Running ImprovedFortressLoot
+[00:10:52] [main/INFO]: [ModuleLoader] Running ImprovedMansionLoot
+[00:10:52] [main/INFO]: [ModuleLoader] Running ImprovedMineshafts
+[00:10:52] [main/INFO]: [ModuleLoader] Running InventoryTidying
+[00:10:52] [main/INFO]: [ModuleLoader] Running Kilns
+[00:10:52] [main/INFO]: [ModuleLoader] Running LavaBucketDestroysItems
+[00:10:52] [main/INFO]: [ModuleLoader] Running LowerNoteblockPitch
+[00:10:52] [main/INFO]: [ModuleLoader] Running Lumberjacks
+[00:10:52] [main/INFO]: [ModuleLoader] Running MapTooltip
+[00:10:52] [main/INFO]: [ModuleLoader] Running Mooblooms
+[00:10:52] [main/INFO]: [ModuleLoader] Running MorePortalFrames
+[00:10:52] [main/INFO]: [ModuleLoader] Running NoCropTrampling
+[00:10:52] [main/INFO]: [ModuleLoader] Running NoPetDamage
+[00:10:52] [main/INFO]: [ModuleLoader] Running NoPotionGlint
+[00:10:52] [main/INFO]: [ModuleLoader] Running NoSpyglassScope
+[00:10:52] [main/INFO]: [ModuleLoader] Running OpenBothDoors
+[00:10:52] [main/INFO]: [ModuleLoader] Running ParrotsStayOnShoulder
+[00:10:52] [main/INFO]: [ModuleLoader] Running PathToDirt
+[00:10:52] [main/INFO]: [ModuleLoader] Running PlayerPressurePlates
+[00:10:52] [main/INFO]: [ModuleLoader] Running PortableCrafting
+[00:10:52] [main/INFO]: [ModuleLoader] Running QuickReplant
+[00:10:52] [main/INFO]: [ModuleLoader] Running RaidHorns
+[00:10:52] [main/INFO]: [ModuleLoader] Running RedstoneLanterns
+[00:10:52] [main/INFO]: [ModuleLoader] Running RedstoneSand
+[00:10:52] [main/INFO]: [ModuleLoader] Running RepairElytraFromLeather
+[00:10:52] [main/INFO]: [ModuleLoader] Running RepairNetheriteFromScrap
+[00:10:52] [main/INFO]: [ModuleLoader] Running RepairTridentsFromShards
+[00:10:52] [main/INFO]: [ModuleLoader] Running ShowRepairCost
+[00:10:52] [main/INFO]: [ModuleLoader] Running ShulkerBoxDragDrop
+[00:10:52] [main/INFO]: [ModuleLoader] Running ShulkerBoxTooltip
+[00:10:52] [main/INFO]: [ModuleLoader] Running SmoothGlowstone
+[00:10:52] [main/INFO]: [ModuleLoader] Running SnowAccumulation
+[00:10:52] [main/INFO]: [ModuleLoader] Running StackableEnchantedBooks
+[00:10:52] [main/INFO]: [ModuleLoader] Running StackablePotions
+[00:10:52] [main/INFO]: [ModuleLoader] Running StackableStews
+[00:10:52] [main/INFO]: [ModuleLoader] Running StraysDropBlueIce
+[00:10:52] [main/INFO]: [ModuleLoader] Running StraysSpawnUnderground
+[00:10:52] [main/INFO]: [ModuleLoader] Running StrongerAnvils
+[00:10:52] [main/INFO]: [ModuleLoader] Running TotemOfPreserving
+[00:10:52] [main/INFO]: [ModuleLoader] Running TotemWorksFromInventory
+[00:10:52] [main/INFO]: [ModuleLoader] Running VariantBarrels
+[00:10:52] [main/INFO]: [ModuleLoader] Running VariantBars
+[00:10:52] [main/INFO]: [ModuleLoader] Running VariantBookshelves
+[00:10:52] [main/INFO]: [ModuleLoader] Running VariantChains
+[00:10:52] [main/INFO]: [ModuleLoader] Running VariantChests
+[00:10:52] [main/INFO]: [ModuleLoader] Running VariantLadders
+[00:10:52] [main/INFO]: [ModuleLoader] Running VariantLanterns
+[00:10:52] [main/INFO]: [ModuleLoader] Running VariantMobTextures
+[00:10:52] [main/INFO]: [ModuleLoader] Running VillagersFollowEmeraldBlocks
+[00:10:52] [main/INFO]: [ModuleLoader] Running WeatheringIron
+[00:10:52] [main/INFO]: [ModuleLoader] Running WitchesDropLuck
+[00:10:52] [main/INFO]: [ModuleLoader] Running Woodcutters
+[00:10:55] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:glass_bottle
+[00:10:55] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
+[00:10:55] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
+[00:10:55] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:glass_bottle
+[00:10:55] [main/WARN]: Encountered duplicate API provider registration for item: minecraft:bucket
+[00:10:55] [main/INFO]: Definitely not up to no good
+[00:10:55] [main/INFO]: [REI] Registered plugin provider CharmReiServerPlugin [charm] for REIPlugin
+[00:10:55] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:request_tags_c2s
+[00:10:55] [main/INFO]: [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIPlugin
+[00:10:55] [main/INFO]: [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIPlugin
+[00:10:55] [main/INFO]: [REI] Registered plugin provider ReiCompat [travelersbackpack] for REIPlugin
+[00:10:55] [main/INFO]: [REI] Registered plugin provider CharmReiServerPlugin [charm] for REIServerPlugin
+[00:10:55] [main/INFO]: [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIServerPlugin
+[00:10:55] [main/INFO]: [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIServerPlugin
+[00:10:55] [main/INFO]: [REI] Registered plugin provider ReiCompat [travelersbackpack] for REIServerPlugin
+[00:10:55] [main/INFO]: [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIServerPlugin
+[00:10:55] [main/INFO]: [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIPlugin
+[00:10:55] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:delete_item
+[00:10:55] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item
+[00:10:55] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item_grab
+[00:10:55] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:create_item_hotbar
+[00:10:55] [main/INFO]: Registering C2S receiver with id roughlyenoughitems:move_items
+[00:10:55] [main/INFO]: Reloading config
+[00:10:55] [main/INFO]: Reloading reverb parameters
+[00:10:56] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.WaterEffect as a FluidEffect for minecraft:water 81000 with the ID 0
+[00:10:56] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.LavaEffect as a FluidEffect for minecraft:lava 81000 with the ID 1
+[00:10:56] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.PotionEffect as a FluidEffect for travelersbackpack:potion_still 27000 with the ID 2
+[00:10:56] [main/INFO]: Registered the class com.tiviacz.travelersbackpack.fluids.effects.MilkEffect as a FluidEffect for travelersbackpack:milk_still 81000 with the ID 3
+[00:10:56] [main/INFO]: Compatibility version 15
+[00:10:56] [main/INFO]: Loading plugins
+[00:10:56] [main/INFO]: Loaded 2 plugin(s)
+[00:10:56] [main/INFO]: Initializing plugins
+[00:10:56] [main/INFO]: Initializing Simple Voice Chat integration
+[00:10:56] [main/INFO]: Initialized 2 plugin(s)
+[00:10:56] [main/INFO]: Registering events for sound_physics_remastered
+[00:10:56] [main/INFO]: Registering events for vcinteraction
+[00:10:56] [main/INFO]: Reflections took 7 ms to scan 1 urls, producing 1 keys and 4 values
+[00:10:56] [main/INFO]: Reflections took 4 ms to scan 1 urls, producing 1 keys and 4 values
+[00:10:56] [main/INFO]: Reflections took 0 ms to scan 1 urls, producing 1 keys and 2 values
+[00:10:56] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[00:10:56] [main/INFO]: Reflections took 1 ms to scan 1 urls, producing 1 keys and 2 values
+[00:10:56] [main/INFO]: Reflections took 2 ms to scan 1 urls, producing 1 keys and 2 values
+[00:10:56] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[00:10:57] [main/INFO]: [fabric-registry-sync] Loaded registry data [file 1/4]
+[00:10:59] [main/INFO]: Loaded 24 recipes
+[00:10:59] [main/INFO]: Loaded 2502 advancements
+[00:10:59] [main/INFO]: [REI] Reloading Plugin Manager [REIPlugin] stage [START], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[00:10:59] [main/INFO]: [REI] Reloading Plugin Manager [REIServerPlugin] stage [START], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[00:10:59] [main/INFO]: [REI] Reloaded Plugin Manager [REIPlugin] with 5 plugins in 50.65 ms.
+[00:10:59] [main/INFO]: [REI] Reloaded Plugin Manager [REIServerPlugin] with 5 plugins in 7.987 ms.
+[00:10:59] [main/INFO]: [REI] Reloading Plugin Manager [REIPlugin] stage [END], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[00:10:59] [main/INFO]: [REI] Reloading Plugin Manager [REIServerPlugin] stage [END], registered 5 plugins: CharmReiServerPlugin of CharmReiServerPlugin [charm], DefaultRuntimePlugin of DefaultRuntimePlugin [roughlyenoughitems], ReiCompat of ReiCompat [travelersbackpack], FabricFluidAPISupportPlugin, DefaultPlugin of DefaultPlugin [roughlyenoughitems]
+[00:10:59] [main/INFO]: [REI] Reloaded Plugin Manager [REIPlugin] with 5 plugins in 27.12 ms.
+[00:10:59] [main/INFO]: [REI] Reloaded Plugin Manager [REIServerPlugin] with 5 plugins in 25.47 ms.
+[00:11:01] [main/INFO]: Applied 326 biome modifications to 57 of 72 new biomes in 27.97 ms
+[00:11:01] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[00:11:01] [Server thread/INFO]: Loading properties
+[00:11:01] [Server thread/INFO]: Default game type: SURVIVAL
+[00:11:01] [Server thread/INFO]: Generating keypair
+[00:11:01] [Server thread/INFO]: Starting Minecraft server on 172.22.20.14:25565
+[00:11:01] [Server thread/INFO]: Using default channel type
+[00:11:01] [Server thread/WARN]: Failed to find a usable hardware address from the network interfaces; using random bytes: 4e:f6:6a:da:14:8f:20:b9
+[00:11:01] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[00:11:01] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[00:11:01] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[00:11:01] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[00:11:01] [Server thread/INFO]: Preparing level "world"
+[00:11:02] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[00:11:09] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[00:11:09] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[00:11:09] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-4/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-7/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-5/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[00:11:10] [Worker-Main-6/INFO]: Preparing spawn area: 0%
+[00:11:11] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[00:11:11] [Worker-Main-7/INFO]: Preparing spawn area: 7%
+[00:11:12] [Worker-Main-6/INFO]: Preparing spawn area: 39%
+[00:11:12] [Worker-Main-7/INFO]: Preparing spawn area: 69%
+[00:11:13] [Worker-Main-5/INFO]: Preparing spawn area: 94%
+[00:11:13] [Server thread/INFO]: Time elapsed: 11108 ms
+[00:11:13] [Server thread/INFO]: Done (11.546s)! For help, type "help"
+[00:11:13] [Server thread/INFO]: Created README.txt in config folder.
+[00:11:13] [Server thread/INFO]: Config 'tool_leveling_table.json' was successfully loaded.
+[00:11:13] [Server thread/INFO]: Saved the checked/corrected config: tool_leveling_table.json
+[00:11:13] [Server thread/INFO]: Config 'item_values.json' was successfully loaded.
+[00:11:13] [Server thread/INFO]: Saved the checked/corrected config: item_values.json
+[00:11:13] [Server thread/INFO]: Config 'command_config.json' was successfully loaded.
+[00:11:13] [Server thread/INFO]: Saved the checked/corrected config: command_config.json
+[00:11:13] [Server thread/WARN]: Running in offline mode - Voice chat encryption is not secure!
+[00:11:13] [VoiceChatServerThread/INFO]: Server started at port 24454
+[00:19:42] [Server thread/INFO]: Fhraze[/172.22.20.12:47502] logged in with entity id 275 at (-1922.5546928425329, 13.0, -247.06855029951706)
+[00:19:42] [Server thread/INFO]: Fhraze joined the game
+[00:19:42] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
+[00:19:42] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
+[00:19:42] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
+[00:19:43] [Server thread/INFO]: Received secret request of Fhraze (15)
+[00:19:43] [Server thread/INFO]: Sent secret to Fhraze
+[00:19:46] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player 1e130ad2-a122-3396-aaf7-ce85cb193571
+[00:19:46] [VoiceChatPacketProcessingThread/WARN]: Failed to load native Opus codec: /data/data/com.termux/files/home/.cache/JNA/temp/jna5630424329827363837.tmp: dlopen failed: library "libc.so.6" not found: needed by /data/data/com.termux/files/home/.cache/JNA/temp/jna5630424329827363837.tmp in namespace (default)
+[00:19:46] [VoiceChatPacketProcessingThread/WARN]: Failed to load native Opus codec - Falling back to Java Opus implementation
+[00:19:46] [VoiceChatPacketProcessingThread/INFO]: Initializing Opus decoder with sample rate 48000 Hz, frame size 960 bytes and max payload size 1024 bytes
+[00:20:46] [Server thread/WARN]: @Final field field_25883:Lnet/minecraft/class_4970$class_4973; in charm.mixins.json:more_portal_frames.AddValidPortalFrameBlocksMixin from mod charm should be final
+[01:06:45] [Server thread/INFO]: Xnor0408[/172.22.213.21:59047] logged in with entity id 5214 at (-1897.5, 63.0, -266.5)
+[01:06:45] [Server thread/INFO]: Xnor0408 joined the game
+[01:06:45] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
+[01:06:45] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
+[01:06:45] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
+[01:06:49] [Server thread/INFO]: Received secret request of Xnor0408 (15)
+[01:06:49] [Server thread/INFO]: Sent secret to Xnor0408
+[01:07:06] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player 09d94a8c-f26f-3d67-9c09-b1fc9012e4e5
+[01:12:41] [Server thread/INFO]: Xnor0408 has made the advancement [Suit Up]
+[01:12:42] [Server thread/INFO]: babygirlUwU[/172.22.188.242:64725] logged in with entity id 6076 at (-151.38879464142371, 59.0, -19.35409535072273)
+[01:12:42] [Server thread/INFO]: babygirlUwU joined the game
+[01:12:42] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
+[01:12:42] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
+[01:12:42] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
+[01:12:44] [Server thread/INFO]: Received secret request of babygirlUwU (15)
+[01:12:44] [Server thread/INFO]: Sent secret to babygirlUwU
+[01:12:50] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player 020c88fd-bf7a-33d4-b32f-4248c9c2f9f3
+[01:13:24] [Server thread/INFO]: ClockWings[/172.22.98.220:63297] logged in with entity id 6433 at (-1908.5, 63.0, -250.5)
+[01:13:24] [Server thread/INFO]: ClockWings joined the game
+[01:13:24] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
+[01:13:24] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
+[01:13:24] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
+[01:13:26] [Server thread/INFO]: Received secret request of ClockWings (15)
+[01:13:26] [Server thread/INFO]: Sent secret to ClockWings
+[01:13:32] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player b2385f61-f386-30dc-94c9-39a8a9f37897
+[01:15:20] [Server thread/WARN]: Xnor0408 moved too quickly! -9.209768952036256,0.25799910351528155,-4.22981066767926
+[01:15:24] [VoiceChatPacketProcessingThread/INFO]: Player b2385f61-f386-30dc-94c9-39a8a9f37897 timed out
+[01:15:24] [VoiceChatPacketProcessingThread/INFO]: Reconnecting player ClockWings
+[01:15:24] [VoiceChatPacketProcessingThread/INFO]: Sent secret to ClockWings
+[01:15:35] [Server thread/WARN]: ClockWings moved too quickly! 4.901847191449178,1.2286092609382138,8.737681157001958
+[01:15:39] [Server thread/WARN]: ClockWings was kicked for floating too long!
+[01:15:39] [Server thread/INFO]: ClockWings lost connection: Disconnected
+[01:15:39] [Server thread/INFO]: ClockWings left the game
+[01:15:39] [Server thread/INFO]: Disconnecting client ClockWings
+[01:15:39] [Server thread/WARN]: handleDisconnection() called twice
+[01:15:52] [Server thread/INFO]: ClockWings[/172.22.98.220:56590] logged in with entity id 7174 at (-1924.8027896923606, 64.00133597911214, -238.90950947052474)
+[01:15:52] [Server thread/INFO]: ClockWings joined the game
+[01:15:52] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
+[01:15:52] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
+[01:15:52] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
+[01:15:52] [Server thread/INFO]: Received secret request of ClockWings (15)
+[01:15:52] [Server thread/INFO]: Sent secret to ClockWings
+[01:15:56] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player b2385f61-f386-30dc-94c9-39a8a9f37897
+[01:17:14] [Server thread/INFO]: Xnor0408 has made the advancement [Stone Age]
+[01:17:34] [Server thread/INFO]: ClockWings has made the advancement [Suit Up]
+[01:17:53] [Server thread/INFO]: Xnor0408 has made the advancement [Getting an Upgrade]
+[01:19:12] [Server thread/INFO]: ClockWings has made the advancement [Stone Age]
+[01:23:30] [Server thread/INFO]: ClockWings fell from a high place
+[01:23:30] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-1935, y=63, z=-257}
+[01:25:14] [Server thread/INFO]: KeiStar7[/172.22.72.190:54798] logged in with entity id 9532 at (-2009.8697126169725, 69.0, -117.91626769312857)
+[01:25:14] [Server thread/INFO]: KeiStar7 joined the game
+[01:25:14] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
+[01:25:14] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
+[01:25:14] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
+[01:25:15] [Server thread/INFO]: Received secret request of KeiStar7 (15)
+[01:25:15] [Server thread/INFO]: Sent secret to KeiStar7
+[01:25:17] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player ce564aef-a6e4-3fb5-88df-a29b23bcc82d
+[01:26:24] [Server thread/INFO]: Xnor0408 has reached the goal [On The Go]
+[01:27:46] [Server thread/INFO]: ClockWings has reached the goal [On The Go]
+[01:28:32] [Server thread/INFO]: [Not Secure] <KeiStar7> o cara quase me joga na lava vsf
+[01:29:02] [Server thread/INFO]: ClockWings fell from a high place
+[01:29:02] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-1980, y=70, z=-141}
+[01:29:50] [Server thread/INFO]: Xnor0408 was slain by ClockWings
+[01:29:50] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-1972, y=70, z=-109}
+[01:31:03] [Server thread/INFO]: [Not Secure] <Xnor0408> ./tp clockwings
+[01:31:05] [Server thread/INFO]: [Not Secure] <ClockWings> clbc
+[01:31:08] [Server thread/INFO]: [Not Secure] <ClockWings> to nas masmorras
+[01:31:16] [Server thread/INFO]: [Not Secure] <KeiStar7> CBt
+[01:31:24] [Server thread/INFO]: [Not Secure] <Xnor0408> cock and balls tortura
+[01:32:03] [Server thread/INFO]: [Not Secure] <KeiStar7> depenaram meus cascalhos vsf
+[01:32:08] [Server thread/INFO]: [Not Secure] <KeiStar7> e andesito
+[01:32:20] [Server thread/INFO]: [Not Secure] <KeiStar7> e terra
+[01:32:22] [Server thread/INFO]: Xnor0408 has made the advancement [Exotic Starter]
+[01:33:33] [Server thread/INFO]: [Not Secure] <Xnor0408> coords
+[01:34:27] [Server thread/INFO]: ClockWings fell from a high place
+[01:34:27] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-1931, y=65, z=-236}
+[01:35:56] [Server thread/INFO]: ClockWings fell from a high place
+[01:35:56] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-1930, y=63, z=-232}
+[01:36:20] [Server thread/INFO]: [Not Secure] <KeiStar7> e minha bolsa sumiu
+[01:37:22] [Server thread/INFO]: Melansla[/172.22.124.157:52046] logged in with entity id 12752 at (-1795.6992048284637, 78.0, -273.6466163199879)
+[01:37:22] [Server thread/INFO]: Melansla joined the game
+[01:37:22] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
+[01:37:22] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
+[01:37:22] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
+[01:37:22] [Server thread/INFO]: Melansla lost connection: Disconnected
+[01:37:22] [Server thread/INFO]: Melansla left the game
+[01:37:22] [Server thread/INFO]: Disconnecting client Melansla
+[01:37:36] [Server thread/INFO]: [Not Secure] <Xnor0408> clock
+[01:37:37] [Server thread/INFO]: [Not Secure] <Xnor0408> barco
+[01:37:37] [Server thread/INFO]: Melansla[/172.22.124.157:52068] logged in with entity id 12920 at (-1795.6992048284637, 78.0, -273.6466163199879)
+[01:37:37] [Server thread/INFO]: Melansla joined the game
+[01:37:37] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
+[01:37:37] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
+[01:37:37] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
+[01:37:38] [Server thread/INFO]: Melansla lost connection: Disconnected
+[01:37:38] [Server thread/INFO]: Melansla left the game
+[01:37:38] [Server thread/INFO]: Disconnecting client Melansla
+[01:40:34] [Server thread/INFO]: [Not Secure] <KeiStar7> baixa minetogether fhraze
+[01:40:41] [Server thread/INFO]: [Not Secure] <Fhraze> q
+[01:40:47] [Server thread/INFO]: [Not Secure] <KeiStar7> jo
+[01:40:50] [Server thread/INFO]: [Not Secure] <ClockWings> soares
+[01:40:53] [Server thread/INFO]: [Not Secure] <Fhraze> FDP
+[01:40:56] [Server thread/INFO]: [Not Secure] <KeiStar7> sua piranha
+[01:41:04] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 0.5712155692740453
+[01:41:04] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 0.5712155692740453
+[01:41:04] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 0.5712155692740453
+[01:41:04] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 0.2841989334178834
+[01:41:42] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 0.4559589409707314
+[01:41:42] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 0.7935835158461941
+[01:41:42] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 1.1368514740154296
+[01:43:29] [Server thread/INFO]: [Not Secure] <KeiStar7> eu tinha packs de ferro na minha mochina mano
+[01:45:15] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 0.3465007299314493
+[01:45:15] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 0.4350772024662888
+[01:45:15] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 1.7281881108917787
+[01:45:15] [Server thread/WARN]: Boat (vehicle of ClockWings) moved wrongly! 0.3401379915032976
+[01:46:11] [Server thread/INFO]: ClockWings has made the advancement [Exotic Starter]
+[01:47:02] [Server thread/INFO]: [Not Secure] <ClockWings> pera
+[01:47:07] [Server thread/INFO]: [Not Secure] <KeiStar7> ma;a
+[01:47:26] [Server thread/INFO]: [Not Secure] <KeiStar7> maçã
+[01:47:50] [Server thread/WARN]: Boat (vehicle of ClockWings) moved too quickly! 0.9218547866169047,9.960000045597553,-0.9084896876965445
+[01:48:40] [Server thread/INFO]: Melansla[/172.22.124.157:56869] logged in with entity id 15600 at (-1795.6992048284637, 78.0, -273.6466163199879)
+[01:48:40] [Server thread/INFO]: Melansla joined the game
+[01:48:40] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
+[01:48:40] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
+[01:48:40] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
+[01:48:41] [Server thread/INFO]: Received secret request of Melansla (15)
+[01:48:41] [Server thread/INFO]: Sent secret to Melansla
+[01:48:46] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player dc65c1c5-dcd8-3d3d-a95c-6fbc3b39affb
+[01:49:04] [Server thread/INFO]: [Not Secure] <ClockWings> melansa
+[01:49:05] [Server thread/INFO]: [Not Secure] <ClockWings> cd tu
+[01:49:16] [Server thread/INFO]: [Not Secure] <Melansla> no cu
+[01:49:20] [Server thread/INFO]: [Not Secure] <ClockWings> vem pro spawn
+[01:49:25] [Server thread/INFO]: [Not Secure] <Melansla> settando keybind do xaero's
+[01:49:28] [Server thread/INFO]: [Not Secure] <Melansla> calma ai
+[01:49:31] [Server thread/INFO]: [Not Secure] <Melansla> tá conflitando
+[01:51:01] [Server thread/INFO]: [Not Secure] <Melansla> to morrendo de fome
+[01:51:59] [Server thread/INFO]: ClockWings has reached the goal [We Need to Go Higher]
+[01:52:03] [Server thread/INFO]: Xnor0408 has reached the goal [We Need to Go Higher]
+[01:52:06] [Server thread/INFO]: Villager class_1646['Villager'/16662, l='ServerLevel[world]', x=-208.85, y=-273.46, z=-24.44] died, message: 'Villager fell out of the world'
+[01:52:13] [Server thread/INFO]: ClockWings has made the advancement [I've been falling, for 30 minutes!]
+[01:52:16] [Server thread/WARN]: Xnor0408 moved too quickly! -0.054973858498101436,-15.476805479058022,-0.14419922949792507
+[01:52:18] [Server thread/INFO]: Xnor0408 has made the advancement [I've been falling, for 30 minutes!]
+[01:52:19] [Server thread/WARN]: Xnor0408 moved too quickly! 0.0,-12.487512062367099,0.0
+[01:52:19] [Server thread/WARN]: ClockWings moved too quickly! -0.06908531853832756,-18.439980963101277,0.15549662602612102
+[01:52:23] [Server thread/INFO]: Xnor0408 fell out of the world
+[01:52:23] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-198, y=63, z=-25}
+[01:52:29] [Server thread/INFO]: [Not Secure] <Melansla> kkkkkkkkkkkkk
+[01:52:34] [Server thread/INFO]: [Not Secure] <ClockWings> fiz mlg de barco lol
+[01:53:23] [Server thread/INFO]: ClockWings has made the advancement [Acquire Hardware]
+[01:53:33] [Server thread/WARN]: Xnor0408 moved too quickly! -1763.1010934973147,705.0132715898045,-201.62788833853847
+[01:53:34] [Server thread/WARN]: Xnor0408 moved too quickly! 0.0,-21.28159011822015,0.0
+[01:53:42] [Server thread/INFO]: death.attack.paradise_lost_fall
+[01:53:42] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-1959, y=81, z=-224}
+[01:53:43] [Server thread/INFO]: ClockWings fell from a high place
+[01:53:43] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-203, y=95, z=-17}
+[01:55:06] [Server thread/INFO]: Villager class_1646['Villager'/17310, l='ServerLevel[world]', x=-209.70, y=89.00, z=-19.62] died, message: 'Villager plummeted from the heavens'
+[01:55:26] [Server thread/INFO]: Villager class_1646['Villager'/17306, l='ServerLevel[world]', x=-224.60, y=-164.71, z=-23.33] died, message: 'Villager fell out of the world'
+[01:56:06] [Server thread/WARN]: Boat (vehicle of ClockWings) moved too quickly! -0.4339224057001161,-11.119999925792218,-0.4398588532093868
+[01:56:06] [Server thread/WARN]: Boat (vehicle of ClockWings) moved too quickly! -0.39979535967614765,-11.19999992400408,-0.4753155478764768
+[01:56:06] [Server thread/WARN]: Boat (vehicle of ClockWings) moved too quickly! -0.5742232487589831,-16.859999884665015,-0.7367524095043905
+[01:56:07] [Server thread/WARN]: Boat (vehicle of ClockWings) moved too quickly! -0.16842822807092261,-12.159999902546403,-0.7051552340040246
+[01:56:07] [Server thread/WARN]: Boat (vehicle of ClockWings) moved too quickly! -0.15318031828201129,-12.239999900758264,-0.6746078826434712
+[01:56:07] [Server thread/WARN]: Boat (vehicle of ClockWings) moved too quickly! -0.2184835039618065,-18.41999984979629,-0.9622038630892575
+[01:56:07] [Server thread/WARN]: Boat (vehicle of ClockWings) moved too quickly! -0.2772563695166923,-24.639999797940256,-1.221040238633634
+[01:56:10] [Server thread/WARN]: ClockWings moved too quickly! -2655.949608972538,704.0533432886557,1284.2047742216575
+[01:56:19] [Server thread/INFO]: death.attack.paradise_lost_fall
+[01:56:19] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-2951, y=67, z=1427}
+[01:58:08] [Server thread/INFO]: Melansla lost connection: Disconnected
+[01:58:08] [Server thread/INFO]: Melansla left the game
+[01:58:08] [Server thread/INFO]: Disconnecting client Melansla
+[02:00:00] [Server thread/INFO]: [Not Secure] <KeiStar7> tem farm de ovelha nesse mapa?
+[02:00:03] [Server thread/INFO]: [Not Secure] <Fhraze> nn
+[02:00:04] [Server thread/INFO]: [Not Secure] <KeiStar7> e de lula
+[02:00:11] [Server thread/INFO]: [Not Secure] <Fhraze> n tem nenhuma farm ainda
+[02:00:19] [Server thread/INFO]: [Not Secure] <Fhraze> o almeida falo q vai fazer a de enderman
+[02:00:29] [Server thread/INFO]: [Not Secure] <KeiStar7> eu vou precisar de muita lã tinta preta e tinta amarela
+[02:01:49] [Server thread/INFO]: Melansla[/172.22.124.157:56696] logged in with entity id 19735 at (-2037.7501831533957, 63.0, -255.4528497065267)
+[02:01:49] [Server thread/INFO]: Melansla joined the game
+[02:01:49] [Server thread/INFO]: Sending config to client: 'toolleveling:general'
+[02:01:49] [Server thread/INFO]: Sending config to client: 'toolleveling:item_values'
+[02:01:49] [Server thread/INFO]: Sending config to client: 'toolleveling:commands'
+[02:01:51] [Server thread/INFO]: Received secret request of Melansla (15)
+[02:01:51] [Server thread/INFO]: Sent secret to Melansla
+[02:01:57] [VoiceChatPacketProcessingThread/INFO]: Successfully authenticated player dc65c1c5-dcd8-3d3d-a95c-6fbc3b39affb
+[02:01:59] [Server thread/INFO]: ClockWings was slain by Iron Golem
+[02:01:59] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-1939, y=64, z=-270}
+[02:02:18] [Server thread/INFO]: [Not Secure] <Melansla> tchola
+[02:02:40] [Server thread/INFO]: [Not Secure] <KeiStar7> ta faltando 20 packs de terra
+[02:03:25] [Server thread/INFO]: Xnor0408 was slain by ClockWings
+[02:03:25] [Server thread/INFO]: [TotemOfPreserving] Spawned a totem at: class_2338{x=-1921, y=12, z=-242}
+[02:04:01] [Server thread/INFO]: ClockWings lost connection: Disconnected
+[02:04:01] [Server thread/INFO]: ClockWings left the game
+[02:04:01] [Server thread/INFO]: Disconnecting client ClockWings
+[02:04:04] [Server thread/INFO]: Xnor0408 lost connection: Disconnected
+[02:04:04] [Server thread/INFO]: Xnor0408 left the game
+[02:04:04] [Server thread/INFO]: Disconnecting client Xnor0408
+[02:08:07] [Server thread/INFO]: KeiStar7 lost connection: Disconnected
+[02:08:07] [Server thread/INFO]: KeiStar7 left the game
+[02:08:07] [Server thread/INFO]: Disconnecting client KeiStar7
+[02:33:46] [Server thread/INFO]: babygirlUwU lost connection: Disconnected
+[02:33:46] [Server thread/INFO]: babygirlUwU left the game
+[02:33:46] [Server thread/INFO]: Disconnecting client babygirlUwU
+[02:37:05] [Server thread/INFO]: [Not Secure] <Melansla> fhraze
+[02:37:08] [Server thread/INFO]: [Not Secure] <Fhraze> q
+[02:37:08] [Server thread/INFO]: [Not Secure] <Melansla> vai mimir agora?
+[02:37:16] [Server thread/INFO]: [Not Secure] <Fhraze> daq a pouco
+[02:37:23] [Server thread/INFO]: [Not Secure] <Melansla> blz
+[02:37:57] [Server thread/INFO]: [Not Secure] <Melansla> quem tava procurando bloco de coral?
+[02:38:02] [Server thread/INFO]: [Not Secure] <Fhraze> sla
+[02:38:13] [Server thread/INFO]: [Not Secure] <Melansla> é q tem wandering trader vendendo
+[03:04:59] [Server thread/INFO]: Melansla lost connection: Disconnected
+[03:04:59] [Server thread/INFO]: Melansla left the game
+[03:04:59] [Server thread/INFO]: Disconnecting client Melansla
+[03:05:17] [Server thread/INFO]: Fhraze lost connection: Disconnected
+[03:05:17] [Server thread/INFO]: Fhraze left the game
+[03:05:17] [Server thread/INFO]: Disconnecting client Fhraze
+[03:15:19] [Server thread/INFO]: Stopping the server
+[03:15:19] [Server thread/INFO]: Stopping server
+[03:15:19] [Server thread/INFO]: Saving players
+[03:15:19] [Server thread/INFO]: Saving worlds
+[03:15:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[03:15:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[03:15:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[03:15:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/paradise_lost:paradise_lost
+[03:15:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[03:15:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[03:15:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[03:15:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (paradise_lost): All chunks are saved
+[03:15:21] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

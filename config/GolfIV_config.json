@@ -7,8 +7,8 @@
     "_comment_allowedDestructibleByPiston_1": "// Allows headless pistons to destroy certain blocks when preventing destruction is enabled.",
     "_comment_allowedDestructibleByPiston_2": "// Useful to allow only breaking of bedrock but denying destruction of barriers.",
     "allowedDestructibleByHeadlessPistons": [
-      "minecraft:bedrock",
-      "minecraft:piston_head"
+      "minecraft:piston_head",
+      "minecraft:bedrock"
     ],
     "// What altitude in the nether should start inflicting void damage (e.g. 128). -1 disables it.": "",
     "inflictNetherRoofDamage": -1
@@ -65,9 +65,9 @@
     "_comment_allowedHealthTags_1": "// Allows health tags for certain entities.",
     "_comment_allowedHealthTags_2": "// This maps entity ID to percentage as decimal.",
     "allowedHealthTags": {
-      "minecraft:iron_golem": 0.25,
       "minecraft:wolf": 0.0,
-      "minecraft:wither": 0.5
+      "minecraft:wither": 0.5,
+      "minecraft:iron_golem": 0.25
     },
     "removeEquipmentTags": true,
     "checkPortalHack": true,

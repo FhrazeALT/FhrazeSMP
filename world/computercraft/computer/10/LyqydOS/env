@@ -1,0 +1,666 @@
+local unpack = unpack or table.unpack
+
+--Peripheral modifications.
+do
+	local oldPeripheralCall = peripheral.call
+
+	function peripheral.call(side, func, ...)
+		if peripheral.getType(side) == "modem" then
+			if func == "isOpen" then
+				local proc = process.id() and process.list[process.id()]
+				if not proc then return false end
+				if not proc.modem then return false end
+				if not proc.modem[side] then return false end
+				if proc.modem[side][(...)] then return true end
+				return false
+			elseif func == "open" then
+				local proc = process.list[process.id()]
+				if not proc.modem then proc.modem = {} end
+				if not proc.modem[side] then proc.modem[side] = {} end
+				local channel = (...)
+				proc.modem[side][channel] = true
+				oldPeripheralCall(side, func, channel)
+			elseif func == "close" then
+				local proc = process.list[process.id()]
+				if not proc.modem then return nil end
+				if not proc.modem[side] then return nil end
+				local channel = (...)
+				if proc.modem[side][channel] then
+					proc.modem[side][channel] = nil
+					local close = true
+					for pID, pInfo in pairs(process.list) do
+						if pInfo and pInfo.modem and pInfo.modem[side] and pInfo.modem[side][channel] then
+							close = false
+							break
+						end
+					end
+					if close then return oldPeripheralCall(side, func, channel) end
+				end
+			elseif func == "closeAll" then
+				local proc = process.list[process.id()]
+				if not proc.modem then return nil end
+				if not proc.modem[side] then return nil end
+				for channel in pairs(proc.modem[side]) do
+					peripheral.call(side, "close", channel)
+				end
+			else
+				return oldPeripheralCall(side, func, ...)
+			end
+		else
+			return oldPeripheralCall(side, func, ...)
+		end
+	end
+end
+
+--Rednet modifications
+do
+	local validSides = {}
+	for k, v in pairs(rs.getSides()) do
+		validSides[v] = true
+	end
+
+	local function validateSide(side)
+		if type(side) ~= "string" then
+			error("string expected", 3)
+		end
+		if not validSides[side] then
+			error("Invalid side", 3)
+		end
+		if peripheral.getType(side) ~= "modem" then	
+			error("No modem on "..side.." side", 3)
+		end
+		return true
+	end
+
+	function rednet.open(side)
+		if validateSide(side) then
+			local proc = process.this()
+			if not proc.rednet then proc.rednet = {} end
+			proc.rednet[side] = true
+			peripheral.call(side, "open", os.getComputerID())
+			peripheral.call(side, "open", 65535)
+		end
+	end
+
+	function rednet.close(side)
+		if validateSide(side) then
+			local proc = process.this()
+			if not proc.rednet then return nil end
+			proc.rednet[side] = nil
+			peripheral.call(side, "close", os.getComputerID())
+			peripheral.call(side, "close", 65535)
+		end
+	end
+
+	function rednet.isOpen(side)
+		if side then
+			if type(side) ~= "string" then
+				error("expected string", 2)
+			end
+			if peripheral.getType(side) == "modem" then
+				local proc = process.this()
+				if not proc.modem then return false end
+				if not proc.modem[side] then return false end
+				return (proc.modem[side][os.getComputerID()] and proc.modem[side][65535]) or false
+			end
+		else
+			for n, side in ipairs(peripheral.getNames()) do
+				if rednet.isOpen(side) then
+					return true
+				end
+			end
+		end
+	end
+
+	function rednet.send(recipient, message, protocol)
+		for _, side in pairs(rs.getSides()) do
+			if peripheral.getType(side) == "modem" and rednet.isOpen(side) then
+				if term.current then
+					local id = math.random(1, 2147483547)
+					local messTable = {
+						nMessageID = id,
+						nRecipient = recipient,
+						message = message,
+						sProtocol = protocol,
+					}
+					peripheral.call(side, "transmit", recipient, os.getComputerID(), messTable)
+					peripheral.call(side, "transmit", 65533, os.getComputerID(), messTable)
+				else
+					peripheral.call(side, "transmit", recipient, os.getComputerID(), message)
+				end
+				return true
+			end
+		end
+		error("No open sides", 2)
+	end
+
+	function rednet.broadcast(message, protocol)
+		return rednet.send(65535, message, protocol)
+	end
+
+	function rednet.host(protocol, hostname)
+		if type(protocol) ~= "string" or type(hostname) ~= "string" then
+			error("expected string, string", 2)
+		end
+		if hostname == "localhost" then
+			error("Reserved hostname", 2)
+		end
+		local proc = process.this()
+		if not proc.rednet then proc.rednet = {} end
+		if not proc.rednet.hosting then proc.rednet.hosting = {} end
+		if rednet.lookup(protocol, hostname) ~= nil then
+			error("Hostname in use", 2)
+		end
+		proc.rednet.hosting[protocol] = hostname
+	end
+
+	function rednet.unhost(protocol)
+		if type(protocol) ~= "string" then
+			error("expected string", 2)
+		end
+		local proc = process.this()
+		if not proc.rednet then return end
+		if not proc.rednet.hosting then return end
+		proc.rednet.hosting[protocol] = nil
+	end
+
+	function rednet.lookup(protocol, hostname)
+		if type(protocol) ~= "string" then
+			error("expected string", 2)
+		end
+
+		local result
+		if not hostname then
+			result = {}
+		end
+
+		for pID, proc in ipairs(process.list) do
+			if proc and proc.rednet and proc.rednet.hosting then
+				if proc.rednet.hosting[protocol] then
+					if not hostname then
+						table.insert(result, os.getComputerID())
+					elseif hostname == "localhost" or hostname == proc.rednet.hosting[protocol] then
+						return os.getComputerID()
+					end
+				end
+			end
+		end
+
+		if not rednet.isOpen() then
+			if result then
+				unpack(result)
+			end
+			return nil
+		end
+
+		rednet.broadcast({sType = "lookup", sProtocol = protocol, sHostname = hostname,}, "dns")
+
+		local timer = os.startTimer(2)
+		while true do
+			local event = {os.pullEvent()}
+			if event[1] == "rednet_message" then
+				if event[4] == "dns" and event[3].sType == "lookup response" then
+					if event[3].sProtocol == protocol then
+						if not hostname then
+							table.insert(result, event[2])
+						elseif event[3].sHostname == hostname then
+							return event[2]
+						end
+					end
+				end
+			elseif event[1] == "timer" and event[2] == timer then
+				break
+			end
+		end
+		if result then
+			return unpack(result)
+		end
+	end
+end
+
+--FS modifications.
+do
+	local oldfs = {}
+	for k, v in pairs(fs) do
+		if type(k) == "string" and type(v) == "function" then
+			oldfs[k] = v
+		end
+	end
+
+	LyqydOS.fs = {}
+	LyqydOS.fs.raw = oldfs
+	LyqydOS.fs.mounts = {}
+
+	LyqydOS.fs.canMountToPath = function(path)
+		if string.sub(path, 1, 1) ~= "/" then
+			path = "/"..path
+		end
+		for i, mount in ipairs(LyqydOS.fs.mounts) do
+			if mount and mount.path == path then
+				return false
+			end
+		end
+		if LyqydOS.fs.raw.exists(path) and LyqydOS.fs.raw.isDir(path) then
+			local list = LyqydOS.fs.raw.list(path)
+			if #list == 0 then
+				return true
+			end
+		end
+		return false
+	end
+
+	local function getMountID(path)
+		if string.sub(path, 1, 1) ~= "/" then
+			path = "/"..path
+		end
+		local matchLen, matchID = 0, false
+		for i, mnt in ipairs(LyqydOS.fs.mounts) do
+			local match = string.match(path, "^("..mnt.path..")")
+			if match and #match > matchLen then
+				matchLen = #match
+				matchID = i
+			end
+		end
+		if matchID then
+			return matchID
+		end
+	end
+
+	local function getMount(path)
+		local id = getMountID(path)
+		if id then
+			return LyqydOS.fs.mounts[id]
+		end
+	end
+
+	local function getRelativePath(path, mount)
+		if string.sub(path, 1, 1) ~= "/" then
+			path = "/"..path
+		end
+		return string.match(path, "^"..mount.path.."(.*)")
+	end
+
+	local function yield()
+		local key = tostring({})
+		os.queueEvent("vfs_yield", key)
+		local event, val
+		repeat
+			event, val = os.pullEvent()
+		until event == "vfs_yield" and val == key
+	end
+
+	local fsTransformTable = {
+		"list",
+		"exists",
+		"isDir",
+		"isReadOnly",
+		"getSize",
+		"getFreeSpace",
+		"makeDir",
+		"delete",
+		"find",
+	}
+
+	for i, name in ipairs(fsTransformTable) do
+		fs[name] = function(path)
+			local mnt = getMount(path)
+			if mnt then
+				return mnt.mount[name](getRelativePath(path, mnt))
+			else
+				return oldfs[name](path)
+			end
+		end
+	end
+
+	fs.getDrive = function(path)
+		local id = getMountID(path)
+		if id then
+			return "lyq_vfs_"..tostring(id)
+		else
+			return oldfs.getDrive(path)
+		end
+	end
+
+	fs.move = function(origin, destination)
+		local omnt = getMount(origin)
+		local dmnt = getMount(destination)
+		if omnt == dmnt and omnt then
+			--both file paths are within the same mount point
+			omnt.mount.move(getRelativePath(origin, omnt), getRelativePath(destination, omnt))
+		elseif omnt then
+			--the origin file has a mount point.
+			local data = omnt.mount.get(getRelativePath(origin, omnt))
+			if dmnt then
+				dmnt.mount.put(getRelativePath(destination, dmnt), data)
+			else
+				local handle = oldfs.open(destination, "wb")
+				if handle then
+					for i = 1, #data do
+						handle.write(data[i])
+						if i % 1000 == 0 then yield() end
+					end
+					handle.close()
+				end
+			end
+			omnt.mount.delete(getRelativePath(origin, omnt))
+		elseif dmnt then
+			--the origin file does not have a mount point, but the destination does.
+			local handle = oldfs.open(origin, "rb")
+			if handle then
+				local data = {}
+				local num = handle.read()
+				while num do
+					table.insert(data, num)
+					num = handle.read()
+					if #data % 1000 == 0 then yield() end
+				end
+				dmnt.mount.put(getRelativePath(destination, dmnt), data)
+				handle.close()
+			end
+			oldfs.delete(origin)
+		else
+			oldfs.move(origin, destination)
+		end
+	end
+
+	fs.copy = function(origin, destination)
+		local omnt = getMount(origin)
+		local dmnt = getMount(destination)
+		if omnt == dmnt and omnt then
+			--both file paths are within the same mount point
+			omnt.mount.copy(getRelativePath(origin, omnt), getRelativePath(destination, omnt))
+		elseif omnt then
+			--the origin file has a mount point.
+			local data = omnt.mount.get(getRelativePath(origin, omnt))
+			if dmnt then
+				dmnt.mount.put(getRelativePath(destination, dmnt), data)
+			else
+				local handle = oldfs.open(destination, "wb")
+				if handle then
+					for i = 1, #data do
+						handle.write(data[i])
+						if i % 1000 == 0 then yield() end
+					end
+					handle.close()
+				end
+			end
+		elseif dmnt then
+			--the origin file does not have a mount point, but the destination does.
+			local handle = oldfs.open(origin, "rb")
+			if handle then
+				local data = {}
+				local num = handle.read()
+				while num do
+					table.insert(data, num)
+					num = handle.read()
+					if #data % 1000 == 0 then yield() end
+				end
+				dmnt.mount.put(getRelativePath(destination, dmnt), data)
+				handle.close()
+			end
+		else
+			oldfs.copy(origin, destination)
+		end
+	end
+
+	fs.open = function(path, mode)
+		local mount = getMount(path)
+		if mount then
+			if mode == "r" then
+				local data = string.char(unpack(mount.mount.get(getRelativePath(path, mount))))
+				local seek = 0
+				local handle = {
+					readLine = function()
+						if seek < #data then
+							local line
+							line, seek = string.match(data, "([^\n]*)\r?\n-()", seek + 1)
+							return line
+						end
+					end,
+					readAll = function()
+						if seek <= #data then
+							local line
+							line, seek = string.match(data, "(.*)()", seek)
+							return line
+						end
+					end,
+					close = function()
+						seek = #data + 1
+					end,
+				}
+				return handle
+			elseif mode == "rb" then
+				local data = mount.mount.get(getRelativePath(path, mount))
+				local seek = 0
+				local handle = {
+					read = function()
+						if seek < #data then
+							seek = seek + 1
+							return data[seek]
+						end
+					end,
+					close = function()
+						seek = #data
+					end
+				}
+				return handle
+			elseif mode == "w" or mode == "a" then
+				local data = ""
+				if mode == "a" then
+					data = string.char(unpack(mount.mount.get(getRelativePath(path, mount))))
+				end
+				local open = true
+				local handle = {
+					writeLine = function(str)
+						if open then
+							data = data..str.."\n"
+						end
+					end,
+					write = function(str)
+						if open then
+							data = data..str
+						end
+					end,
+					flush = function()
+						if open then
+							mount.mount.put(getRelativePath(path, mount), {string.byte(data, 1, -1)})
+						end
+					end,
+					close = function()
+						if open then
+							mount.mount.put(getRelativePath(path, mount), {string.byte(data, 1, -1)})
+							open = false
+						end
+					end,
+				}
+				return handle
+			elseif mode == "wb" or mode == "ab" then
+				local data = {}
+				if mode == "ab" then
+					data = mount.mount.get(getRelativePath(path, mount))
+				end
+				local open = true
+				local handle = {
+					write = function(num)
+						if open then
+							data[#data + 1] = num
+						end
+					end,
+					flush = function()
+						if open then
+							mount.mount.put(getRelativePath(path, mount), data)
+						end
+					end,
+					close = function()
+						if open then
+							mount.mount.put(getRelativePath(path, mount), data)
+							open = false
+						end
+					end,
+				}
+				return handle
+			end
+		else
+			return oldfs.open(path, mode)
+		end
+	end
+end
+
+--Disk modifications.
+do
+	local oldGetMountPath = disk.getMountPath
+
+	disk.getMountPath = function(side)
+		local drive, num = string.match(side, "(.-)_(%d+)$")
+		if drive == "lyq_vfs" then
+			return LyqydOS.fs.mounts[tonumber(num)].path
+		else
+			return oldGetMountPath(side)
+		end
+	end
+end
+
+--Redstone modifications.
+do
+	local oldrs = {}
+	for k, v in pairs(rs) do
+		if type(k) == "string" and type(v) == "function" then
+			oldrs[k] = v
+		end
+	end
+
+	local validSides = {}
+	for k, v in pairs(rs.getSides()) do
+		validSides[v] = true
+	end
+
+	local function validate(side, value, exType)
+		if type(side) ~= "string" or type(value) ~= exType then
+			error("Expected string, "..exType)
+		end
+		if not validSides[side] then
+			error("Invalid side")
+		end
+		return true
+	end
+
+	local function getCurrentValue(side)
+		local value = 0
+		for pID, pInfo in pairs(process.list) do
+			if pInfo and pInfo.redstone and pInfo.redstone[side] and pID ~= process.id() then
+				value = math.max(value, pInfo.redstone[side].value)
+			end
+		end
+		return value
+	end
+
+	local function getCurrentBundled(side)
+		local value = 0
+		for pID, pInfo in pairs(process.list) do
+			if pInfo and pInfo.redstone and pInfo.redstone[side] and pID ~= process.id() then
+				value = bit.bor(value, pInfo.redstone[side].bundled)
+			end
+		end
+		return value
+	end
+
+	redstone.setAnalogOutput = function(side, value)
+		if validate(side, value, "number") then
+			local current = getCurrentValue(side)
+			local proc = process.list[process.id()]
+			if not proc.redstone then proc.redstone = {} end
+			if not proc.redstone[side] then proc.redstone[side] = {} end
+			proc.redstone[side].value = value
+			value = math.max(value, current)
+			oldrs.setAnalogOutput(side, value)
+		end
+	end
+
+	redstone.setOutput = function(side, value)
+		if validate(side, value, "boolean") then
+			redstone.setAnalogOutput(side, value == true and 15 or 0)
+		end
+	end
+
+	redstone.setBundledOutput = function(side, value)
+		if validate(side, value, number) then
+			local current = getCurrentBundled(side)
+			local proc = process.list[process.id()]
+			if not proc.redstone then proc.redstone = {} end
+			if not proc.redstone[side] then proc.redstone[side] = {} end
+			proc.redstone[side].bundled = value
+			value = bit.bor(value, current)
+			oldrs.setBundledOutput(side, value)
+		end
+	end
+end
+
+--shell and multishell modifications
+do
+	LyqydOS.shell.multishell.getTitle = function(n)
+		if process.list[n] then
+			return process.list[n].name
+		end
+	end
+
+	LyqydOS.shell.multishell.setTitle = function(n, title)
+		if process.list[n] then
+			process.list[n].name = title
+		end
+	end
+
+	LyqydOS.shell.multishell.getCount = function()
+		return #process.list
+	end
+
+	LyqydOS.shell.multishell.launch = function(env, path, ...)
+		local args = {...}
+		if path then
+			local pid = #process.list + 1
+			local redirect, bufNum = process.compositor:newBuffer(pid)
+			process.new(function() os.run(env, shell.resolveProgram("lsh"), path, unpack(args)) end, shell.resolveProgram("lsh"), redirect)
+			process.compositor:toBack(bufNum)
+			return pid
+		else
+			return false
+		end
+	end
+
+	LyqydOS.shell.multishell.getCurrent = function()
+		return process.id()
+	end
+
+	LyqydOS.shell.multishell.getFocus = function()
+		return process.focus
+	end
+
+	LyqydOS.shell.multishell.setFocus = function(n)
+		if process.list[n] then
+			local proc = process.list[n]
+			process.focus = n
+			--bring the buffer to the top
+			local buf = proc.firstRedirect.buffer
+			for i, layer in ipairs(process.compositor.bufferStack) do
+				if layer == buf then
+					process.compositor:toFront(i)
+					break
+				end
+			end
+		end
+	end
+
+	LyqydOS.shell.shell.openTab = function(...)
+		local env = {shell = LyqydOS.shell.shell, multishell = LyqydOS.shell.multishell}
+		local command = table.concat({...}, " ")
+		local args = {}
+		for match in string.gmatch(command, "[^ \t]+") do
+			table.insert(args, match)
+		end
+		local path = table.remove(args, 1)
+		return LyqydOS.shell.multishell.launch(env, path, unpack(args))
+	end
+
+	LyqydOS.shell.shell.switchTab = function(n)
+		LyqydOS.shell.multishell.setFocus(n)
+	end
+end

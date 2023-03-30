@@ -1,0 +1,2 @@
+shell.run("/boot/craftos.lua")
+--shell.run("/LyqydOS/procman")

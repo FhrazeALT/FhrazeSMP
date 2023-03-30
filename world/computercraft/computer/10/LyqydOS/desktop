@@ -1,0 +1,357 @@
+local unpack = unpack or table.unpack
+
+local standard = {
+	titlebar = {"=", "0", "f"},
+	ostext = {" ", "0", "f"},
+	tasktext = {" ", "0", "f"},
+	tasksep = {"|", "0", "f"},
+}
+
+local pretty = {
+	titlebar = {" ", "0", "8"},
+	ostext = {" ", "b", "8"},
+	tasktext = {" ", "f", "8"},
+	tasksep = {"|", "f", "8"},
+}
+
+
+local themes = theme.newSet("desktop", "standard", standard)
+themes:add("pretty", pretty)
+
+local path = fs.combine(LyqydOS.folderPath, "themes/desktop")
+if fs.exists(path) and fs.isDir(path) then
+	for _, name in pairs(fs.list(path)) do
+		local themeData, err = configuration.load(fs.combine(path, name))
+		if themeData then
+			themes:add(name, themeData)
+		else
+			print("Could not load desktop theme "..name.."\n"..err)
+			sleep(1)
+		end
+	end
+end
+
+local deskID = process.id()
+local redirect, bufNum = process.compositor:newBuffer(deskID)
+local w, h = redirect.getSize()
+local deskWin = window.new(w, h, 1, 1, "desktop", redirect)
+deskWin.deferDraw = true
+deskWin:setBorderless(true)
+deskWin.minimizable = false
+deskWin.resizable = false
+deskWin.movable = false
+deskWin.closable = false
+process.compositor:lockToBack(bufNum)
+local deskProc = process.this()
+deskProc:addWindow(deskWin)
+deskProc.windows.selectable = false
+
+process.addHook({"key", 59})
+process.addHook({"redraw"})
+
+local runHistory = {}
+if fs.exists(fs.combine(LyqydOS.folderPath, ".lyqrunhistory")) then
+	local histFile = io.open(fs.combine(LyqydOS.folderPath, ".lyqrunhistory"), "r")
+	if histFile then
+		for line in histFile:lines() do
+			table.insert(runHistory, line)
+		end
+		histFile:close()
+	end
+end
+
+local function getWindowDimensions(winPath)
+	local winDims = io.open(fs.combine(LyqydOS.folderPath, ".lyqwin"), "r")
+	if winDims then
+		for line in winDims:lines() do
+			local x, y, w, h, max, path = string.match(line, "(%d+),(%d+),(%d+),(%d+),(%a+),(.*)")
+			if path == winPath then
+				winDims:close()
+				return x, y, w, h, max
+			end
+		end
+		winDims:close()
+	end
+end
+
+local function addLineToHistory(line)
+	if line ~= "" and (#runHistory == 0 or line ~= runHistory[#runHistory]) then
+		--should never be able to get above 255, but just in case, the while doesn't hurt
+		table.insert(runHistory,line)		
+		while #runHistory>255 do
+			table.remove(runHistory, 1)
+		end
+		--update history on disk
+		local histFile=io.open(fs.combine(LyqydOS.folderPath, ".lyqrunhistory"),"w")
+		if histFile then
+			for i=1, #runHistory do
+				histFile:write(runHistory[i].."\n")
+			end
+			histFile:close()
+		end
+	end
+end
+
+local function runProgram()
+	local desk = process.id()
+	local dProc = process.list[desk]
+	local win
+	if pocket then
+		win = window.new(26, 3, 1, 2, "Run Program", process.compositor:newBuffer(desk))
+	else
+		win = window.new(30, 3, 2, 2, "Run Program", process.compositor:newBuffer(desk))
+	end
+
+	dProc:addWindow(win)
+	win:setMode("ephemeral")
+	win:setType("menu")
+	win:setTheme(LyqydOS.window.theme)
+	process.focus = desk
+
+	local _old = term.redirect(win.redirect)
+	term.setTextColor(colors.white)
+	term.setBackgroundColor(colors.black)
+	write("> ")
+	local success, line = pcall(read, nil, runHistory)
+	--clean up window
+	if _old then
+		term.redirect(_old)
+	else
+		term.restore()
+	end
+
+	dProc:removeWindow(win)
+	if success and #line > 0 then
+		--don't save empty or repeated lines
+		addLineToHistory(line)
+		process.getFromName("lws"):queue("start_program", line)
+	end
+end
+
+local function setBackground(color, image)
+	if deskWin.redirect.isColor() then
+		if color then
+			local x, y = deskWin.redirect.getSize()
+			for i = 2, y do
+				deskWin.redirect.buffer.backColor[i] = string.rep(string.format("%x", math.floor(math.log(color) / math.log(2))), x)
+			end
+		end
+		if image and #image > 0 then
+			local x, y = deskWin.redirect.getSize()
+			local background = {}
+			if fs.exists(image) then
+				local handle = io.open(image, "r")
+				if handle then
+					for line in handle:lines() do
+						table.insert(background, string.sub(line, 1, x))
+					end
+					handle:close()
+				end
+				local backColor = color or backgroundColor
+				backColor = string.format("%x", math.floor(math.log(backColor) / math.log(2)))
+				for i = 2, y do
+					if background[i - 1] then
+						deskWin.redirect.buffer.backColor[i] = background[i-1]..string.rep(backColor, x - #background[i-1])
+					else
+						deskWin.redirect.buffer.backColor[i] = string.rep(backColor, x)
+					end
+				end
+			end
+		end
+	else
+		deskWin.redirect.setBackgroundColor(colors.black)
+		deskWin.redirect.clear()
+	end
+	process.list[deskID]:queue("redraw")
+end
+
+local function buildRecent()
+	local recents = {}
+	for i = 1, #runHistory do
+		if recents[runHistory[i]] then
+			recents[runHistory[i]] = recents[runHistory[i]] + 1
+		else
+			recents[runHistory[i]] = 1
+		end
+	end
+	local sortedRecents = {}
+	for command, count in pairs(recents) do
+		table.insert(sortedRecents, {command = command, count = count})
+	end
+
+	--sorting function, reversed order for largest first.
+	local function sortRecent(a, b)
+		return a.count > b.count
+	end
+
+	table.sort(sortedRecents, sortRecent)
+
+	local recentLines = {}
+	for i = 1, math.min(8, #sortedRecents) do
+		recentLines[i] = sortedRecents[i].command
+	end
+
+	return recentLines
+end
+
+local function recentPrograms()
+	local recents = buildRecent()
+	local width = 1
+	local desk = process.id()
+	local dProc = process.list[desk]
+	local win
+	if pocket then
+		win = window.new(26, 10, 1, 2, "Recent Programs", process.compositor:newBuffer(desk))
+	else
+		win = window.new(30, 10, 2, 2, "Recent Programs", process.compositor:newBuffer(desk))
+	end
+	dProc:addWindow(win)
+	win:setMode("ephemeral")
+	win:setType("menu")
+	win:setTheme(LyqydOS.window.theme)
+	win:setBorderless(true)
+	process.focus = desk
+
+	local _old = term.redirect(win.redirect)
+	term.setBackgroundColor(term.isColor() and colors.gray or colors.black)
+	local success, selection = pcall(menu.select, recents)
+	--clean up window
+	if _old then
+		term.redirect(_old)
+	else
+		term.restore()
+	end
+
+	dProc:removeWindow(win)
+	if success then
+		addLineToHistory(recents[selection])
+		process.getFromName("lws"):queue("start_program", recents[selection])
+	end
+end
+
+--set up initial view.
+local deskTheme = themes.themes[LyqydOS.desktop.theme]
+setBackground(LyqydOS.desktop.background, LyqydOS.desktop.backgroundImage)
+local x, y = deskWin.redirect.getSize()
+deskWin.redirect.buffer.text[1] = deskTheme.titlebar[1].."LyqydOS"..string.rep(deskTheme.titlebar[1], x - 8)
+if deskWin.redirect.isColor() then
+	deskWin.redirect.buffer.textColor[1] = deskTheme.titlebar[2]..string.rep(deskTheme.ostext[2], 7)..string.rep(deskTheme.titlebar[2], x - 8)
+	deskWin.redirect.buffer.backColor[1] = deskTheme.titlebar[3]..string.rep(deskTheme.ostext[3], 7)..string.rep(deskTheme.titlebar[3], x - 8)
+end
+deskWin:draw()
+
+local titlebarItems
+local tasksClickable
+
+while true do
+	local event = {os.pullEventRaw()}
+	if event[1] == "redraw" then
+		titlebarItems = {}
+		for i=1, #process.list do
+			if i ~= process.id() and process.list[i] and process.list[i].windows and #process.list[i].windows >= 1 then
+				local proc = process.list[i]
+				for j = #proc.windows, 1, -1 do
+					if proc.windows[j].mode ~= "ephemeral" then
+						local tBarEntry = {pID = i, text = proc.windows[j].caption}
+						table.insert(titlebarItems, tBarEntry)
+						break
+					end
+				end
+			end
+		end
+		local taskText = {}
+		tasksClickable = 0
+		local usableWidth = x - 10
+		for eNum, eInfo in ipairs(titlebarItems) do
+			if #taskText * 9 + 9 > usableWidth then
+				if #taskText > 0 then
+					table.remove(taskText)
+					table.insert(taskText, "More... ")
+					--taskText = string.sub(taskText, 1, -10).."More... |"
+				end
+				break
+			end
+			local str = string.sub(eInfo.text, 1, 8)
+			str = str..string.rep(" ", 8 - #str)
+			--if taskText == "" then taskText = "|" end
+			table.insert(taskText, str)
+			--taskText = taskText..str.."|"
+			tasksClickable = tasksClickable + 1
+		end
+		deskWin.redirect.buffer.text[1] = deskTheme.titlebar[1].."LyqydOS"..deskTheme.titlebar[1]
+		deskWin.redirect.buffer.textColor[1] = deskTheme.titlebar[2]..string.rep(deskTheme.ostext[2], 7)..deskTheme.titlebar[2]
+		deskWin.redirect.buffer.backColor[1] = deskTheme.titlebar[3]..string.rep(deskTheme.ostext[3], 7)..deskTheme.titlebar[3]
+		if #taskText > 0 then
+			deskWin.redirect.buffer.text[1] = deskWin.redirect.buffer.text[1]..deskTheme.tasksep[1]
+			deskWin.redirect.buffer.textColor[1] = deskWin.redirect.buffer.textColor[1]..deskTheme.tasksep[2]
+			deskWin.redirect.buffer.backColor[1] = deskWin.redirect.buffer.backColor[1]..deskTheme.tasksep[3]
+			for i = 1, #taskText do
+				deskWin.redirect.buffer.text[1] = deskWin.redirect.buffer.text[1]..taskText[i]..deskTheme.tasksep[1]
+				deskWin.redirect.buffer.textColor[1] = deskWin.redirect.buffer.textColor[1]..string.rep(deskTheme.tasktext[2], #taskText[i])..deskTheme.tasksep[2]
+				deskWin.redirect.buffer.backColor[1] = deskWin.redirect.buffer.backColor[1]..string.rep(deskTheme.tasktext[3], #taskText[i])..deskTheme.tasksep[3]
+			end
+		end
+		deskWin.redirect.buffer.text[1] = deskWin.redirect.buffer.text[1]..string.rep(deskTheme.titlebar[1], x - #deskWin.redirect.buffer.text[1])
+		deskWin.redirect.buffer.textColor[1] = deskWin.redirect.buffer.textColor[1]..string.rep(deskTheme.titlebar[2], x - #deskWin.redirect.buffer.textColor[1])
+		deskWin.redirect.buffer.backColor[1] = deskWin.redirect.buffer.backColor[1]..string.rep(deskTheme.titlebar[3], x - #deskWin.redirect.buffer.backColor[1])
+		deskWin:draw()
+	elseif event[1] == "set_property" then
+		if event[2] == "background" then
+			setBackground(event[3], event[4])
+		elseif event[2] == "theme" then
+			if themes.themes[event[3]] then
+				deskTheme = themes.themes[event[3]]
+				os.queueEvent("property_changed", process.id(), unpack(event))
+			else
+				os.queueEvent("property_refused", process.id(), unpack(event))
+			end
+		end
+	elseif event[1] == "run_program" then
+		process.new(runProgram, "run")
+	elseif event[1] == "key" and event[2] == 59 then
+		process.new(runProgram, "run")
+	elseif event[1] == "mouse_click" then
+		if event[4] == 1 then
+			--click on titlebar with no window covering it.
+			if event[3] > 1 and event[3] < 9 then
+				if event[2] == 1 then
+					--clicked on the LyqydOS button
+					if #runHistory > 0 then
+						process.new(recentPrograms, "recent")
+					else
+						process.new(runProgram, "run")
+					end
+				elseif event[2] == 2 then
+					--right-clicked on the LyqydOS button
+					process.new(runProgram, "run")
+				end
+			elseif event[3] > 9 then
+				--clicked on task bar.
+				clickItem = math.floor((event[3] - 1) / 9)
+				if (event[3] - 10 ) % 9 ~= 0 and clickItem <= tasksClickable then
+					--they clicked on the name itself, not the boundary line.
+					if clickItem == tasksClickable and clickItem < #titlebarItems then
+						--clicked on more, display the window choice dialog
+						process.getFromName("lws"):queue("select_window")
+					else
+						if process.focus ~= titlebarItems[clickItem].pID then
+							process.focus = titlebarItems[clickItem].pID
+						end
+						local proc = process.list[process.focus]
+						local win = proc.windows[#proc.windows]
+						proc:toFront()
+						if win.minimized then win:unMinimize() end
+						win:draw()
+						if event[2] == 2 then
+							--they right-clicked, so let's also display the window action menu.
+							process.getFromName("lws"):queue("window_action", process.focus, win)
+						end
+					end
+				end
+			end
+		end
+	elseif event[1] == "service_stop" then
+		process.compositor:removeBuffer(deskRedirect)
+		process.removeHook({"key", 59})
+	end
+end

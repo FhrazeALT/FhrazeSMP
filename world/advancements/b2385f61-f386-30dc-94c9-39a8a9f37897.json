@@ -1,0 +1,968 @@
+{
+  "minecraft:recipes/food/cooked_mutton_from_campfire_cooking": {
+    "criteria": {
+      "has_mutton": "2023-03-30 01:20:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purple_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/fluid_pipe_vertical": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lime_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lever": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/blue_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_sword": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/appliances/copper_backtank": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "create:copper": {
+    "criteria": {
+      "0": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "charm:inventory_tidying/tidy_inventory": {
+    "criteria": {
+      "tidied_inventory": "2023-03-30 01:47:30 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_bed": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/green_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_pickaxe": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "paradise_lost:consume_food": {
+    "criteria": {
+      "blacurent": "2023-03-30 01:46:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "charm:totem_of_preserving/use_totem_of_preserving": {
+    "criteria": {
+      "used_totem_of_preserving": "2023-03-30 01:23:30 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/magenta_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/light_blue_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/copper_block": {
+    "criteria": {
+      "has_copper_ingot": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "paradise_lost:enter_paradise_lost": {
+    "criteria": {
+      "entered_nether": "2023-03-30 01:51:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2023-03-30 01:42:04 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/iron_block": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/fluid_valve": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2023-03-30 01:13:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/painting": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/copper_valve_handle_from_others": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/steam_engine": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/orange_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cyan_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/shears": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/stick": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/gray_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/amethyst_block": {
+    "criteria": {
+      "has_amethyst_shard": "2023-03-30 01:25:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2023-03-30 01:13:56 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/magenta_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/materials/andesite_alloy": {
+    "criteria": {
+      "has_item": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.palettes/oak_window": {
+    "criteria": {
+      "has_ingredient": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_blue_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_shovel": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2023-03-30 01:20:39 +0000"
+    },
+    "done": true
+  },
+  "charm:portable_crafting/use_crafting_table": {
+    "criteria": {
+      "used_crafting_table": "2023-03-30 01:27:46 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/cyan_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/gray_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_leggings": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_axe": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "mutton": "2023-03-30 01:22:25 +0000"
+    },
+    "done": false
+  },
+  "minecraft:recipes/transportation/mangrove_chest_boat": {
+    "criteria": {
+      "has_boat": "2023-03-30 01:37:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/shield": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "charm:core/automation": {
+    "criteria": {
+      "player_joined": "2023-03-30 01:13:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bucket": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/materials/copper_nugget": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_boots": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/hopper": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_chest_boat": {
+    "criteria": {
+      "has_boat": "2023-03-30 01:37:43 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/yellow_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2023-03-30 01:20:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2023-03-30 01:27:45 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_banner": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_chestplate": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/copper_valve_handle": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/purple_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "charm:core/mobs": {
+    "criteria": {
+      "player_joined": "2023-03-30 01:13:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/yellow_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_chest_boat": {
+    "criteria": {
+      "has_boat": "2023-03-30 01:37:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_sign": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/empty_blaze_burner": {
+    "criteria": {
+      "has_item": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_helmet": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/spyglass": {
+    "criteria": {
+      "has_amethyst_shard": "2023-03-30 01:25:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_boots": "2023-03-30 01:17:34 +0000"
+    },
+    "done": true
+  },
+  "betterdungeons:root": {
+    "criteria": {
+      "always": "2023-03-30 01:13:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/lime_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/appliances/crafting_blueprint": {
+    "criteria": {
+      "has_item": "2023-03-30 01:27:45 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_button": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/iron_bars": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tinted_glass": {
+    "criteria": {
+      "has_amethyst_shard": "2023-03-30 01:25:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/blue_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_chest_boat": {
+    "criteria": {
+      "has_boat": "2023-03-30 01:37:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_boots": "2023-03-30 01:17:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_chest_boat": {
+    "criteria": {
+      "has_boat": "2023-03-30 01:37:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/furnace": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/minecart": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/appliances/diving_helmet": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:birch_forest": "2023-03-30 01:42:51 +0000",
+      "minecraft:river": "2023-03-30 01:13:47 +0000",
+      "minecraft:forest": "2023-03-30 01:19:21 +0000",
+      "minecraft:desert": "2023-03-30 01:56:16 +0000",
+      "minecraft:old_growth_birch_forest": "2023-03-30 01:42:58 +0000",
+      "minecraft:plains": "2023-03-30 01:13:25 +0000"
+    },
+    "done": false
+  },
+  "minecraft:recipes/redstone/iron_door": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2023-03-30 01:20:39 +0000"
+    },
+    "done": true
+  },
+  "charm:core/smithing": {
+    "criteria": {
+      "player_joined": "2023-03-30 01:13:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/orange_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_hoe": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/mechanical_pump": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2023-03-30 01:22:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2023-03-30 01:13:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/stone_sword": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2023-03-30 01:13:56 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/appliances/diving_boots": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_shovel": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_pickaxe": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smithing_table": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_trapdoor": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_door": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2023-03-30 01:20:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2023-03-30 01:13:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_chest_boat": {
+    "criteria": {
+      "has_boat": "2023-03-30 01:37:43 +0000"
+    },
+    "done": true
+  },
+  "charm:core/tools": {
+    "criteria": {
+      "player_joined": "2023-03-30 01:13:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/brown_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/black_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/black_dye": {
+    "criteria": {
+      "has_ink_sac": "2023-03-30 01:41:08 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/green_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_hoe": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2023-03-30 01:13:56 +0000"
+    },
+    "done": true
+  },
+  "charm:core/root": {
+    "criteria": {
+      "player_joined": "2023-03-30 01:13:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pink_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lightning_rod": {
+    "criteria": {
+      "has_copper_ingot": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/white_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "charm:core/world": {
+    "criteria": {
+      "player_joined": "2023-03-30 01:13:24 +0000"
+    },
+    "done": true
+  },
+  "paradise_lost:root": {
+    "criteria": {
+      "entered_paradise": "2023-03-30 01:51:59 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/pink_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/smart_fluid_pipe": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "paradise_lost:void_paradise_lost": {
+    "criteria": {
+      "invoid": "2023-03-30 01:52:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_carpet": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lantern": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "charm:core/decoration": {
+    "criteria": {
+      "player_joined": "2023-03-30 01:13:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_boots": "2023-03-30 01:17:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_mutton_from_smoking": {
+    "criteria": {
+      "has_mutton": "2023-03-30 01:20:33 +0000"
+    },
+    "done": true
+  },
+  "toolleveling:recipes/tool_leveling_table": {
+    "criteria": {
+      "has_enchanting_table": "2023-03-30 01:17:30 +0000"
+    },
+    "done": true
+  },
+  "charm:core/tweaks": {
+    "criteria": {
+      "player_joined": "2023-03-30 01:13:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_chest_boat": {
+    "criteria": {
+      "has_boat": "2023-03-30 01:37:43 +0000"
+    },
+    "done": true
+  },
+  "betterdeserttemples:root": {
+    "criteria": {
+      "always": "2023-03-30 01:13:24 +0000"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2023-03-30 01:17:30 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/steam_whistle": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chain": {
+    "criteria": {
+      "has_iron_ingot": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_gray_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_wool": {
+    "criteria": {
+      "has_white_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_fence": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2023-03-30 01:13:56 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/fluid_pipe": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/smelt_iron": {
+    "criteria": {
+      "iron": "2023-03-30 01:53:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_axe": {
+    "criteria": {
+      "has_cobblestone": "2023-03-30 01:19:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_mutton": {
+    "criteria": {
+      "has_mutton": "2023-03-30 01:20:33 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/light_gray_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/hose_pulley": {
+    "criteria": {
+      "has_item": "2023-03-30 01:25:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab": {
+    "criteria": {
+      "has_planks": "2023-03-30 01:40:16 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/kinetics/red_seat": {
+    "criteria": {
+      "has_wool": "2023-03-30 01:20:34 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 3120
+}

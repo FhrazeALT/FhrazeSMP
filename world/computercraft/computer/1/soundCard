@@ -1,0 +1,24 @@
+modem = peripheral.find("modem")
+if not modem then error("must be connected to computer") end
+modem.open(1)
+
+commands.async.gamerule("commandBlockOutput false")
+
+while true do
+  local _, side, freq, rfreq, msg = os.pullEvent('modem_message')
+  
+  firstSpace = msg:find(' ',1)
+  secondSpace = msg:find(' ',firstSpace+1)
+  
+  strALen = firstSpace-1
+  strBLen = secondSpace-firstSpace-1
+  strCLen = #msg-secondSpace
+  
+  strA = msg:sub(1,strALen)
+  strB = msg:sub(firstSpace+1,firstSpace+strBLen)
+  strC = msg:sub(secondSpace+1,#msg)
+  
+  commands.async.playsound(strA.." @a ~ ~ ~ "..strB.." "..strC)
+  
+  print("played sound: "..strA..", vol: "..strB..", pitch: "..strC)
+end

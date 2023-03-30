@@ -1,0 +1,7 @@
+local pID = (...)
+local proc = tonumber(pID) and process.list[tonumber(pID)] or process.getFromName(pID)
+local pid = proc.id
+if proc then
+	proc:resume({"terminate"})
+	if process.list[pid] then return proc:kill() else return true end
+end
