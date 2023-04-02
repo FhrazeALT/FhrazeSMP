@@ -911,6 +911,12 @@
     },
     "done": true
   },
+  "minecraft:husbandry/make_a_sign_glow": {
+    "criteria": {
+      "make_a_sign_glow": "2023-04-02 18:23:04 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/acacia_pressure_plate": {
     "criteria": {
       "has_planks": "2023-04-01 02:42:33 +0000"
@@ -3490,6 +3496,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/redstone_lamp": {
+    "criteria": {
+      "has_glowstone": "2023-04-02 17:51:07 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_polished_blackstone_bricks_stonecutting": {
     "criteria": {
       "has_polished_blackstone_bricks": "2023-03-25 23:37:44 +0000"
@@ -5147,7 +5159,8 @@
       "beetroot": "2023-04-01 01:36:36 +0000",
       "cooked_chicken": "2023-03-25 01:26:09 +0000",
       "cod": "2023-03-25 01:26:00 +0000",
-      "cooked_salmon": "2023-03-25 02:28:52 +0000"
+      "cooked_salmon": "2023-03-25 02:28:52 +0000",
+      "carrot": "2023-04-02 20:54:16 +0000"
     },
     "done": false
   },
@@ -5703,6 +5716,12 @@
     },
     "done": true
   },
+  "minecraft:husbandry/kill_axolotl_target": {
+    "criteria": {
+      "kill_axolotl_target": "2023-04-02 18:44:30 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/stone_brick_wall_from_stone_bricks_stonecutting": {
     "criteria": {
       "has_stone_bricks": "2023-03-24 23:00:00 +0000"
@@ -5820,6 +5839,12 @@
   "minecraft:recipes/tools/stone_shovel": {
     "criteria": {
       "has_cobblestone": "2023-03-24 03:55:55 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/throw_trident": {
+    "criteria": {
+      "shot_trident": "2023-04-02 20:30:20 +0000"
     },
     "done": true
   },
