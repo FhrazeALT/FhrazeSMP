@@ -1,0 +1,278 @@
+characters = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'}
+numbers = {'zero','one','two','three','four','five','six','seven','eight','nine'}
+numbersShift = {')','!','@','#','$','%','¨','&','*','('}
+specialchars = {'space'}
+extrachars = {'menu','semicolon','minus','equals',nil,'comma','period','slash','apostrophe','rightBracket','backslash','leftBracket'}
+
+input = ""
+shift = true
+
+function extra( __keyName )
+    if __keyName == 'semicolon' then return 'ç' end
+    if __keyName == 'minus' then return '-' end
+    if __keyName == 'equals' then return '=' end
+    if __keyName == nil then return "\\" end
+    if __keyName == 'comma' then return ',' end
+    if __keyName == 'period' then return '.' end
+    if __keyName == 'slash' then return '/' end
+    if __keyName == 'apostrophe' then return '~' end
+    if __keyName == 'rightBracket' then return '[' end
+    if __keyName == 'backslash' then return ']' end
+    if __keyName == 'leftBracket' then return '´'   end 
+    if __keyName == 'menu' then return ':' end
+end
+
+function extrashift( __keyName )
+    if __keyName == 'semicolon' then return 'Ç' end
+    if __keyName == 'minus' then return '_' end
+    if __keyName == 'equals' then return '+' end
+    if __keyName == nil then return '|' end
+    if __keyName == 'comma' then return '<' end
+    if __keyName == 'period' then return '>' end
+    if __keyName == 'slash' then return '?' end
+    if __keyName == 'apostrophe' then return '^' end
+    if __keyName == 'rightBracket' then return '{' end
+    if __keyName == 'backslash' then return '}' end
+    if __keyName == 'leftBracket' then return '`' end
+    if __keyName == 'menu' then return ';' end
+end
+
+function process( _keyName, _key )
+    --common characters
+    if contains( characters, _keyName ) and shift then
+        return _keyName
+    elseif contains( numbers, _keyName ) and not shift then
+        return numbersShift[ tonumber( string.char(_key)+1 ) ]
+    elseif contains( characters, _keyName) or contains( numbers, _keyName ) or contains( specialchars, _keyName) then
+        return string.char( _key )
+    end
+    --extra characters
+    local _in
+    if contains( extrachars, _keyName ) and not shift then
+        return extrashift( _keyName )
+    elseif contains( extrachars, _keyName ) then
+        return extra( _keyName )
+    end
+end
+
+--get display width and height
+width, height = term.getSize()
+topTags = (width-9) / 2 
+
+function contains ( tab, val )
+    for i=1, #tab do
+        if tab[i] == val then
+            return true
+        end
+    end
+    return false
+end
+
+function apply( _char )
+    if input:sub(-1) == '~' then
+        input = input:sub(1, -2)
+        if _char == 'a' then 
+            if not shift then
+                return 'Ã' 
+            else
+                return 'ã' 
+            end
+        end
+    elseif input:sub(-1) == '´' then
+        input = input:sub(1, -2)
+        if _char == 'e' then 
+            if not shift then
+                return 'É'
+            else
+                return 'é'
+            end
+        end
+        if _char == 'u' then
+            if not shift then
+                return 'Ú'
+            else
+                return 'ú'
+            end
+        end
+        if _char == 'i' then 
+            if not shift then
+                return 'Í'
+            else
+                return 'í' 
+            end
+        end
+        if _char == 'a' then 
+            if not shift then
+                return 'Á'
+            else
+                return 'á'
+            end
+        end
+        if _char == 'o' then 
+            if not shift then
+                return 'Ó'
+            else
+                return 'ó'
+            end
+        end
+    elseif input:sub(-1) == '`' then
+        input = input:sub(1, -2)
+        if _char == 'i' then 
+            if not shift then
+                return 'Ì'
+            else
+                return 'ì'
+            end
+        end
+        if _char == 'a' then 
+            if not shift then
+                return 'À'
+            else
+                return 'à'
+            end
+        end
+        if _char == 'e' then 
+            if not shift then
+                return 'È'
+            else
+                return 'è'
+            end
+        end
+        if _char == 'u' then 
+            if not shift then
+                return 'Ù'
+            else
+                return 'ù'
+            end
+        end
+        if _char == 'o' then 
+            if not shift then
+                return 'Ò'
+            else
+                return 'ò'
+            end
+        end
+    elseif input:sub(-1) == '^' then
+        input = input:sub(1, -2)
+        if _char == 'a' then 
+            if not shift then
+                return 'Â'
+            else
+                return 'â'
+            end
+        end
+        if _char == 'o' then 
+            if not shift then
+                return 'Ô'
+            else
+                return 'ô'
+            end
+        end
+        if _char == 'e' then 
+            if not shift then
+                return 'Ê'
+            else
+                return 'ê'
+            end
+        end
+        if _char == 'i' then 
+            if not shift then
+                return 'Î'
+            else
+                return 'î'
+            end
+        end
+        if _char == 'u' then 
+            if not shift then
+                return 'Û'
+            else
+                return 'û'
+            end
+        end
+    end
+    return procChar
+end
+
+term.setBackgroundColor( colors.gray )
+
+while true do
+    local event, key, isHeld = os.pullEvent("key")
+    local keyName = keys.getName( key )
+    
+    if key == keys.enter and input ~= "" then
+        --send message
+        input = ""
+    elseif key == keys.leftShift then
+        --turn caps lock on
+        shift = not shift
+    elseif key == keys.backspace then
+        --remove last char
+        input = input:sub(1, -2)
+    elseif key == keys.left then
+        --quit app
+        return 1
+    end
+
+    --process input  
+    procChar = process( keyName, key )
+    if contains( characters, keyName ) then
+        procChar = apply( keyName )
+    end
+    --add input to box
+    if contains( characters, keyName ) or contains( numbers, keyName ) or contains( specialchars, keyName ) or contains( extrachars, keyName ) then 
+        input = input .. procChar
+    end
+
+    --print UI
+    term.clear()
+    
+    term.setBackgroundColor( colors.magenta )
+    term.setCursorPos( 1, 1 )
+    topbar = ""
+    for i=1, topTags do topbar = topbar .. "#" end
+    term.write( topbar .. ">Fiscord<" .. topbar )
+    term.setBackgroundColor( colors.gray )
+    
+    term.setBackgroundColor( colors.purple )
+    term.setCursorPos( 1, height-1 )
+    term.write("/shift[ ]")
+    
+    if shift == false then
+        term.setTextColor( colors.red )
+        term.setCursorPos( 8, height-1 )
+        term.write("*")
+        term.setTextColor( colors.white )
+    end
+    
+    term.setCursorPos( 10, height-1 )
+    local bottomGap = ""
+    for i=1, width-10 do bottomGap = bottomGap .. " " end
+    term.write( bottomGap )
+    
+    term.setCursorPos( width, height-1 )
+    term.write("\\")
+    
+    --print user input
+    if string.len( input ) > width - 2 then
+        _input = input:sub(-(width-2))
+    else
+        _input = input
+    end
+    
+    term.setCursorPos( 1, height )
+    term.write("|")
+    
+    term.setBackgroundColor( colors.gray )
+        
+    term.setCursorPos( 2, height )
+    term.write( _input )
+    
+    term.setBackgroundColor( colors.purple )
+    
+    term.setCursorPos( width, height )
+    term.write("|")
+    
+    term.setBackgroundColor( colors.gray )
+    
+    sleep( 0.005 )
+end

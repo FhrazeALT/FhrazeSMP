@@ -1,1 +1,7 @@
-shell.run("/LyqydOS/procman")
+rednet.open("back", true)
+status = rednet.isOpen()
+if status then
+    print("rednet open")
+else
+    print("rednet failed")
+end

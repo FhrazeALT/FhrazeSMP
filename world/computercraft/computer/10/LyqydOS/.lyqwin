@@ -1,6 +1,0 @@
-1,1,9,4,false,rom/programs/reboot
-1,1,9,4,false,rom/programs/shutdown
-1,1,19,9,true,rom/programs/color/paint
-1,3,26,16,false,rom/programs/shell
-1,4,26,16,false,rom/programs/lua
-1,2,26,3,false,run

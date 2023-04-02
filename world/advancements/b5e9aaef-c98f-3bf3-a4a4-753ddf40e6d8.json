@@ -1,92 +1,55 @@
 {
-  "minecraft:recipes/building_blocks/birch_stairs": {
-    "criteria": {
-      "has_planks": "2023-03-25 17:05:25 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/wooden_sword": {
-    "criteria": {
-      "has_stick": "2023-03-25 17:05:29 +0000"
-    },
-    "done": true
-  },
-  "betterdungeons:root": {
-    "criteria": {
-      "always": "2023-03-25 17:04:37 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/wooden_axe": {
     "criteria": {
       "has_stick": "2023-03-25 17:05:29 +0000"
     },
     "done": true
   },
-  "charm:core/root": {
+  "betterend:recipes/decorations/lucernia_fence": {
     "criteria": {
-      "player_joined": "2023-03-25 17:04:37 +0000"
+      "has_370_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
-  "create:recipes/create.base/crafting/appliances/crafting_blueprint": {
+  "betterend:recipes/decorations/umbrella_tree_ladder": {
     "criteria": {
-      "has_item": "2023-03-25 17:05:26 +0000"
+      "has_327_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/birch_wood": {
+  "betterend:recipes/decorations/jellyshroom_fence": {
     "criteria": {
-      "has_log": "2023-03-25 17:05:02 +0000"
+      "has_344_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
-  "charm:core/world": {
+  "betterend:recipes/decorations/tenanea_gate": {
     "criteria": {
-      "player_joined": "2023-03-25 17:04:37 +0000"
+      "has_268_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/tools/wooden_hoe": {
+  "betterend:recipes/decorations/tenanea_sign": {
     "criteria": {
-      "has_stick": "2023-03-25 17:05:29 +0000"
+      "has_277_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/redstone/birch_trapdoor": {
+  "betterend:recipes/decorations/helix_tree_fence": {
     "criteria": {
-      "has_planks": "2023-03-25 17:05:25 +0000"
+      "has_292_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
-  "create:recipes/create.palettes/birch_window": {
+  "betterend:recipes/decorations/terminite_sword_handle": {
     "criteria": {
-      "has_ingredient": "2023-03-25 17:05:25 +0000"
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
-  "charm:core/automation": {
+  "betterend:recipes/decorations/end_lotus_sign": {
     "criteria": {
-      "player_joined": "2023-03-25 17:04:37 +0000"
-    },
-    "done": true
-  },
-  "charm:core/decoration": {
-    "criteria": {
-      "player_joined": "2023-03-25 17:04:37 +0000"
-    },
-    "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:birch_forest": "2023-03-25 17:04:37 +0000",
-      "minecraft:river": "2023-03-25 17:05:48 +0000"
-    },
-    "done": false
-  },
-  "minecraft:recipes/building_blocks/birch_planks": {
-    "criteria": {
-      "has_logs": "2023-03-25 17:05:02 +0000"
+      "has_199_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
@@ -96,9 +59,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/birch_door": {
+  "betterend:recipes/decorations/thallasium_hoe": {
     "criteria": {
-      "has_planks": "2023-03-25 17:05:25 +0000"
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
@@ -114,73 +77,19 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/charcoal": {
-    "criteria": {
-      "has_log": "2023-03-25 17:05:02 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/birch_slab": {
-    "criteria": {
-      "has_planks": "2023-03-25 17:05:25 +0000"
-    },
-    "done": true
-  },
-  "charm:core/smithing": {
-    "criteria": {
-      "player_joined": "2023-03-25 17:04:37 +0000"
-    },
-    "done": true
-  },
-  "toolleveling:recipes/tool_leveling_table": {
-    "criteria": {
-      "has_enchanting_table": "2023-03-25 17:05:02 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/wooden_pickaxe": {
-    "criteria": {
-      "has_stick": "2023-03-25 17:05:29 +0000"
-    },
-    "done": true
-  },
-  "charm:core/tweaks": {
-    "criteria": {
-      "player_joined": "2023-03-25 17:04:37 +0000"
-    },
-    "done": true
-  },
-  "create:root": {
-    "criteria": {
-      "0": "2023-03-25 17:05:02 +0000"
-    },
-    "done": true
-  },
-  "betterdeserttemples:root": {
-    "criteria": {
-      "always": "2023-03-25 17:04:37 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/ladder": {
     "criteria": {
       "has_stick": "2023-03-25 17:05:29 +0000"
     },
     "done": true
   },
+  "betterend:recipes/tools/diamond_hammer": {
+    "criteria": {
+      "has_691_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/birch_button": {
-    "criteria": {
-      "has_planks": "2023-03-25 17:05:25 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/barrel": {
-    "criteria": {
-      "has_planks": "2023-03-25 17:05:25 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/birch_fence_gate": {
     "criteria": {
       "has_planks": "2023-03-25 17:05:25 +0000"
     },
@@ -192,39 +101,15 @@
     },
     "done": true
   },
-  "minecraft:story/root": {
+  "bclib:recipes/decorations/tag_smith_table": {
     "criteria": {
-      "crafting_table": "2023-03-25 17:05:26 +0000"
+      "has_tag_planks": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/soul_campfire": {
+  "betterend:recipes/decorations/lacugrove_fence": {
     "criteria": {
-      "has_stick": "2023-03-25 17:05:29 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/crossbow": {
-    "criteria": {
-      "has_stick": "2023-03-25 17:05:29 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/birch_sign": {
-    "criteria": {
-      "has_planks": "2023-03-25 17:05:25 +0000"
-    },
-    "done": true
-  },
-  "charm:core/mobs": {
-    "criteria": {
-      "player_joined": "2023-03-25 17:04:37 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/birch_fence": {
-    "criteria": {
-      "has_planks": "2023-03-25 17:05:25 +0000"
+      "has_214_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },
@@ -234,9 +119,484 @@
     },
     "done": true
   },
+  "betterend:recipes/tools/iron_hammer": {
+    "criteria": {
+      "has_687_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/helix_tree_sign": {
+    "criteria": {
+      "has_303_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2023-03-25 17:05:29 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/terminite_axe": {
+    "criteria": {
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2023-03-25 17:05:29 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/dragon_tree_gate": {
+    "criteria": {
+      "has_242_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "charm:core/automation": {
+    "criteria": {
+      "player_joined": "2023-03-25 17:04:37 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/dragon_tree_fence": {
+    "criteria": {
+      "has_240_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks": {
+    "criteria": {
+      "has_logs": "2023-03-25 17:05:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab": {
+    "criteria": {
+      "has_planks": "2023-03-25 17:05:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_fence_gate": {
+    "criteria": {
+      "has_planks": "2023-03-25 17:05:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2023-03-25 17:05:26 +0000"
+    },
+    "done": true
+  },
+  "bclib:recipes/decorations/tag_shield": {
+    "criteria": {
+      "has_tag_planks": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/dragon_tree_ladder": {
+    "criteria": {
+      "has_249_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_stick": "2023-03-25 17:05:29 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/lacugrove_ladder": {
+    "criteria": {
+      "has_223_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/mossy_glowshroom_fence": {
+    "criteria": {
+      "has_136_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "bclib:recipes/decorations/tag_piston": {
+    "criteria": {
+      "has_tag_planks": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_hammer": {
+    "criteria": {
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "charm:core/mobs": {
+    "criteria": {
+      "player_joined": "2023-03-25 17:04:37 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/pythadendron_ladder": {
+    "criteria": {
+      "has_171_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_shovel": {
+    "criteria": {
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterdungeons:root": {
+    "criteria": {
+      "always": "2023-03-25 17:04:37 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbrella_tree_sign": {
+    "criteria": {
+      "has_329_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.base/crafting/appliances/crafting_blueprint": {
+    "criteria": {
+      "has_item": "2023-03-25 17:05:26 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/lucernia_sign": {
+    "criteria": {
+      "has_381_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/terminite_hoe": {
+    "criteria": {
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/jellyshroom_sign": {
+    "criteria": {
+      "has_355_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/pythadendron_sign": {
+    "criteria": {
+      "has_173_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/end_lotus_ladder": {
+    "criteria": {
+      "has_197_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/pythadendron_gate": {
+    "criteria": {
+      "has_164_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:birch_forest": "2023-03-25 17:04:37 +0000",
+      "minecraft:river": "2023-03-25 17:05:48 +0000"
+    },
+    "done": false
+  },
+  "betterend:recipes/decorations/lacugrove_gate": {
+    "criteria": {
+      "has_216_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbrella_tree_gate": {
+    "criteria": {
+      "has_320_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2023-03-25 17:05:02 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/mossy_glowshroom_ladder": {
+    "criteria": {
+      "has_145_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "charm:core/smithing": {
+    "criteria": {
+      "player_joined": "2023-03-25 17:04:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2023-03-25 17:05:29 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/dragon_tree_sign": {
+    "criteria": {
+      "has_251_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2023-03-25 17:05:25 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/leather_wrapped_stick": {
+    "criteria": {
+      "has_674_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/pythadendron_fence": {
+    "criteria": {
+      "has_162_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/tenanea_fence": {
+    "criteria": {
+      "has_266_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_sign": {
+    "criteria": {
+      "has_planks": "2023-03-25 17:05:25 +0000"
+    },
+    "done": true
+  },
+  "bclib:recipes/decorations/tag_rail": {
+    "criteria": {
+      "has_2_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
   "charm:core/tools": {
     "criteria": {
       "player_joined": "2023-03-25 17:04:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_stairs": {
+    "criteria": {
+      "has_planks": "2023-03-25 17:05:25 +0000"
+    },
+    "done": true
+  },
+  "charm:core/root": {
+    "criteria": {
+      "player_joined": "2023-03-25 17:04:37 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/helix_tree_gate": {
+    "criteria": {
+      "has_294_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/tools/golden_hammer": {
+    "criteria": {
+      "has_689_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/end_lotus_fence": {
+    "criteria": {
+      "has_188_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_axe": {
+    "criteria": {
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_wood": {
+    "criteria": {
+      "has_log": "2023-03-25 17:05:02 +0000"
+    },
+    "done": true
+  },
+  "charm:core/world": {
+    "criteria": {
+      "player_joined": "2023-03-25 17:04:37 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_trapdoor": {
+    "criteria": {
+      "has_planks": "2023-03-25 17:05:25 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/create.palettes/birch_window": {
+    "criteria": {
+      "has_ingredient": "2023-03-25 17:05:25 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/end_lotus_gate": {
+    "criteria": {
+      "has_190_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/helix_tree_ladder": {
+    "criteria": {
+      "has_301_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "charm:core/decoration": {
+    "criteria": {
+      "player_joined": "2023-03-25 17:04:37 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_pickaxe": {
+    "criteria": {
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_door": {
+    "criteria": {
+      "has_planks": "2023-03-25 17:05:25 +0000"
+    },
+    "done": true
+  },
+  "toolleveling:recipes/tool_leveling_table": {
+    "criteria": {
+      "has_enchanting_table": "2023-03-25 17:05:02 +0000"
+    },
+    "done": true
+  },
+  "charm:core/tweaks": {
+    "criteria": {
+      "player_joined": "2023-03-25 17:04:37 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/jellyshroom_gate": {
+    "criteria": {
+      "has_346_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterdeserttemples:root": {
+    "criteria": {
+      "always": "2023-03-25 17:04:37 +0000"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2023-03-25 17:05:02 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/lucernia_gate": {
+    "criteria": {
+      "has_372_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/lacugrove_sign": {
+    "criteria": {
+      "has_225_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_sword_handle": {
+    "criteria": {
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/jellyshroom_ladder": {
+    "criteria": {
+      "has_353_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/tenanea_ladder": {
+    "criteria": {
+      "has_275_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbrella_tree_fence": {
+    "criteria": {
+      "has_318_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_campfire": {
+    "criteria": {
+      "has_stick": "2023-03-25 17:05:29 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/terminite_hammer": {
+    "criteria": {
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_fence": {
+    "criteria": {
+      "has_planks": "2023-03-25 17:05:25 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/mossy_glowshroom_sign": {
+    "criteria": {
+      "has_147_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/mossy_glowshroom_gate": {
+    "criteria": {
+      "has_138_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/terminite_shovel": {
+    "criteria": {
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/terminite_pickaxe": {
+    "criteria": {
+      "has_1_stick": "2023-04-01 21:27:56 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/lucernia_ladder": {
+    "criteria": {
+      "has_379_stick": "2023-04-01 21:27:56 +0000"
     },
     "done": true
   },

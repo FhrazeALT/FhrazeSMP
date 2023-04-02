@@ -1,0 +1,30 @@
+--keyTable = {}
+
+--function contains ( tab, val )
+--    for i=1, #tab do
+--        if tab[1] == val then
+--            return true
+--        end
+--    end
+--    return false
+--end
+
+--function recordKey ( _key )
+        
+--end
+
+term.clear()
+
+while true do
+    local event, key, isHeld = os.pullEvent("key")
+    local keyName = keys.getName( key ) 
+    
+    term.clear()
+    term.setCursorPos(1,1)
+    print(key)
+    print(keyName)
+    if (key >= 65 and key <= 90) or (key >= 48 and key <=57) then
+        print(string.char(key))
+    end
+    sleep(0.005)
+end

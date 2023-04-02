@@ -1,2 +1,0 @@
-pcall(shell.run, table.concat({...}, " "))
-os.pullEvent("key")

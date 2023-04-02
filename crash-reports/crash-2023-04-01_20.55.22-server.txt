@@ -1,0 +1,257 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 2023-04-01 20:55:22
+Description: Accessing LegacyRandomSource from multiple threads
+
+java.lang.IllegalStateException: Accessing LegacyRandomSource from multiple threads
+	at net.minecraft.class_5798.method_33564(class_5798.java:84)
+	at net.minecraft.class_5820.method_43156(class_5820.java:49)
+	at net.minecraft.class_6566.method_43057(class_6566.java:56)
+	at net.minecraft.class_1948.method_24930(class_1948.java:241)
+	at net.minecraft.class_1948.method_8663(class_1948.java:212)
+	at net.minecraft.class_1948.method_27821(class_1948.java:200)
+	at net.minecraft.class_3215.method_14161(class_3215.java:376)
+	at net.minecraft.class_3215.method_12127(class_3215.java:323)
+	at net.minecraft.class_3218.method_18765(class_3218.java:319)
+	at net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:875)
+	at net.minecraft.class_3176.method_3813(class_3176.java:289)
+	at net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:819)
+	at net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:665)
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:257)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.class_5798.method_33564(class_5798.java:84)
+	at net.minecraft.class_5820.method_43156(class_5820.java:49)
+	at net.minecraft.class_6566.method_43057(class_6566.java:56)
+	at net.minecraft.class_1948.method_24930(class_1948.java:241)
+	at net.minecraft.class_1948.method_8663(class_1948.java:212)
+	at net.minecraft.class_1948.method_27821(class_1948.java:200)
+	at net.minecraft.class_3215.method_14161(class_3215.java:376)
+	at net.minecraft.class_3215.method_12127(class_3215.java:323)
+	at net.minecraft.class_3218.method_18765(class_3218.java:319)
+
+-- Thread dumps --
+Details:
+	Thread dumps: Server thread: 
+	at java.base/java.lang.Thread.getStackTrace(Thread.java:1610)
+	at net.minecraft.class_5798.method_39936(class_5798.java:92)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at net.minecraft.class_5798.method_33564(class_5798.java:82)
+	at net.minecraft.class_5820.method_43156(class_5820.java:49)
+	at net.minecraft.class_6566.method_43057(class_6566.java:56)
+	at net.minecraft.class_1948.method_24930(class_1948.java:241)
+	at net.minecraft.class_1948.method_8663(class_1948.java:212)
+	at net.minecraft.class_1948.method_27821(class_1948.java:200)
+	at net.minecraft.class_3215.method_14161(class_3215.java:376)
+	at net.minecraft.class_3215.method_12127(class_3215.java:323)
+	at net.minecraft.class_3218.method_18765(class_3218.java:319)
+	at net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:875)
+	at net.minecraft.class_3176.method_3813(class_3176.java:289)
+	at net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:819)
+	at net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:665)
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:257)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Stacktrace:
+	at net.minecraft.class_5798.method_33564(class_5798.java:84)
+	at net.minecraft.class_5820.method_43156(class_5820.java:49)
+	at net.minecraft.class_6566.method_43057(class_6566.java:56)
+	at net.minecraft.class_1948.method_24930(class_1948.java:241)
+	at net.minecraft.class_1948.method_8663(class_1948.java:212)
+	at net.minecraft.class_1948.method_27821(class_1948.java:200)
+	at net.minecraft.class_3215.method_14161(class_3215.java:376)
+	at net.minecraft.class_3215.method_12127(class_3215.java:323)
+	at net.minecraft.class_3218.method_18765(class_3218.java:319)
+	at net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:875)
+	at net.minecraft.class_3176.method_3813(class_3176.java:289)
+	at net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:819)
+	at net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:665)
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:257)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+-- Affected level --
+Details:
+	All players: 1 total; [class_3222['Melansla'/34255, l='ServerLevel[world]', x=529.69, y=65.00, z=-2372.74]]
+	Chunk stats: 2063
+	Level dimension: minecraft:the_nether
+	Derived: true
+	Level spawn location: World: (-1900,63,-257), Section: (at 4,15,15 in -119,3,-17; chunk contains blocks -1904,0,-272 to -1889,255,-257), Region: (-4,-1; contains chunks -128,-32 to -97,-1, blocks -2048,0,-512 to -1537,255,-1)
+	Level time: 4288740 game time, 5633864 day time
+	Level name: world
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Level weather: Rain time: 25356 (now: false), thunder time: 75098 (now: false)
+	Known server brands: fabric
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.method_3813(MinecraftServer.java:875)
+	at net.minecraft.class_3176.method_3813(class_3176.java:289)
+	at net.minecraft.server.MinecraftServer.method_3748(MinecraftServer.java:819)
+	at net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:665)
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:257)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Linux (aarch64) version 5.10.136-android12-9-00003-g8970630c07cd-ab9368044
+	Java Version: 17-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1545735680 bytes (1474 MiB) / 4764729344 bytes (4544 MiB) up to 5368709120 bytes (5120 MiB)
+	CPUs: 8
+	Processor Vendor: aarch64
+	Processor Name: 
+	Identifier: aarch64 Family 8 Model 0xd48 Stepping r0x0p2
+	Microarchitecture: unknown
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 1
+	Number of logical CPUs: 8
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 11278.81
+	Virtual memory used (MB): 10951.28
+	Swap memory total (MB): 5639.40
+	Swap memory used (MB): 1844.00
+	JVM Flags: 1 total; -Xmx5G
+	Fabric Mods: 
+		architectury: Architectury 6.5.69
+		bclib: BCLib 2.1.6
+		betterdeserttemples: YUNG's Better Desert Temples 1.19.2-Fabric-2.2.2
+			org_reflections_reflections: reflections 0.10.2
+		betterdungeons: YUNG's Better Dungeons 1.19.2-Fabric-3.2.1
+		betterend: Better End 2.1.4
+		betterfortresses: YUNG's Better Nether Fortresses 1.19.2-Fabric-1.0.5
+		bettermineshafts: YUNG's Better Mineshafts 1.19.2-Fabric-3.2.0
+		betteroceanmonuments: YUNG's Better Ocean Monuments 1.19.2-Fabric-2.1.0
+		betterstrongholds: YUNG's Better Strongholds 1.19.2-Fabric-3.2.0
+		betterwitchhuts: YUNG's Better Witch Huts 1.19.2-Fabric-2.1.0
+		charm: Charm 4.4.4
+			com_moandjiezana_toml_toml4j: toml4j 0.7.2
+		cloth-config: Cloth Config v8 8.2.88
+			cloth-basic-math: cloth-basic-math 0.6.1
+		colytra: Colytra 6.0.0+1.19.2
+			spectrelib: SpectreLib 0.8.1+1.19
+		computercraft: CC: Restitched 1.101.2
+			io_netty_netty-codec-http: netty-codec-http 4.1.77.Final
+			org_squiddev_cobalt: Cobalt 0.5.5
+		cosmetic-armor: Cosmetic Armor 1.4.0
+		crawl: Crawl 0.11.1
+			mm: Manningham Mills 2.3
+		create: Create 0.5.0.i-961+1.19.2
+			com_google_code_findbugs_jsr305: jsr305 3.0.2
+			forgeconfigapiport: Forge Config API Port 4.2.9
+				com_electronwill_night-config_core: core 3.6.5
+				com_electronwill_night-config_toml: toml 3.6.5
+			milk: Milk Lib 1.0.51
+				dripstone_fluid_lib: Dripstone Fluid Lib 2.0.1
+			porting_lib: Porting Lib 2.1.784+1.19.2
+				com_github_llamalad7_mixinextras: MixinExtras 0.1.1
+				forge_tags: Porting Lib Tags 3.0
+				porting_lib_accessors: Porting Lib Accessors 2.1.784+1.19.2
+				porting_lib_attributes: Porting Lib Attributes 2.1.784+1.19.2
+				porting_lib_base: Porting Lib Base 2.1.784+1.19.2
+				porting_lib_common: Porting Lib Common 2.1.784+1.19.2
+				porting_lib_constants: Porting Lib Constants 2.1.784+1.19.2
+				porting_lib_entity: Porting Lib Entity 2.1.784+1.19.2
+				porting_lib_extensions: Porting Lib Extensions 2.1.784+1.19.2
+				porting_lib_fake_players: Porting Lib Fake Players 2.1.784+1.19.2
+				porting_lib_lazy_registration: Porting Lib Lazy Register 2.1.784+1.19.2
+				porting_lib_model_generators: Porting Lib Model Generators 2.1.784+1.19.2
+				porting_lib_model_loader: Porting Lib Model Loader 2.1.784+1.19.2
+				porting_lib_models: Porting Lib Models 2.1.784+1.19.2
+				porting_lib_networking: Porting Lib Networking 2.1.784+1.19.2
+				porting_lib_obj_loader: Porting Lib Obj Loader 2.1.784+1.19.2
+				porting_lib_transfer: Porting Lib Transfer 2.1.784+1.19.2
+				serialization_hooks: Serialization Hooks 0.3.26
+			reach-entity-attributes: Reach Entity Attributes 2.3.0
+			registrate-fabric: Registrate for Fabric 1.1.50-MC1.19.2
+		fabric-api: Fabric API 0.75.1+1.19.2
+			fabric-api-base: Fabric API Base 0.4.15+8f4e8eb390
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.14+93d8cb8290
+			fabric-biome-api-v1: Fabric Biome API (v1) 9.1.0+82db024a90
+			fabric-block-api-v1: Fabric Block API (v1) 1.0.2+e415d50e90
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.16+f71b366f90
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.1+413cbbc790
+			fabric-commands-v0: Fabric Commands (v0) 0.2.33+df3654b390
+			fabric-containers-v0: Fabric Containers (v0) 0.1.41+df3654b390
+			fabric-content-registries-v0: Fabric Content Registries (v0) 3.5.1+7c6cd14d90
+			fabric-convention-tags-v1: Fabric Convention Tags 1.2.2+27265b3490
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.8+aeb40ebe90
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 5.3.7+413cbbc790
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 2.1.35+0d0f210290
+			fabric-entity-events-v1: Fabric Entity Events (v1) 1.5.4+9244241690
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.4.34+562bff6e90
+			fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.35+df3654b390
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.24+b6b6abb490
+			fabric-item-api-v1: Fabric Item API (v1) 1.6.5+dce4603e90
+			fabric-item-groups-v0: Fabric Item Groups (v0) 0.3.38+9244241690
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.2.4+1b46dc7890
+			fabric-loot-api-v2: Fabric Loot API (v2) 1.1.12+83a8659290
+			fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.1.15+9e7660c690
+			fabric-message-api-v1: Fabric Message API (v1) 5.0.7+93d8cb8290
+			fabric-mining-level-api-v1: Fabric Mining Level API (v1) 2.1.23+33fbc73890
+			fabric-networking-api-v1: Fabric Networking API (v1) 1.2.11+10eb22f490
+			fabric-networking-v0: Fabric Networking (v0) 0.3.28+df3654b390
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 4.2.1+d8ef690890
+			fabric-particles-v1: Fabric Particles (v1) 1.0.14+4d0d570390
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 1.0.1+413cbbc790
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 0.9.32+9244241690
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.19+6e0787e690
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.0.11+4d0d570390
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 2.1.2+aae9039d90
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.8.3+251d254a90
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.7+1cc24b1b90
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 2.1.6+413cbbc790
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 1.3.3+08b73de490
+		fabricloader: Fabric Loader 0.14.18
+		golfiv: Golf IV 0.6.0
+		incendium: Incendium 5.1.6
+		java: OpenJDK 64-Bit Server VM 17
+		lithium: Lithium 0.11.0
+		minecraft: Minecraft 1.19.2
+		paradise_lost: Paradise Lost 2.1.0-beta+1.19.2
+			cardinal-components-base: Cardinal Components API (base) 5.0.1
+			cardinal-components-entity: Cardinal Components API (entities) 5.0.1
+			customportalapi: Custom Portal Api 0.0.1-beta54-1.19
+			gud_recipe_confidence: Recipe Confidence 1.0.2
+			incubus_core: Incubus Core 1.9.4
+		roughlyenoughitems: Roughly Enough Items 9.1.587
+			error_notifier: Error Notifier 1.0.9
+		sound_physics_remastered: Sound Physics Remastered 1.19.2-1.0.18
+		toolleveling: ToolLeveling+ 1.19.2-1.4.1
+		travelersbackpack: Traveler's Backpack 1.19.2-8.2.14
+		trinkets: Trinkets 3.4.2
+		vcinteraction: Voice Chat Interaction 1.19.2-1.0.3
+			polymer: Polymer (Core) 0.2.19+1.19.2
+				packet_tweaker: Packet Tweaker 0.3.0+1.18.2
+				polymer-registry-sync-manipulator: Polymer Registry Sync Manipulator 0.0.3+1.19.2
+		voicechat: Simple Voice Chat 1.19.2-2.3.28
+		yungsapi: YUNG's API 1.19.2-Fabric-3.8.8
+			org_javassist_javassist: javassist 3.28.0-GA
+		yungsbridges: YUNG's Bridges 1.19.2-Fabric-3.1.0
+		yungsextras: YUNG's Extras 1.19.2-Fabric-3.1.0
+	Server Running: true
+	Player Count: 2 / 24; [class_3222['Fhraze'/2502, l='ServerLevel[world]', x=-1922.50, y=11.90, z=-247.50], class_3222['Melansla'/34255, l='ServerLevel[world]', x=529.69, y=65.00, z=-2372.74]]
+	Data Packs: vanilla, Fabric Mods
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'fabric'
+	Type: Dedicated Server (map_server.txt)
