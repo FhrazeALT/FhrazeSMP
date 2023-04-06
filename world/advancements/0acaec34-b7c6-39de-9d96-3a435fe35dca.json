@@ -419,12 +419,6 @@
     },
     "done": true
   },
-  "incendium:technical/scroll_of_returning": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 19:56:21 +0000"
-    },
-    "done": false
-  },
   "minecraft:recipes/building_blocks/blue_wool": {
     "criteria": {
       "has_white_wool": "2023-03-25 00:18:50 +0000"
@@ -598,12 +592,6 @@
       "has_andesite": "2023-03-25 01:25:55 +0000"
     },
     "done": true
-  },
-  "incendium:technical/sentrys_wrath": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
   },
   "charm:core/world": {
     "criteria": {
@@ -869,12 +857,6 @@
     },
     "done": true
   },
-  "incendium:technical/inventory/sentrys_wrath": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
-  },
   "create:recipes/create.palettes/polished_cut_limestone_wall_from_limestone_stonecutting": {
     "criteria": {
       "has_limestone": "2023-03-25 02:48:17 +0000"
@@ -1121,12 +1103,6 @@
     },
     "done": true
   },
-  "incendium:technical/multiplex_crossbow": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
-  },
   "create:recipes/create.palettes/small_calcite_bricks_from_calcite_stonecutting": {
     "criteria": {
       "has_calcite": "2023-03-26 19:40:11 +0000"
@@ -1192,12 +1168,6 @@
       "has_andesite": "2023-03-25 01:25:55 +0000"
     },
     "done": true
-  },
-  "incendium:technical/using/ragnarok": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 19:56:21 +0000"
-    },
-    "done": false
   },
   "minecraft:nether/brew_potion": {
     "criteria": {
@@ -1434,12 +1404,6 @@
   "minecraft:recipes/building_blocks/red_wool": {
     "criteria": {
       "has_white_wool": "2023-03-25 00:18:50 +0000"
-    },
-    "done": true
-  },
-  "incendium:root": {
-    "criteria": {
-      "requirement": "2023-04-01 20:12:58 +0000"
     },
     "done": true
   },
@@ -2277,12 +2241,6 @@
     },
     "done": true
   },
-  "incendium:technical/feed_ghastling": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
-  },
   "minecraft:story/upgrade_tools": {
     "criteria": {
       "stone_pickaxe": "2023-03-25 00:09:35 +0000"
@@ -2336,12 +2294,6 @@
       "has_asurine": "2023-03-29 01:32:33 +0000"
     },
     "done": true
-  },
-  "incendium:technical/on_inventory_change": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
   },
   "minecraft:recipes/combat/golden_boots": {
     "criteria": {
@@ -2858,12 +2810,6 @@
       "has_calcite": "2023-03-26 19:40:11 +0000"
     },
     "done": true
-  },
-  "incendium:technical/on_player_hurt": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
   },
   "create:recipes/create.palettes/polished_cut_veridium_stairs_from_veridium_stonecutting": {
     "criteria": {
@@ -3483,12 +3429,6 @@
       "has_329_stick": "2023-03-31 22:33:02 +0000"
     },
     "done": true
-  },
-  "incendium:technical/using/trailblazer": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 19:56:21 +0000"
-    },
-    "done": false
   },
   "create:recipes/create.palettes/cut_calcite_bricks_from_calcite_stonecutting": {
     "criteria": {
@@ -4254,12 +4194,6 @@
     },
     "done": true
   },
-  "incendium:technical/firestorm": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
-  },
   "minecraft:recipes/building_blocks/deepslate_bricks_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2023-03-25 01:03:25 +0000"
@@ -4332,12 +4266,6 @@
       "has_iron_ingot": "2023-03-25 00:25:32 +0000"
     },
     "done": true
-  },
-  "incendium:technical/holy_wrath": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
   },
   "minecraft:recipes/redstone/stone_pressure_plate": {
     "criteria": {
@@ -4554,12 +4482,6 @@
       "has_379_stick": "2023-03-31 22:33:02 +0000"
     },
     "done": true
-  },
-  "incendium:technical/on_block": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
   },
   "betterend:recipes/decorations/tenanea_bookshelf": {
     "criteria": {
@@ -4893,12 +4815,6 @@
     },
     "done": true
   },
-  "incendium:technical/using/shield": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 19:56:21 +0000"
-    },
-    "done": false
-  },
   "minecraft:recipes/misc/leather_horse_armor": {
     "criteria": {
       "has_leather": "2023-03-25 00:54:19 +0000"
@@ -5042,12 +4958,6 @@
       "has_planks": "2023-04-01 02:33:57 +0000"
     },
     "done": true
-  },
-  "incendium:technical/inventory/firestorm": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
   },
   "charm:core/tools": {
     "criteria": {
@@ -5763,12 +5673,6 @@
     },
     "done": true
   },
-  "incendium:technical/new_player": {
-    "criteria": {
-      "requirement": "2023-04-01 19:56:20 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/misc/iron_ingot_from_nuggets": {
     "criteria": {
       "has_iron_nugget": "2023-03-25 03:19:56 +0000"
@@ -5799,12 +5703,6 @@
     },
     "done": true
   },
-  "incendium:technical/give_ghastling": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
-  },
   "minecraft:recipes/building_blocks/birch_stairs": {
     "criteria": {
       "has_planks": "2023-03-25 00:05:47 +0000"
@@ -5834,12 +5732,6 @@
       "has_item": "2023-03-25 00:38:15 +0000"
     },
     "done": true
-  },
-  "incendium:technical/on_kill": {
-    "criteria": {
-      "log_spam_fixer": "2023-04-01 20:43:19 +0000"
-    },
-    "done": false
   },
   "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
