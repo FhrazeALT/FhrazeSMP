@@ -113,6 +113,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/crimson_hyphae": {
+    "criteria": {
+      "has_log": "2023-04-07 22:16:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2023-04-07 21:39:26 +0000"
+    },
+    "done": true
+  },
   "paradise_lost:consume_food": {
     "criteria": {
       "blacurent": "2023-04-07 01:48:19 +0000"
@@ -122,6 +134,12 @@
   "minecraft:recipes/building_blocks/yellow_concrete_powder": {
     "criteria": {
       "has_sand": "2023-04-07 03:06:29 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/charcoal_block": {
+    "criteria": {
+      "has_692_charcoal": "2023-04-07 21:40:05 +0000"
     },
     "done": true
   },
@@ -269,6 +287,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/crimson_pressure_plate": {
+    "criteria": {
+      "has_planks": "2023-04-07 22:16:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/spruce_boat": {
     "criteria": {
       "in_water": "2023-04-07 01:47:54 +0000"
@@ -278,6 +302,12 @@
   "minecraft:recipes/decorations/jukebox": {
     "criteria": {
       "has_diamond": "2023-04-07 02:03:00 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/flower_banner_pattern": {
+    "criteria": {
+      "has_oxeye_daisy": "2023-04-07 21:17:51 +0000"
     },
     "done": true
   },
@@ -302,6 +332,12 @@
   "betterend:recipes/decorations/terminite_axe": {
     "criteria": {
       "has_1_stick": "2023-04-07 02:02:31 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crimson_fence": {
+    "criteria": {
+      "has_planks": "2023-04-07 22:16:43 +0000"
     },
     "done": true
   },
@@ -350,6 +386,12 @@
   "minecraft:recipes/tools/wooden_hoe": {
     "criteria": {
       "has_stick": "2023-04-07 02:02:31 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_wart_block": {
+    "criteria": {
+      "has_nether_wart": "2023-04-07 21:16:52 +0000"
     },
     "done": true
   },
@@ -509,6 +551,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/crimson_button": {
+    "criteria": {
+      "has_planks": "2023-04-07 22:16:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/acacia_chest_boat": {
     "criteria": {
       "has_boat": "2023-04-07 02:10:32 +0000"
@@ -554,6 +602,12 @@
   "minecraft:recipes/decorations/furnace": {
     "criteria": {
       "has_cobblestone": "2023-04-07 01:46:36 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphur_gunpowder": {
+    "criteria": {
+      "has_657_coal_charcoal": "2023-04-07 21:40:05 +0000"
     },
     "done": true
   },
@@ -605,6 +659,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/red_nether_bricks": {
+    "criteria": {
+      "has_nether_wart": "2023-04-07 21:16:52 +0000"
+    },
+    "done": true
+  },
   "charm:core/smithing": {
     "criteria": {
       "player_joined": "2023-04-07 01:40:05 +0000"
@@ -614,6 +674,12 @@
   "minecraft:recipes/decorations/lime_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-04-07 02:02:11 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/crimson_door": {
+    "criteria": {
+      "has_planks": "2023-04-07 22:16:43 +0000"
     },
     "done": true
   },
@@ -713,6 +779,12 @@
     },
     "done": true
   },
+  "create:recipes/create.palettes/crimson_window": {
+    "criteria": {
+      "has_ingredient": "2023-04-07 22:16:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/orange_stained_glass": {
     "criteria": {
       "has_glass": "2023-04-07 02:04:05 +0000"
@@ -722,6 +794,12 @@
   "minecraft:recipes/decorations/cyan_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2023-04-07 02:42:41 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2023-04-07 21:07:49 +0000"
     },
     "done": true
   },
@@ -761,6 +839,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/crimson_trapdoor": {
+    "criteria": {
+      "has_planks": "2023-04-07 22:16:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2023-04-07 02:03:00 +0000"
@@ -785,9 +869,23 @@
     },
     "done": true
   },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:skeleton": "2023-04-07 21:08:16 +0000",
+      "minecraft:piglin": "2023-04-07 22:16:03 +0000",
+      "minecraft:zombie": "2023-04-07 21:07:49 +0000"
+    },
+    "done": false
+  },
   "betterend:recipes/tools/golden_hammer": {
     "criteria": {
       "has_689_stick": "2023-04-07 02:02:31 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2023-04-07 21:39:26 +0000"
     },
     "done": true
   },
@@ -845,6 +943,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/crimson_sign": {
+    "criteria": {
+      "has_planks": "2023-04-07 22:16:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/black_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-04-07 02:02:11 +0000"
@@ -854,6 +958,12 @@
   "betterend:recipes/decorations/lacugrove_bookshelf": {
     "criteria": {
       "has_230_book": "2023-04-07 02:17:32 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_azure_bluet": {
+    "criteria": {
+      "has_azure_bluet": "2023-04-07 21:00:09 +0000"
     },
     "done": true
   },
@@ -1127,6 +1237,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/blue_dye_from_cornflower": {
+    "criteria": {
+      "has_cornflower": "2023-04-07 21:00:11 +0000"
+    },
+    "done": true
+  },
   "betterend:recipes/decorations/end_lotus_sign": {
     "criteria": {
       "has_199_stick": "2023-04-07 02:02:31 +0000"
@@ -1136,6 +1252,12 @@
   "betterend:recipes/decorations/thallasium_hoe": {
     "criteria": {
       "has_1_stick": "2023-04-07 02:02:31 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/crimson_slab": {
+    "criteria": {
+      "has_planks": "2023-04-07 22:16:43 +0000"
     },
     "done": true
   },
@@ -1163,9 +1285,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/crimson_stairs": {
+    "criteria": {
+      "has_planks": "2023-04-07 22:16:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_stained_glass": {
     "criteria": {
       "has_glass": "2023-04-07 02:04:05 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/crimson_fence_gate": {
+    "criteria": {
+      "has_planks": "2023-04-07 22:16:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_poppy": "2023-04-07 21:43:40 +0000"
     },
     "done": true
   },
@@ -1190,6 +1330,12 @@
   "betterend:recipes/decorations/jellyshroom_bookshelf": {
     "criteria": {
       "has_360_book": "2023-04-07 02:17:32 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2023-04-07 21:00:09 +0000"
     },
     "done": true
   },
@@ -1277,6 +1423,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/crimson_planks": {
+    "criteria": {
+      "has_logs": "2023-04-07 22:16:39 +0000"
+    },
+    "done": true
+  },
   "betterend:recipes/decorations/dragon_tree_gate": {
     "criteria": {
       "has_242_stick": "2023-04-07 02:02:31 +0000"
@@ -1304,6 +1456,12 @@
   "betterend:recipes/decorations/dragon_tree_fence": {
     "criteria": {
       "has_240_stick": "2023-04-07 02:02:31 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2023-04-07 21:09:34 +0000"
     },
     "done": true
   },
@@ -1484,6 +1642,12 @@
   "create:recipes/create.base/crafting/appliances/crafting_blueprint": {
     "criteria": {
       "has_item": "2023-04-07 01:43:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:zombie": "2023-04-07 21:07:49 +0000"
     },
     "done": true
   },
@@ -1807,6 +1971,12 @@
     },
     "done": true
   },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:crimson_forest": "2023-04-07 21:39:27 +0000"
+    },
+    "done": false
+  },
   "minecraft:recipes/decorations/light_gray_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-04-07 02:02:11 +0000"
@@ -1870,6 +2040,12 @@
   "minecraft:recipes/decorations/red_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2023-04-07 02:42:41 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_oxeye_daisy": {
+    "criteria": {
+      "has_oxeye_daisy": "2023-04-07 21:17:51 +0000"
     },
     "done": true
   },

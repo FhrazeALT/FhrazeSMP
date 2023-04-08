@@ -119,6 +119,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/flavolite_polished_stonecutting": {
+    "criteria": {
+      "has_0_flavolite": "2023-04-08 05:58:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/copper_block": {
     "criteria": {
       "has_copper_ingot": "2023-03-25 06:13:25 +0000"
@@ -182,6 +188,12 @@
   "create:recipes/create.palettes/cut_dripstone_slab_from_dripstone_block_stonecutting": {
     "criteria": {
       "has_dripstone_block": "2023-04-05 22:53:00 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_tiles_stonecutting": {
+    "criteria": {
+      "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -269,6 +281,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/endstone_flower_pot": {
+    "criteria": {
+      "has_707_end_stone_bricks": "2023-04-08 06:23:18 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.palettes/cut_tuff_bricks_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2023-03-24 22:58:04 +0000"
@@ -278,6 +296,12 @@
   "create:recipes/create.palettes/cut_veridium_brick_slab_from_veridium_stonecutting": {
     "criteria": {
       "has_veridium": "2023-03-24 23:56:34 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/blackstone_lantern": {
+    "criteria": {
+      "has_622_crystal_shards": "2023-04-08 06:34:36 +0000"
     },
     "done": true
   },
@@ -371,6 +395,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/smaragdant_crystal_wall": {
+    "criteria": {
+      "has_544_smaragdant_crystal": "2023-04-08 06:06:37 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/deepslate_tile_stairs_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2023-03-24 22:55:00 +0000"
@@ -380,6 +410,18 @@
   "minecraft:recipes/building_blocks/light_gray_concrete_powder": {
     "criteria": {
       "has_gravel": "2023-03-24 23:16:03 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/dragon_tree_log": {
+    "criteria": {
+      "has_258_dragon_tree_bark": "2023-04-08 05:34:35 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_slab": {
+    "criteria": {
+      "has_47_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -437,6 +479,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/flavolite_pillar_stonecutting": {
+    "criteria": {
+      "has_0_flavolite": "2023-04-08 05:58:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/andesite_stairs_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2023-03-24 22:28:08 +0000"
@@ -452,6 +500,12 @@
   "create:recipes/create.palettes/small_crimsite_brick_slab_from_crimsite_stonecutting": {
     "criteria": {
       "has_crimsite": "2023-03-25 06:18:15 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbralith_brick_wall_stonecutting": {
+    "criteria": {
+      "has_0_umbralith": "2023-04-08 05:31:57 +0000"
     },
     "done": true
   },
@@ -527,6 +581,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/umbralith_bricks": {
+    "criteria": {
+      "has_114_umbralith": "2023-04-08 05:31:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/spruce_planks": {
     "criteria": {
       "has_logs": "2023-03-26 03:25:51 +0000"
@@ -575,6 +635,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/umbralith_tiles_stonecutting": {
+    "criteria": {
+      "has_0_umbralith": "2023-04-08 05:31:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/light_blue_carpet_from_white_carpet": {
     "criteria": {
       "has_white_carpet": "2023-03-28 01:15:12 +0000"
@@ -590,6 +656,12 @@
   "minecraft:recipes/building_blocks/smooth_quartz_slab": {
     "criteria": {
       "has_smooth_quartz": "2023-04-01 20:45:12 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_bricks": {
+    "criteria": {
+      "has_6_flavolite": "2023-04-08 05:58:43 +0000"
     },
     "done": true
   },
@@ -638,6 +710,12 @@
   "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs": {
     "criteria": {
       "has_polished_blackstone_bricks": "2023-03-25 23:37:44 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/end_stone_furnace": {
+    "criteria": {
+      "has_694_end_stone": "2023-04-08 05:38:32 +0000"
     },
     "done": true
   },
@@ -701,6 +779,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/violecite_lantern": {
+    "criteria": {
+      "has_36_crystal_shards": "2023-04-08 06:34:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/brewing/glistering_melon_slice": {
     "criteria": {
       "has_melon": "2023-03-24 03:50:16 +0000"
@@ -761,6 +845,18 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/smaragdant_crystal": {
+    "criteria": {
+      "has_712_smaragdant_crystal_shard": "2023-04-08 05:30:44 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_brick_wall_stonecutting": {
+    "criteria": {
+      "has_0_flavolite": "2023-04-08 05:58:43 +0000"
+    },
+    "done": true
+  },
   "betterend:recipes/decorations/dragon_tree_bookshelf": {
     "criteria": {
       "has_256_book": "2023-03-31 21:34:27 +0000"
@@ -776,6 +872,12 @@
   "create:recipes/create.palettes/cut_asurine_from_asurine_stonecutting": {
     "criteria": {
       "has_asurine": "2023-03-24 23:28:48 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/purpur_lantern": {
+    "criteria": {
+      "has_620_crystal_shards": "2023-04-08 06:34:36 +0000"
     },
     "done": true
   },
@@ -1007,6 +1109,12 @@
     },
     "done": true
   },
+  "betterend:root": {
+    "criteria": {
+      "entered_end": "2023-04-08 05:27:30 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/crimson_stairs": {
     "criteria": {
       "has_planks": "2023-03-26 00:44:37 +0000"
@@ -1061,9 +1169,21 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/violecite_brick_wall_stonecutting": {
+    "criteria": {
+      "has_0_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.base/crafting/materials/andesite_alloy": {
     "criteria": {
       "has_item": "2023-03-24 22:59:00 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbralith_slab": {
+    "criteria": {
+      "has_119_umbralith": "2023-04-08 05:31:57 +0000"
     },
     "done": true
   },
@@ -1076,6 +1196,12 @@
   "minecraft:recipes/building_blocks/blackstone_slab_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2023-03-26 03:56:27 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbralith_stairs_stonecutting": {
+    "criteria": {
+      "has_0_umbralith": "2023-04-08 05:31:57 +0000"
     },
     "done": true
   },
@@ -1103,9 +1229,21 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/umbralith_button": {
+    "criteria": {
+      "has_124_umbralith": "2023-04-08 05:31:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/jungle_planks": {
     "criteria": {
       "has_logs": "2023-03-24 03:55:42 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_stairs_stonecutting": {
+    "criteria": {
+      "has_0_flavolite": "2023-04-08 05:58:43 +0000"
     },
     "done": true
   },
@@ -1259,6 +1397,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/umbralith_stairs": {
+    "criteria": {
+      "has_118_umbralith": "2023-04-08 05:31:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/golden_pickaxe": {
     "criteria": {
       "has_gold_ingot": "2023-03-24 23:20:51 +0000"
@@ -1379,6 +1523,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/sandy_jadestone_lantern": {
+    "criteria": {
+      "has_108_crystal_shards": "2023-04-08 06:34:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/stone_pickaxe": {
     "criteria": {
       "has_cobblestone": "2023-03-24 03:55:55 +0000"
@@ -1481,6 +1631,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/violecite_furnace": {
+    "criteria": {
+      "has_38_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "paradise_lost:void_paradise_lost": {
     "criteria": {
       "invoid": "2023-03-25 05:37:47 +0000"
@@ -1521,6 +1677,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/sulphuric_rock_wall": {
+    "criteria": {
+      "has_50_sulphuric_rock": "2023-04-08 06:44:57 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.palettes/small_tuff_bricks_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2023-03-24 22:58:04 +0000"
@@ -1542,6 +1704,12 @@
   "minecraft:recipes/misc/diamond": {
     "criteria": {
       "has_diamond_block": "2023-03-27 00:25:42 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_bulb_lantern": {
+    "criteria": {
+      "has_473_glowing_bulb": "2023-04-08 06:18:18 +0000"
     },
     "done": true
   },
@@ -1578,6 +1746,12 @@
   "create:recipes/create.palettes/polished_cut_calcite_stairs_from_calcite_stonecutting": {
     "criteria": {
       "has_calcite": "2023-03-26 02:58:31 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbralith_brick_stair_stonecutting": {
+    "criteria": {
+      "has_0_umbralith": "2023-04-08 05:31:57 +0000"
     },
     "done": true
   },
@@ -1641,6 +1815,18 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/umbralith_bricks_stonecutting": {
+    "criteria": {
+      "has_0_umbralith": "2023-04-08 05:31:57 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_brick_slab_stonecutting": {
+    "criteria": {
+      "has_0_flavolite": "2023-04-08 05:58:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/purple_wool": {
     "criteria": {
       "has_white_wool": "2023-03-24 22:26:05 +0000"
@@ -1665,9 +1851,21 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/sulphuric_rock_brick_slab_stonecutting": {
+    "criteria": {
+      "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_andesite_stairs": {
     "criteria": {
       "has_polished_andesite": "2023-03-25 06:37:32 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_bars": {
+    "criteria": {
+      "has_461_thallasium_ingot": "2023-04-08 06:28:58 +0000"
     },
     "done": true
   },
@@ -1746,6 +1944,12 @@
   "minecraft:recipes/building_blocks/end_stone_brick_slab_from_end_stone_stonecutting": {
     "criteria": {
       "has_end_stone": "2023-03-26 22:42:31 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/violecite_polished_stonecutting": {
+    "criteria": {
+      "has_0_violecite": "2023-04-08 06:47:33 +0000"
     },
     "done": true
   },
@@ -1911,6 +2115,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/smaragdant_crystal_bricks": {
+    "criteria": {
+      "has_536_smaragdant_crystal": "2023-04-08 06:06:37 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/bucket": {
     "criteria": {
       "has_iron_ingot": "2023-03-24 22:59:00 +0000"
@@ -1974,6 +2184,12 @@
   "minecraft:recipes/decorations/white_banner": {
     "criteria": {
       "has_white_wool": "2023-03-24 22:26:05 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_block": {
+    "criteria": {
+      "has_458_thallasium_ingot": "2023-04-08 06:28:58 +0000"
     },
     "done": true
   },
@@ -2218,6 +2434,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/thallasium_ingot_furnace_raw": {
+    "criteria": {
+      "has_1_thallasium_raw": "2023-04-08 05:38:31 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/golden_apple": {
     "criteria": {
       "has_gold_ingot": "2023-03-24 23:20:51 +0000"
@@ -2269,6 +2491,12 @@
   "minecraft:recipes/building_blocks/dark_oak_wood": {
     "criteria": {
       "has_log": "2023-03-26 02:18:18 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_wall_stonecutting": {
+    "criteria": {
+      "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -2380,6 +2608,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/thallasium_pressure_plate": {
+    "criteria": {
+      "has_462_thallasium_ingot": "2023-04-08 06:28:58 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/black_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-03-25 17:28:16 +0000"
@@ -2419,6 +2653,12 @@
   "create:recipes/create.palettes/cut_scoria_brick_slab_from_scoria_stonecutting": {
     "criteria": {
       "has_scoria": "2023-03-30 02:33:27 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbralith_lantern": {
+    "criteria": {
+      "has_126_crystal_shards": "2023-04-08 06:34:36 +0000"
     },
     "done": true
   },
@@ -2512,6 +2752,18 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/thallasium_chandelier": {
+    "criteria": {
+      "has_474_thallasium_ingot": "2023-04-08 06:28:58 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/smaragdant_crystal_slab": {
+    "criteria": {
+      "has_541_smaragdant_crystal": "2023-04-08 06:06:37 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/golden_boots": {
     "criteria": {
       "has_gold_ingot": "2023-03-24 23:20:51 +0000"
@@ -2560,9 +2812,21 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/umbralith_pressure_plate": {
+    "criteria": {
+      "has_125_umbralith": "2023-04-08 05:31:57 +0000"
+    },
+    "done": true
+  },
   "create:copper": {
     "criteria": {
       "0": "2023-03-25 06:13:25 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/end_stone_lantern": {
+    "criteria": {
+      "has_610_crystal_shards": "2023-04-08 06:34:36 +0000"
     },
     "done": true
   },
@@ -2890,6 +3154,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/sulphuric_rock_bricks_stonecutting": {
+    "criteria": {
+      "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.palettes/small_veridium_brick_slab_from_veridium_stonecutting": {
     "criteria": {
       "has_veridium": "2023-03-24 23:56:34 +0000"
@@ -2917,6 +3187,12 @@
   "create:recipes/create.palettes/cut_crimsite_slab_from_crimsite_stonecutting": {
     "criteria": {
       "has_crimsite": "2023-03-25 06:18:15 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbralith_wall": {
+    "criteria": {
+      "has_122_umbralith": "2023-04-08 05:31:57 +0000"
     },
     "done": true
   },
@@ -2956,6 +3232,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/umbralith_brick_slab_stonecutting": {
+    "criteria": {
+      "has_0_umbralith": "2023-04-08 05:31:57 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.palettes/cut_calcite_slab_from_calcite_stonecutting": {
     "criteria": {
       "has_calcite": "2023-03-26 02:58:31 +0000"
@@ -2977,6 +3259,12 @@
   "create:recipes/create.palettes/cut_calcite_brick_slab_from_calcite_stonecutting": {
     "criteria": {
       "has_calcite": "2023-03-26 02:58:31 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_brick_stair_stonecutting": {
+    "criteria": {
+      "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -3037,6 +3325,12 @@
   "create:recipes/create.palettes/small_calcite_brick_wall_from_calcite_stonecutting": {
     "criteria": {
       "has_calcite": "2023-03-26 02:58:31 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbralith_furnace": {
+    "criteria": {
+      "has_128_umbralith": "2023-04-08 05:31:57 +0000"
     },
     "done": true
   },
@@ -3151,6 +3445,12 @@
   "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2023-03-26 03:56:27 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_stairs": {
+    "criteria": {
+      "has_10_flavolite": "2023-04-08 05:58:43 +0000"
     },
     "done": true
   },
@@ -3358,6 +3658,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/flavolite_brick_stair_stonecutting": {
+    "criteria": {
+      "has_0_flavolite": "2023-04-08 05:58:43 +0000"
+    },
+    "done": true
+  },
   "charm:inventory_tidying/tidy_inventory": {
     "criteria": {
       "tidied_inventory": "2023-03-25 03:56:40 +0000"
@@ -3532,6 +3838,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/violecite_stairs": {
+    "criteria": {
+      "has_28_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.palettes/small_scoria_bricks_from_scoria_stonecutting": {
     "criteria": {
       "has_scoria": "2023-03-30 02:33:27 +0000"
@@ -3553,6 +3865,12 @@
   "minecraft:recipes/misc/stick": {
     "criteria": {
       "has_planks": "2023-03-24 03:49:17 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_chain": {
+    "criteria": {
+      "has_467_thallasium_ingot": "2023-04-08 06:28:58 +0000"
     },
     "done": true
   },
@@ -3720,6 +4038,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/thallasium_trapdoor": {
+    "criteria": {
+      "has_464_thallasium_ingot": "2023-04-08 06:28:58 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/brick": {
     "criteria": {
       "has_clay_ball": "2023-03-24 22:38:27 +0000"
@@ -3810,6 +4134,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/violecite_tiles_stonecutting": {
+    "criteria": {
+      "has_0_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/gold_block": {
     "criteria": {
       "has_gold_ingot": "2023-03-24 23:20:51 +0000"
@@ -3825,6 +4155,12 @@
   "minecraft:recipes/decorations/mossy_stone_brick_wall": {
     "criteria": {
       "has_mossy_stone_bricks": "2023-03-24 23:07:06 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_stairs_stonecutting": {
+    "criteria": {
+      "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -3882,6 +4218,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/violecite_slab": {
+    "criteria": {
+      "has_29_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_stairs": {
     "criteria": {
       "has_planks": "2023-03-24 03:49:17 +0000"
@@ -3891,6 +4233,12 @@
   "create:recipes/create.base/crafting/kinetics/controller_rail": {
     "criteria": {
       "has_item": "2023-03-24 23:18:27 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_slab": {
+    "criteria": {
+      "has_11_flavolite": "2023-04-08 05:58:43 +0000"
     },
     "done": true
   },
@@ -3951,6 +4299,12 @@
   "minecraft:recipes/decorations/gray_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2023-03-25 03:13:33 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_stairs": {
+    "criteria": {
+      "has_46_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -4180,6 +4534,18 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/umbralith_polished_stonecutting": {
+    "criteria": {
+      "has_0_umbralith": "2023-04-08 05:31:57 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_door": {
+    "criteria": {
+      "has_463_thallasium_ingot": "2023-04-08 06:28:58 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.palettes/crimsite_pillar_from_crimsite_stonecutting": {
     "criteria": {
       "has_crimsite": "2023-03-25 06:18:15 +0000"
@@ -4189,6 +4555,18 @@
   "betterend:recipes/decorations/end_lotus_bookshelf": {
     "criteria": {
       "has_204_book": "2023-03-31 21:34:27 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/shadow_berry_seeds": {
+    "criteria": {
+      "has_608_shadow_berry_raw": "2023-04-08 05:34:41 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/smaragdant_crystal_stairs": {
+    "criteria": {
+      "has_540_smaragdant_crystal": "2023-04-08 06:06:37 +0000"
     },
     "done": true
   },
@@ -4207,6 +4585,12 @@
   "minecraft:end/root": {
     "criteria": {
       "entered_end": "2023-03-26 22:40:24 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/aurora_block": {
+    "criteria": {
+      "has_605_crystal_shards": "2023-04-08 06:34:36 +0000"
     },
     "done": true
   },
@@ -4288,6 +4672,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/azure_jadestone_lantern": {
+    "criteria": {
+      "has_90_crystal_shards": "2023-04-08 06:34:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/cyan_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-03-25 17:28:16 +0000"
@@ -4342,9 +4732,21 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/violecite_bricks": {
+    "criteria": {
+      "has_24_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/acacia_wood": {
     "criteria": {
       "has_log": "2023-03-26 02:49:25 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/purple_polypore_dye": {
+    "criteria": {
+      "has_609_purple_polypore": "2023-04-08 05:34:31 +0000"
     },
     "done": true
   },
@@ -4381,6 +4783,12 @@
   "create:recipes/create.palettes/cut_andesite_slab_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2023-03-24 22:28:08 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_polished_stonecutting": {
+    "criteria": {
+      "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -4435,6 +4843,12 @@
   "minecraft:recipes/decorations/light_gray_banner": {
     "criteria": {
       "has_light_gray_wool": "2023-03-25 02:35:11 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/violecite_pressure_plate": {
+    "criteria": {
+      "has_35_violecite": "2023-04-08 06:47:33 +0000"
     },
     "done": true
   },
@@ -4498,6 +4912,12 @@
     },
     "done": true
   },
+  "betterend:portal": {
+    "criteria": {
+      "eternal_portal": "2023-04-08 06:12:42 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/gray_carpet": {
     "criteria": {
       "has_gray_wool": "2023-03-24 22:26:09 +0000"
@@ -4519,6 +4939,12 @@
   "minecraft:recipes/building_blocks/black_concrete_powder": {
     "criteria": {
       "has_gravel": "2023-03-24 23:16:03 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_pillar_stonecutting": {
+    "criteria": {
+      "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -4558,9 +4984,21 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/violecite_wall_stonecutting": {
+    "criteria": {
+      "has_0_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/crossbow": {
     "criteria": {
       "has_stick": "2023-03-24 03:49:35 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/granite_lantern": {
+    "criteria": {
+      "has_616_crystal_shards": "2023-04-08 06:34:36 +0000"
     },
     "done": true
   },
@@ -4657,6 +5095,12 @@
   "minecraft:adventure/kill_a_mob": {
     "criteria": {
       "minecraft:zombie": "2023-03-24 03:53:18 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_slab_stonecutting": {
+    "criteria": {
+      "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -4839,6 +5283,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/missing_tile": {
+    "criteria": {
+      "has_685_purpur_block": "2023-04-08 06:24:08 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
       "has_diamond": "2023-03-24 22:56:48 +0000"
@@ -4857,6 +5307,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/andesite_lantern": {
+    "criteria": {
+      "has_612_crystal_shards": "2023-04-08 06:34:36 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/raw_iron": {
     "criteria": {
       "has_raw_iron_block": "2023-03-26 19:13:08 +0000"
@@ -4866,6 +5322,12 @@
   "computercraft:recipes/computercraft/computer_advanced": {
     "criteria": {
       "has_components": "2023-03-26 23:31:18 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_lantern": {
+    "criteria": {
+      "has_18_crystal_shards": "2023-04-08 06:34:36 +0000"
     },
     "done": true
   },
@@ -4932,6 +5394,12 @@
   "minecraft:recipes/food/cookie": {
     "criteria": {
       "has_cocoa": "2023-03-24 04:00:43 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_bricks": {
+    "criteria": {
+      "has_42_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -5013,6 +5481,24 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/virid_jadestone_lantern": {
+    "criteria": {
+      "has_72_crystal_shards": "2023-04-08 06:34:36 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbralith_slab_stonecutting": {
+    "criteria": {
+      "has_0_umbralith": "2023-04-08 05:31:57 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_pressure_plate": {
+    "criteria": {
+      "has_17_flavolite": "2023-04-08 05:58:43 +0000"
+    },
+    "done": true
+  },
   "betterend:recipes/decorations/tenanea_bookshelf": {
     "criteria": {
       "has_282_book": "2023-03-31 21:34:27 +0000"
@@ -5088,6 +5574,12 @@
   "create:recipes/create.palettes/small_dripstone_bricks_from_dripstone_block_stonecutting": {
     "criteria": {
       "has_dripstone_block": "2023-04-05 22:53:00 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbralith_wall_stonecutting": {
+    "criteria": {
+      "has_0_umbralith": "2023-04-08 05:31:57 +0000"
     },
     "done": true
   },
@@ -5169,9 +5661,21 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/sulphuric_rock_brick_wall_stonecutting": {
+    "criteria": {
+      "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
+    },
+    "done": true
+  },
   "charm:colored_bundles/obtain_colored_bundle": {
     "criteria": {
       "has_bundle": "2023-03-26 07:03:47 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_bricks_stonecutting": {
+    "criteria": {
+      "has_0_flavolite": "2023-04-08 05:58:43 +0000"
     },
     "done": true
   },
@@ -5199,9 +5703,21 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/violecite_button": {
+    "criteria": {
+      "has_34_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/firework_rocket_simple": {
     "criteria": {
       "has_gunpowder": "2023-03-24 23:36:48 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_anvil": {
+    "criteria": {
+      "has_470_thallasium_ingot": "2023-04-08 06:28:58 +0000"
     },
     "done": true
   },
@@ -5345,6 +5861,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/flavolite_furnace": {
+    "criteria": {
+      "has_20_flavolite": "2023-04-08 05:58:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/green_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-03-25 17:28:16 +0000"
@@ -5366,6 +5888,12 @@
   "minecraft:recipes/building_blocks/polished_diorite_slab_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2023-03-24 23:43:38 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_furnace": {
+    "criteria": {
+      "has_56_sulphuric_rock": "2023-04-08 06:44:57 +0000"
     },
     "done": true
   },
@@ -5537,6 +6065,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/dragon_tree_bark": {
+    "criteria": {
+      "has_257_dragon_tree_log": "2023-04-08 06:58:25 +0000"
+    },
+    "done": true
+  },
   "charm:core/tools": {
     "criteria": {
       "player_joined": "2023-03-24 03:39:57 +0000"
@@ -5546,6 +6080,18 @@
   "create:recipes/create.base/crafting/kinetics/brown_seat": {
     "criteria": {
       "has_wool": "2023-03-24 22:26:05 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_slab_stonecutting": {
+    "criteria": {
+      "has_0_flavolite": "2023-04-08 05:58:43 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/violecite_pillar_stonecutting": {
+    "criteria": {
+      "has_0_violecite": "2023-04-08 06:47:33 +0000"
     },
     "done": true
   },
@@ -5602,6 +6148,26 @@
       "has_dripstone_block": "2023-04-05 22:53:00 +0000"
     },
     "done": true
+  },
+  "betterend:all_the_biomes": {
+    "criteria": {
+      "betterend:umbra_valley": "2023-04-08 05:29:56 +0000",
+      "betterend:crystal_mountains": "2023-04-08 06:05:46 +0000",
+      "betterend:dry_shrubland": "2023-04-08 06:23:04 +0000",
+      "betterend:chorus_forest": "2023-04-08 06:16:12 +0000",
+      "betterend:shadow_forest": "2023-04-08 05:34:14 +0000",
+      "betterend:amber_land": "2023-04-08 05:33:03 +0000",
+      "betterend:sulphur_springs": "2023-04-08 06:42:28 +0000",
+      "betterend:lantern_woods": "2023-04-08 06:49:57 +0000",
+      "betterend:umbrella_jungle": "2023-04-08 05:42:06 +0000",
+      "betterend:megalake": "2023-04-08 06:14:15 +0000",
+      "betterend:ice_starfield": "2023-04-08 05:41:14 +0000",
+      "betterend:foggy_mushroomland": "2023-04-08 06:42:13 +0000",
+      "betterend:dust_wastelands": "2023-04-08 06:37:19 +0000",
+      "betterend:blossoming_spires": "2023-04-08 06:17:41 +0000",
+      "betterend:glowing_grasslands": "2023-04-08 06:14:51 +0000"
+    },
+    "done": false
   },
   "minecraft:recipes/building_blocks/deepslate": {
     "criteria": {
@@ -5765,6 +6331,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/sulphuric_rock_button": {
+    "criteria": {
+      "has_52_sulphuric_rock": "2023-04-08 06:44:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cyan_concrete_powder": {
     "criteria": {
       "has_gravel": "2023-03-24 23:16:03 +0000"
@@ -5822,6 +6394,12 @@
   "minecraft:recipes/building_blocks/polished_diorite_stairs_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2023-03-24 23:43:38 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_nuggets_from_ingot": {
+    "criteria": {
+      "has_457_thallasium_ingot": "2023-04-08 06:28:58 +0000"
     },
     "done": true
   },
@@ -5897,6 +6475,18 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/flavolite_button": {
+    "criteria": {
+      "has_16_flavolite": "2023-04-08 05:58:43 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/violecite_brick_slab_stonecutting": {
+    "criteria": {
+      "has_0_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.base/crafting/schematics/schematic_and_quill": {
     "criteria": {
       "has_item": "2023-03-25 07:36:59 +0000"
@@ -5912,6 +6502,12 @@
   "minecraft:recipes/building_blocks/white_stained_glass": {
     "criteria": {
       "has_glass": "2023-03-25 17:27:10 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/violecite_bricks_stonecutting": {
+    "criteria": {
+      "has_0_violecite": "2023-04-08 06:47:33 +0000"
     },
     "done": true
   },
@@ -5954,6 +6550,24 @@
   "betterend:recipes/decorations/jellyshroom_bookshelf": {
     "criteria": {
       "has_360_book": "2023-03-31 21:34:27 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_pressure_plate": {
+    "criteria": {
+      "has_53_sulphuric_rock": "2023-04-08 06:44:57 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/sulphuric_rock_lantern": {
+    "criteria": {
+      "has_54_crystal_shards": "2023-04-08 06:34:36 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_wall": {
+    "criteria": {
+      "has_14_flavolite": "2023-04-08 05:58:43 +0000"
     },
     "done": true
   },
@@ -6047,6 +6661,18 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/terminite_bulb_lantern": {
+    "criteria": {
+      "has_529_glowing_bulb": "2023-04-08 06:18:18 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/violecite_brick_stair_stonecutting": {
+    "criteria": {
+      "has_0_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "charm:core/automation": {
     "criteria": {
       "player_joined": "2023-03-24 03:39:57 +0000"
@@ -6056,6 +6682,12 @@
   "create:recipes/create.palettes/cut_andesite_bricks_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2023-03-24 22:28:08 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/violecite_slab_stonecutting": {
+    "criteria": {
+      "has_0_violecite": "2023-04-08 06:47:33 +0000"
     },
     "done": true
   },
@@ -6086,6 +6718,18 @@
   "create:recipes/create.palettes/small_dripstone_brick_wall_from_dripstone_block_stonecutting": {
     "criteria": {
       "has_dripstone_block": "2023-04-05 22:53:00 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/quartz_lantern": {
+    "criteria": {
+      "has_618_crystal_shards": "2023-04-08 06:34:36 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/violecite_wall": {
+    "criteria": {
+      "has_32_violecite": "2023-04-08 06:47:33 +0000"
     },
     "done": true
   },
@@ -6191,6 +6835,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/violecite_stairs_stonecutting": {
+    "criteria": {
+      "has_0_violecite": "2023-04-08 06:47:33 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/oak_button": {
     "criteria": {
       "has_planks": "2023-03-24 03:49:17 +0000"
@@ -6206,6 +6856,12 @@
   "bclib:recipes/decorations/tag_minecart": {
     "criteria": {
       "has_tag_iron_ingots": "2023-03-31 21:34:27 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/flavolite_tiles_stonecutting": {
+    "criteria": {
+      "has_0_flavolite": "2023-04-08 05:58:43 +0000"
     },
     "done": true
   },
@@ -6287,6 +6943,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/flavolite_wall_stonecutting": {
+    "criteria": {
+      "has_0_flavolite": "2023-04-08 05:58:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
     "criteria": {
       "has_raw_copper": "2023-03-24 23:56:48 +0000"
@@ -6341,9 +7003,21 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/diorite_lantern": {
+    "criteria": {
+      "has_614_crystal_shards": "2023-04-08 06:34:36 +0000"
+    },
+    "done": true
+  },
   "bclib:recipes/decorations/tag_rail": {
     "criteria": {
       "has_tag_iron_ingots": "2023-03-31 21:34:27 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/amber_gem": {
+    "criteria": {
+      "has_624_raw_amber": "2023-04-08 05:38:54 +0000"
     },
     "done": true
   },
@@ -6534,6 +7208,12 @@
     },
     "done": false
   },
+  "betterend:recipes/decorations/end_berry": {
+    "criteria": {
+      "has_22_shadow_berry_raw": "2023-04-08 05:34:41 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/gray_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2023-03-25 17:28:16 +0000"
@@ -6597,6 +7277,12 @@
   "create:recipes/create.base/crafting/kinetics/fluid_pipe": {
     "criteria": {
       "has_item": "2023-03-25 06:13:25 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/umbralith_pillar_stonecutting": {
+    "criteria": {
+      "has_0_umbralith": "2023-04-08 05:31:57 +0000"
     },
     "done": true
   },
