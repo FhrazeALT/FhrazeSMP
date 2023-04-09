@@ -263,6 +263,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/flower_banner_pattern": {
+    "criteria": {
+      "has_oxeye_daisy": "2023-04-09 01:37:52 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.base/crafting/kinetics/sticky_mechanical_piston": {
     "criteria": {
       "has_item": "2023-03-25 22:48:09 +0000"
@@ -710,6 +716,12 @@
   "minecraft:recipes/building_blocks/white_wool_from_string": {
     "criteria": {
       "has_string": "2023-03-25 17:37:32 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/end_stone_furnace": {
+    "criteria": {
+      "has_694_end_stone": "2023-04-09 01:14:46 +0000"
     },
     "done": true
   },
@@ -1722,6 +1734,12 @@
   "minecraft:recipes/building_blocks/acacia_stairs": {
     "criteria": {
       "has_planks": "2023-03-25 18:29:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_oxeye_daisy": {
+    "criteria": {
+      "has_oxeye_daisy": "2023-04-09 01:37:52 +0000"
     },
     "done": true
   },
