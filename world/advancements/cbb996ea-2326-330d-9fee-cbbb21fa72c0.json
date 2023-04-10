@@ -425,6 +425,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/emerald": {
+    "criteria": {
+      "has_emerald_block": "2023-04-09 21:36:41 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.palettes/small_andesite_brick_wall_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2023-04-08 16:47:59 +0000"

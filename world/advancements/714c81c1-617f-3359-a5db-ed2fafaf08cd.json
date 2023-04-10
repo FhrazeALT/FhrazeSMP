@@ -359,6 +359,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/terminite_bulb_lantern_blue": {
+    "criteria": {
+      "has_489_blue_dye": "2023-04-09 19:02:57 +0000"
+    },
+    "done": true
+  },
   "charm:portable_crafting/use_crafting_table": {
     "criteria": {
       "used_crafting_table": "2023-03-25 04:46:34 +0000"
@@ -2438,6 +2444,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/iron_bulb_lantern_blue": {
+    "criteria": {
+      "has_557_blue_dye": "2023-04-09 19:02:57 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/birch_pressure_plate": {
     "criteria": {
       "has_planks": "2023-03-25 04:46:43 +0000"
@@ -2543,6 +2555,12 @@
   "minecraft:recipes/building_blocks/deepslate_tile_slab_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2023-03-25 05:36:05 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/hydralux_petal_block_blue": {
+    "criteria": {
+      "has_401_blue_dye": "2023-04-09 19:02:57 +0000"
     },
     "done": true
   },
@@ -4112,6 +4130,12 @@
   "create:recipes/create.base/crafting/kinetics/green_seat": {
     "criteria": {
       "has_wool": "2023-03-25 05:12:00 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/thallasium_bulb_lantern_blue": {
+    "criteria": {
+      "has_433_blue_dye": "2023-04-09 19:02:57 +0000"
     },
     "done": true
   },

@@ -263,6 +263,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/lime_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/smooth_quartz_slab_from_smooth_quartz_stonecutting": {
     "criteria": {
       "has_smooth_quartz": "2023-04-01 20:45:12 +0000"
@@ -356,6 +362,12 @@
   "betterend:recipes/decorations/shadow_berry_jelly_potion": {
     "criteria": {
       "has_640_potion": "2023-04-01 05:03:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_gray_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
     },
     "done": true
   },
@@ -1139,6 +1151,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/light_gray_glazed_terracotta": {
+    "criteria": {
+      "has_light_gray_terracotta": "2023-04-09 20:47:27 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.palettes/small_andesite_brick_slab_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2023-03-24 22:28:08 +0000"
@@ -1262,6 +1280,12 @@
   "betterend:recipes/decorations/umbralith_stairs_stonecutting": {
     "criteria": {
       "has_0_umbralith": "2023-04-08 05:31:57 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/yellow_glazed_terracotta": {
+    "criteria": {
+      "has_yellow_terracotta": "2023-04-09 19:32:57 +0000"
     },
     "done": true
   },
@@ -1655,6 +1679,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/kill_mob_near_sculk_catalyst": {
+    "criteria": {
+      "kill_mob_near_sculk_catalyst": "2023-04-09 21:53:06 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/end_stone_brick_slab_from_end_stone_brick_stonecutting": {
     "criteria": {
       "has_end_stone_brick": "2023-03-27 00:07:30 +0000"
@@ -1848,6 +1878,12 @@
   "minecraft:recipes/misc/orange_dye_from_red_yellow": {
     "criteria": {
       "has_red_dye": "2023-03-28 01:16:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/white_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
     },
     "done": true
   },
@@ -2343,6 +2379,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/orange_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
+    },
+    "done": true
+  },
   "betterend:recipes/decorations/aeternium_sword_handle": {
     "criteria": {
       "has_0_terminite_ingot": "2023-04-08 17:10:21 +0000"
@@ -2497,6 +2539,12 @@
   "betterend:infusion": {
     "criteria": {
       "infusion_pedestal": "2023-04-08 16:44:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_glazed_terracotta": {
+    "criteria": {
+      "has_orange_terracotta": "2023-04-09 20:47:22 +0000"
     },
     "done": true
   },
@@ -2752,6 +2800,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/red_glazed_terracotta": {
+    "criteria": {
+      "has_red_terracotta": "2023-04-09 20:47:25 +0000"
+    },
+    "done": true
+  },
   "create:recipes/create.palettes/small_asurine_bricks_from_asurine_stonecutting": {
     "criteria": {
       "has_asurine": "2023-03-24 23:28:48 +0000"
@@ -2869,6 +2923,12 @@
   "minecraft:recipes/decorations/snow": {
     "criteria": {
       "has_snowball": "2023-04-01 20:37:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_lantern": {
+    "criteria": {
+      "has_soul_torch": "2023-04-09 21:51:33 +0000"
     },
     "done": true
   },
@@ -3040,6 +3100,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/red_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
+    },
+    "done": true
+  },
   "betterend:recipes/decorations/pythadendron_bookshelf": {
     "criteria": {
       "has_178_book": "2023-03-31 21:34:27 +0000"
@@ -3148,6 +3214,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/recovery_compass": {
+    "criteria": {
+      "has_echo_shard": "2023-04-09 21:29:08 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/andesite": {
     "criteria": {
       "has_stone": "2023-03-24 23:43:38 +0000"
@@ -3205,6 +3277,12 @@
   "minecraft:recipes/building_blocks/cut_sandstone": {
     "criteria": {
       "has_sandstone": "2023-03-26 02:56:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
     },
     "done": true
   },
@@ -4225,6 +4303,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/pink_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/cobbled_deepslate_wall_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2023-03-24 22:55:00 +0000"
@@ -4258,6 +4342,18 @@
   "betterend:recipes/decorations/thallasium_trapdoor": {
     "criteria": {
       "has_464_thallasium_ingot": "2023-04-08 06:28:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/magenta_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/avoid_vibration": {
+    "criteria": {
+      "avoid_vibration": "2023-04-09 20:11:15 +0000"
     },
     "done": true
   },
@@ -4597,6 +4693,12 @@
     },
     "done": false
   },
+  "minecraft:recipes/misc/music_disc_5": {
+    "criteria": {
+      "has_disc_fragment_5": "2023-04-09 21:49:56 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/ender_eye": {
     "criteria": {
       "has_blaze_powder": "2023-03-26 07:20:24 +0000"
@@ -4690,6 +4792,12 @@
   "betterend:recipes/decorations/thallasium_sword_handle": {
     "criteria": {
       "has_1_stick": "2023-03-31 22:58:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cyan_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
     },
     "done": true
   },
@@ -5389,6 +5497,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/blue_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
+    },
+    "done": true
+  },
   "betterend:recipes/decorations/sulphuric_rock_slab_stonecutting": {
     "criteria": {
       "has_0_sulphuric_rock": "2023-04-08 06:44:57 +0000"
@@ -5431,6 +5545,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/light_blue_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/gray_dye": {
     "criteria": {
       "has_white_dye": "2023-04-08 19:30:36 +0000"
@@ -5442,11 +5562,14 @@
       "minecraft:old_growth_pine_taiga": "2023-03-25 20:20:38 +0000",
       "minecraft:taiga": "2023-03-25 05:37:59 +0000",
       "minecraft:deep_ocean": "2023-03-25 04:07:13 +0000",
+      "minecraft:eroded_badlands": "2023-04-09 18:37:32 +0000",
       "minecraft:frozen_river": "2023-03-25 05:43:04 +0000",
       "minecraft:sunflower_plains": "2023-03-25 05:55:43 +0000",
       "minecraft:birch_forest": "2023-03-24 03:39:58 +0000",
       "minecraft:windswept_hills": "2023-03-25 05:40:26 +0000",
       "minecraft:bamboo_jungle": "2023-03-24 03:53:03 +0000",
+      "minecraft:wooded_badlands": "2023-04-09 18:37:17 +0000",
+      "minecraft:badlands": "2023-04-09 18:36:50 +0000",
       "minecraft:savanna_plateau": "2023-03-31 01:18:53 +0000",
       "minecraft:beach": "2023-03-25 00:57:45 +0000",
       "minecraft:dark_forest": "2023-03-25 04:10:05 +0000",
@@ -5459,10 +5582,12 @@
       "minecraft:dripstone_caves": "2023-03-24 22:37:20 +0000",
       "minecraft:snowy_taiga": "2023-03-25 05:42:07 +0000",
       "minecraft:grove": "2023-03-25 04:09:16 +0000",
+      "minecraft:swamp": "2023-04-10 00:41:15 +0000",
       "minecraft:cold_ocean": "2023-03-25 06:04:00 +0000",
       "minecraft:forest": "2023-03-25 00:42:09 +0000",
       "minecraft:lush_caves": "2023-03-24 22:38:10 +0000",
       "minecraft:frozen_ocean": "2023-03-25 05:42:48 +0000",
+      "minecraft:desert": "2023-04-09 18:36:52 +0000",
       "minecraft:deep_frozen_ocean": "2023-03-25 05:47:08 +0000",
       "minecraft:windswept_forest": "2023-03-25 05:38:30 +0000",
       "minecraft:jungle": "2023-03-24 03:58:11 +0000",
@@ -5472,6 +5597,7 @@
       "minecraft:deep_lukewarm_ocean": "2023-03-25 06:00:11 +0000",
       "minecraft:flower_forest": "2023-03-25 05:54:04 +0000",
       "minecraft:old_growth_birch_forest": "2023-03-24 03:40:37 +0000",
+      "minecraft:deep_dark": "2023-04-09 20:10:10 +0000",
       "minecraft:meadow": "2023-03-25 00:39:41 +0000",
       "minecraft:savanna": "2023-03-25 04:24:59 +0000",
       "minecraft:plains": "2023-03-24 23:03:21 +0000"
@@ -5826,6 +5952,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/yellow_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
+    },
+    "done": true
+  },
   "betterend:recipes/decorations/umbralith_slab_stonecutting": {
     "criteria": {
       "has_0_umbralith": "2023-04-08 05:31:57 +0000"
@@ -5847,6 +5979,12 @@
   "betterend:recipes/decorations/lucernia_fence": {
     "criteria": {
       "has_370_stick": "2023-03-31 22:58:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purple_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
     },
     "done": true
   },
@@ -6145,6 +6283,12 @@
       "carrot": "2023-04-02 20:54:16 +0000"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/gray_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
+    },
+    "done": true
   },
   "minecraft:recipes/food/cooked_cod": {
     "criteria": {
@@ -7055,6 +7199,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/green_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/polished_blackstone_wall_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2023-03-26 03:56:27 +0000"
@@ -7064,6 +7214,12 @@
   "create:recipes/create.palettes/cut_diorite_stairs_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2023-03-24 23:43:38 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_terracotta": {
+    "criteria": {
+      "has_terracotta": "2023-04-09 19:32:47 +0000"
     },
     "done": true
   },
