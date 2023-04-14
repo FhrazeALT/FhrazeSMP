@@ -77,6 +77,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/sweet_berry_jelly_potion": {
+    "criteria": {
+      "has_636_potion": "2023-04-14 01:57:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_deepslate": {
     "criteria": {
       "has_cobbled_deepslate": "2023-03-25 02:09:22 +0000"
@@ -227,6 +233,12 @@
     },
     "done": true
   },
+  "betterend:recipes/tools/diamond_hammer": {
+    "criteria": {
+      "has_690_diamond": "2023-04-14 01:22:11 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/chest": {
     "criteria": {
       "has_lots_of_items": "2023-03-25 00:35:41 +0000"
@@ -368,6 +380,12 @@
   "create:recipes/create.palettes/ornate_iron_window": {
     "criteria": {
       "has_ingredient": "2023-03-26 21:02:41 +0000"
+    },
+    "done": true
+  },
+  "betterend:recipes/decorations/shadow_berry_jelly_potion": {
+    "criteria": {
+      "has_640_potion": "2023-04-14 01:57:51 +0000"
     },
     "done": true
   },
@@ -2524,6 +2542,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/blossom_berry_jelly_potion": {
+    "criteria": {
+      "has_644_potion": "2023-04-14 01:57:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/sugar_from_sugar_cane": {
     "criteria": {
       "has_sugar_cane": "2023-03-25 00:54:38 +0000"
@@ -3471,6 +3495,12 @@
   "bclib:recipes/decorations/tag_smith_table": {
     "criteria": {
       "has_tag_planks": "2023-04-05 23:00:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/nether_brick": {
+    "criteria": {
+      "has_netherrack": "2023-04-14 01:53:52 +0000"
     },
     "done": true
   },

@@ -443,6 +443,12 @@
     },
     "done": true
   },
+  "betterend:recipes/decorations/diorite_pedestal": {
+    "criteria": {
+      "has_587_polished_diorite": "2023-04-14 01:51:09 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/deepslate_brick_wall_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2023-03-25 01:03:25 +0000"
@@ -512,6 +518,12 @@
   "minecraft:recipes/food/dried_kelp_from_smelting": {
     "criteria": {
       "has_kelp": "2023-03-29 01:07:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab": {
+    "criteria": {
+      "has_polished_diorite": "2023-04-14 01:51:09 +0000"
     },
     "done": true
   },
@@ -686,6 +698,12 @@
   "create:recipes/create.palettes/cut_asurine_from_asurine_stonecutting": {
     "criteria": {
       "has_asurine": "2023-03-29 01:32:33 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs": {
+    "criteria": {
+      "has_polished_diorite": "2023-04-14 01:51:09 +0000"
     },
     "done": true
   },
@@ -3751,6 +3769,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs_from_polished_diorite_stonecutting": {
+    "criteria": {
+      "has_polished_diorite": "2023-04-14 01:51:09 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/granite_wall_from_granite_stonecutting": {
     "criteria": {
       "has_granite": "2023-03-25 01:26:53 +0000"
@@ -3892,6 +3916,12 @@
   "create:recipes/create.palettes/cut_limestone_brick_wall_from_limestone_stonecutting": {
     "criteria": {
       "has_limestone": "2023-03-25 02:48:17 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab_from_polished_diorite_stonecutting": {
+    "criteria": {
+      "has_polished_diorite": "2023-04-14 01:51:09 +0000"
     },
     "done": true
   },
